@@ -20,6 +20,6 @@ li {
 ul {
   list-style-type: none;
 }
-ul#top_menu {
+ul#top_menu li {
   display: none;
 }
