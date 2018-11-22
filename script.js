@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $("#top_hamburger").click(function() {
-        if ($("#top_menu").css("height") !=== "0px") {
+        if ($("#top_menu").height() > 0) {
             $("#top_menu").css("height", "0px");
             $("#top_menu li").css("height", "0px");
             $("#top_menu li").css("color", "transparent");
