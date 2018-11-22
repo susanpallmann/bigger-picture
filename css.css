@@ -19,10 +19,10 @@ h2 {
   line-height: 1.15em;
   font-weight: 600;
 }
-span#bad {
+span.bad {
   color: #F37852;
 }
-span#good {
+span.good {
   color: #79BCA1;
 }
 body {
@@ -70,4 +70,10 @@ div#firefly_test {
   width: 20px;
   transition: 0.5s;
   position: fixed;
+}
+.col_1 {
+  width: 25%;
+}
+.col_3 {
+  width: 75%;
 }
