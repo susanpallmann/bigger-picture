@@ -41,3 +41,6 @@ ul#top_menu li {
   color: transparent;
   transition: 0.5s;
 }
+div#firefly_test {
+  background: rgba(230, 220, 10, 0.5);
+}
