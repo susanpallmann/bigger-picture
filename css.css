@@ -8,6 +8,11 @@ p {
   font-size: 1em;
   line-height: 1.7em;
 }
+h4 {
+  font-size: 0.9em;
+  text-align: right;
+  color: #F3AF52;
+}
 h2 {
   font-family: 'Open Sans',sans-serif;
   font-size: 1.65em;
