@@ -3,10 +3,12 @@ $(document).ready(function() {
         if ($("#top_menu").is(":visible")) {
             $("#top_menu").css("display", "none");
             $("#top_menu li").css("height", "0px");
+            $("#top_menu li").css("color", "transparent");
             $("#top_hamburger").css("transform", "rotate(0deg)");
         } else {
             $("#top_menu").css("display", "block");
             $("#top_menu li").css("height", "20px");
+            $("#top_menu li").css("color", "#fff");
             $("#top_hamburger").css("transform", "rotate(90deg)");
         }
     });
