@@ -76,6 +76,7 @@ div#firefly_test {
   width: 20px;
   transition: 0.5s;
   position: fixed;
+  z-index: 2;
 }
 .col_1 {
   width: 25%;
