@@ -12,10 +12,8 @@ body {
   border-radius: 5pt;
   width: 30px;
   height: 30px;
-  display: inline-block
-}
-li {
   display: inline-block;
+  transition: transform 0.5s;
 }
 ul {
   list-style-type: none;
