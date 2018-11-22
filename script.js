@@ -12,7 +12,8 @@ $(document).ready(function() {
             $("#top_hamburger").css("transform", "rotate(90deg)");
         }
     });
-    var timer = setTimeout(function() {
-        $("#firefly_test").css("background", "rgba(230, 220, 10, " + Math.random());
-    }, 500);
+    var timer = setTimeout(changeFirefly, 500);
 });
+function changeFirefly {
+    $("#firefly_test").css("background", "rgba(230, 220, 10, " + Math.random());
+}
