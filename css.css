@@ -79,7 +79,7 @@ div#firefly_test {
 .conservationStatus {
   font-size: 2em;
   font-weight: 800;
-  background-image: url("Images/Near Threatened.svg")
+  background-image: url("../Images/Near Threatened.svg")
 }
 .infoSource {
    color: #F3AF52;
