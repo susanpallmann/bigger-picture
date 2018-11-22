@@ -6,3 +6,9 @@ body {
   color: #ffffff;
   font-family: sans-serif;
 }
+.hamburger {
+  background-color: #ffffff;
+  border-radius: 5pt;
+  width: 30px;
+  height: 30px;
+}
