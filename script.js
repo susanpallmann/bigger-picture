@@ -12,7 +12,7 @@ $(document).ready(function() {
             $("#top_hamburger").css("transform", "rotate(90deg)");
         }
     });
-    var timer = setInterval(changeFirefly, 500);
+    var timer = setInterval(changeFirefly, 100);
 });
 function changeFirefly() {
     $("#firefly_test").css("background", "rgba(253, 239, 195, " + Math.random());
