@@ -11,7 +11,6 @@ p {
 h4 {
   font-size: 0.9em;
   text-align: right;
-  color: #F3AF52;
 }
 h2 {
   font-family: 'Open Sans',sans-serif;
@@ -81,4 +80,7 @@ div#firefly_test {
   font-size: 2em;
   font-weight: 800;
   background-image: url("Images/Near Threatened.svg")
+}
+.infoSource {
+   color: #F3AF52;
 }
