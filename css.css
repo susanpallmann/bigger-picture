@@ -80,4 +80,5 @@ div#firefly_test {
 .conservationStatus {
   font-size: 2em;
   font-weight: 800;
+  background-image: url("Images/Near Threatened.svg")
 }
