@@ -19,6 +19,12 @@ h2 {
   line-height: 1.15em;
   font-weight: 600;
 }
+span#bad {
+  color: #F37852;
+}
+span#good {
+  color: #79BCA1;
+}
 body {
   color: #ffffff;
   font-family: 'Open Sans',sans-serif;
