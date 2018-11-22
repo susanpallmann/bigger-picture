@@ -3,6 +3,11 @@ h1 {
   font-family: 'Open Sans',sans-serif;
   margin: 0px;
 }
+p {
+  font-family: 'Open Sans',sans-serif;
+  size: 16pt;
+  line-height: 26pt;
+}
 body {
   color: #ffffff;
   font-family: 'Open Sans',sans-serif;
@@ -21,7 +26,7 @@ body {
   cursor: pointer;
 }
 .information {
-  max-width: 900px;
+  max-width: 700px;
   margin: auto;
   padding: 10pt;
 }
