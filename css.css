@@ -30,3 +30,8 @@ ul#top_menu {
   margin-right: 10px;
   text-align: right;
 }
+ul#top_menu li {
+  height: 0px;
+  color: transparent;
+  transition: 0.5s;
+}
