@@ -6,3 +6,7 @@ This is just a folder to store all imagery used in this project. There are a few
         Yellow - #f3af52, #d89130
         Blue-green - #799e8f, #608e7b
         White (generally only used for UX/UI icons) - #ffffff
+  4. Keep in mind that for this project, color also carries meaning, so iconography should be used with care to either continue or at least no contradict that meaning, as described below:
+        Red - endangerment/extinction/bad
+        Blue-green - hope/survival/recovery
+        Yellow - (less strict a theme) informational/call to action
