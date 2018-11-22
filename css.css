@@ -47,4 +47,5 @@ div#firefly_test {
   height: 20px;
   width: 20px;
   transition: 0.5s;
+  position: fixed;
 }
