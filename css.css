@@ -5,8 +5,13 @@ h1 {
 }
 p {
   font-family: 'Open Sans',sans-serif;
-  size: 16pt;
+  font-size: 16pt;
   line-height: 26pt;
+}
+h2 {
+  font-family: 'Open Sans',sans-serif;
+  size: 27pt;
+  line-height: 29pt;
 }
 body {
   color: #ffffff;
