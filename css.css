@@ -27,7 +27,7 @@ ul {
   list-style-type: none;
 }
 ul#top_menu {
-  display: none;
+  height: 0;
   position: fixed;
   top: 50px;
   right: 0;
