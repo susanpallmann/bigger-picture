@@ -17,6 +17,6 @@ $(document).ready(function() {
 function changeFirefly() {
     var position = $("#firefly_test").position();
     $("#firefly_test").css("background", "rgba(253, 239, 195, " + Math.random());
-    $("#firefly_test").css("top", position.top);
-    $("#firefly_test").css("left", position.left);
+    $("#firefly_test").css("top", position.top + Math.random()*10);
+    $("#firefly_test").css("left", position.left + Math.random()*10);
 }
