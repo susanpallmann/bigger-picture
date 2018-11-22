@@ -43,4 +43,5 @@ ul#top_menu li {
 }
 div#firefly_test {
   background: rgba(230, 220, 10, 0.5);
+  border-radius: 50%;
 }
