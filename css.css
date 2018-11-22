@@ -26,4 +26,7 @@ ul#top_menu {
   display: none;
   position: fixed;
   top: 50px;
+  right: 0;
+  margin-right: 10px;
+  text-align: right;
 }
