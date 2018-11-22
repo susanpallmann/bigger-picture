@@ -21,8 +21,9 @@ body {
   cursor: pointer;
 }
 .information {
-  width: 900px;
+  max-width: 900px;
   margin: auto;
+  padding: 10pt;
 }
 ul {
   list-style-type: none;
