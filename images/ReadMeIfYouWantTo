@@ -1,0 +1,8 @@
+This is just a folder to store all imagery used in this project. There are a few general guidelines to image use for this project:
+  1. Please keep all the images used for the project hosted in here.
+  2. When possible, use SVGs over PNG or JPEG files for optimization reasons.
+  3. In general, icons should follow the set color scheme and utilize one of four color schemes:
+        Red - #f37852, #d7623e
+        Yellow - #f3af52, #d89130
+        Blue-green - #799e8f, #608e7b
+        White (generally only used for UX/UI icons) - #ffffff
