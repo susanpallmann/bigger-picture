@@ -13,6 +13,7 @@ body {
   width: 30px;
   height: 30px;
   display: inline-block;
+  transform: rotate(0deg);
   transition: transform 0.5s;
 }
 .hamburger:hover {
