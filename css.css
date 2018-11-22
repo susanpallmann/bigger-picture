@@ -15,6 +15,9 @@ body {
   display: inline-block;
   transition: transform 0.5s;
 }
+.hamburger:hover {
+  cursor: pointer;
+}
 ul {
   list-style-type: none;
 }
