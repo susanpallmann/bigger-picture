@@ -14,6 +14,6 @@ $(document).ready(function() {
     });
     var timer = setTimeout(changeFirefly, 500);
 });
-function changeFirefly {
+function changeFirefly() {
     $("#firefly_test").css("background", "rgba(230, 220, 10, " + Math.random());
 }
