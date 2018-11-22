@@ -19,6 +19,10 @@ body {
 .hamburger:hover {
   cursor: pointer;
 }
+.information {
+  width: 1200px;
+  margin: auto;
+}
 ul {
   list-style-type: none;
 }
