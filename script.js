@@ -15,5 +15,8 @@ $(document).ready(function() {
     var timer = setInterval(changeFirefly, 100);
 });
 function changeFirefly() {
+    var position = $("#firefly_test").position();
     $("#firefly_test").css("background", "rgba(253, 239, 195, " + Math.random());
+    $("#firefly_test").css("top", position.top);
+    $("#firefly_test").css("left", position.left);
 }
