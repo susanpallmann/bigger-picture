@@ -29,6 +29,11 @@ body {
   background-color: #1C4554;
   margin: 0;
 }
+header {
+  padding: 20px;
+  position: fixed;
+  height: 10vh;
+}
 main {
   margin: 20px;
 }
