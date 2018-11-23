@@ -72,6 +72,7 @@ ul {
   list-style-type: none;
 }
 ul#top_menu {
+  height: 0;
   position: fixed;
   top: 10vh;
   right: 0;
