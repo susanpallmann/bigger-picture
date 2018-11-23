@@ -165,7 +165,12 @@ h4.threatName {
   margin-bottom: 2em;
   margin-top: 0px;
 }
-.addax img {
+.animal .addax {
+  height: 696px;
+  overflow: hidden;
+  position: relative;
+}
+img {
   position: absolute;
   width: 100%;
 }
