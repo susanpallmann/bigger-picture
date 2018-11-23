@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $("#top_hamburger").click(function() {
         if ($("#top_menu").height() > 0) {
-            $("#top_menu li").css("font-size", "0");
+            $("#top_menu").css("font-size", "0");
             $("#top_menu li").css("color", "transparent");
             $("#top_hamburger").css("transform", "rotate(0deg)");
         } else {
