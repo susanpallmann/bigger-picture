@@ -8,6 +8,10 @@ p {
   font-size: 1em;
   line-height: 1.7em;
 }
+h3.populationNumber {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-side: 2em;
+}
 h4 {
   font-size: 0.9em;
   margin: 0.5em;
