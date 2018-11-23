@@ -18,6 +18,8 @@ function changeFireflyColor() {
             var value = Math.random();
             $(this).css("opacity", value*value);
             var position = $(this).position();
+            $(this).css("top", position.top);
+            $(this).css("left", position.left);
             $(this).css("top", position.top + 100*(Math.random()-0.5));
             $(this).css("left", position.left + 100*(Math.random()-0.5));
         }
