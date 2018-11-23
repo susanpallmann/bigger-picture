@@ -125,7 +125,7 @@ div.nearThreatened {
   background-position: center;
 }
 div.hunting {
-  height: 50px;
+  height: 30px;
   width: 80px;
   background-image: url("/images/Hunting.svg");
   background-repeat: no-repeat;
