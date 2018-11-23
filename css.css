@@ -102,13 +102,13 @@ div#firefly_test {
 .col_3 {
   width: 75%;
 }
-div.conservationStatus {
+div.nearThreatened {
   height: 50px;
   background-image: url("/images/Near-Threatened.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
-.conservationStatus p {
+.nearThreatened p {
   font-size: 1.5em;
   font-weight: 800;
   text-align: center;
