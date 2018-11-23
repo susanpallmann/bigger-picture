@@ -52,7 +52,7 @@ main {
 }
 .hamburger {
   background-color: #ffffff;
-  border-radius: 5pt;
+  border-radius: 2vh;
   width: 7.5vh;
   height: 7.5vh;
   display: inline-block;
