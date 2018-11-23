@@ -101,10 +101,8 @@ ul#top_menu li {
 div#hero {
   height: 600pt;
   background-image: url("/images/Rainforest (Tasmanian Devil) Color Concept 2.png");
-  background-position-y: center;
-  background-size: auto 90%;
-  background-repeat: no-repeat;
-  background-position-x: center;
+  background-size: 100%;
+  box-shadow: inset 0 -50px 200px black;
 }
 div#firefly_test {
   background: rgba(253, 239, 195, 0.5);
