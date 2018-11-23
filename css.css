@@ -102,7 +102,7 @@ div#hero {
   height: 600pt;
   background-image: url("/images/Rainforest (Tasmanian Devil) Color Concept 2.png");
   background-size: 100%;
-  box-shadow: inset 0 -50px 200px black;
+  box-shadow: inset 0 -50px 200px #1C4554;
 }
 div#firefly_test {
   background: rgba(253, 239, 195, 0.5);
