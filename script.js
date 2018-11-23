@@ -19,5 +19,6 @@ function changeFireflyColor() {
         $(this).css("opacity", Math.random());
         $(this).css("top", position.top + 100*(Math.random()-0.5));
         $(this).css("left", position.left + 100*(Math.random()-0.5));
+        $(this).css("transition-delay", Math.random());
     });
 }
