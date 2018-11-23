@@ -10,8 +10,9 @@ p {
 }
 h3.populationNumber {
   font-family: 'Roboto Condensed', sans-serif;
-  font-side: 2em;
+  font-size: 2em;
   color: #F3AF52;
+  text-align: center;
 }
 h4 {
   font-size: 0.9em;
