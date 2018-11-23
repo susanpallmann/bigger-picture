@@ -13,8 +13,10 @@ $(document).ready(function() {
     var timer = setInterval(changeFirefly, 100);
 });
 function changeFirefly() {
-    var position = $("#firefly_test").position();
-    $("#firefly_test").css("background-image", "radial-gradient(rgba(253, 239, 195, " + Math.random() + "), transparent, transparent)");
-    $("#firefly_test").css("top", position.top + 30*(Math.random()-0.5));
-    $("#firefly_test").css("left", position.left + 30*(Math.random()-0.5));
+    $(".firefly_test").each(function() {
+        var position = $(this).position();
+        $(this).css("background-image", "radial-gradient(rgba(253, 239, 195, " + Math.random() + "), transparent, transparent)");
+        $(this).css("top", position.top + 30*(Math.random()-0.5));
+        $(this).css("left", position.left + 30*(Math.random()-0.5));
+    });
 }
