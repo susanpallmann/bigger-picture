@@ -103,10 +103,10 @@ div#firefly_test {
   width: 75%;
 }
 .conservationStatus {
-  font-size: 2em;
+  font-size: 1.9em;
   font-weight: 800;
   background-image: url("/images/Near-Threatened.svg");
-  background-repeat: none;
+  background-repeat: no-repeat;
 }
 .infoSource {
    color: #F3AF52;
