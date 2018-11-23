@@ -106,7 +106,7 @@ div#hero {
   height: 600pt;
   background-image: url("/images/Rainforest (Tasmanian Devil) Color Concept 2.png");
   background-position-y: center;
-  background-size: 90%;
+  background-size: auto 90%;
   background-repeat: no-repeat;
   background-position-x: center;
 }
