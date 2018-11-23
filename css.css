@@ -173,8 +173,6 @@ h4.threatName {
 .animal .addax img {
   height: 696px;
   width: 100%;
-  position: fixed;
-  z-index: -1;
 }
 img {
   position: absolute;
