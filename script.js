@@ -16,7 +16,7 @@ function changeFireflyColor() {
     $(".firefly_test").each(function() {
         var position = $(this).position();
         $(this).css("opacity", Math.random());
-        $(this).css("top", position.top + 30*(Math.random()-0.5));
-        $(this).css("left", position.left + 30*(Math.random()-0.5));
+        $(this).css("top", position.top + 10*(Math.random()-0.5));
+        $(this).css("left", position.left + 10*(Math.random()-0.5));
     });
 }
