@@ -10,9 +10,9 @@ $(document).ready(function() {
             $("#top_hamburger").css("transform", "rotate(90deg)");
         }
     });
-    var timer = setInterval(changeFirefly, 100);
+    var timer = setInterval(changeFireflyColor, 400);
 });
-function changeFirefly() {
+function changeFireflyColor() {
     $(".firefly_test").each(function() {
         var position = $(this).position();
         $(this).css("background-image", "radial-gradient(rgba(253, 239, 195, " + Math.random() + "), transparent, transparent)");
