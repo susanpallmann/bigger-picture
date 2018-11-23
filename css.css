@@ -88,7 +88,7 @@ ul#top_menu {
   max-width: fit-content;
   padding: 10px;
   padding-top: 0;
-  transition: 0.5s;
+  transition: ease 3s;
   font-family: 'Open Sans',sans-serif;
   font-size: 1.2em;
 }
