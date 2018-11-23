@@ -41,30 +41,30 @@ body {
 }
 header {
   position: fixed;
-  box-shadow: 0 -3vh 4vh;
+  box-shadow: 0 5px 5px;
   background-color: #1C4554;
   z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
-  height: 10vh;
+  height: 100px;
 }
 header table {
   width: 100%;
 }
 header h1 {
-  font-size: 7.5vh;
+  font-size: 30pt;
   margin: 0;
-  margin-left: 2vh;
+  margin-left: 20px;
 }
 main {
   margin: 0;
 }
 .hamburger {
   background-color: #ffffff;
-  border-radius: 2vh;
-  width: 7.5vh;
-  height: 7.5vh;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
   display: inline-block;
   transform: rotate(0deg);
   transition: transform 0.5s;
@@ -83,7 +83,7 @@ ul {
 ul#top_menu {
   max-height: fit-content;
   position: fixed;
-  top: 50px;
+  top: 100px;
   right: 0;
   text-align: right;
   margin: 0px;
@@ -104,7 +104,10 @@ ul#top_menu li {
 div#hero {
   height: 600pt;
   background-image: url("/images/Rainforest (Tasmanian Devil) Color Concept 2.png");
-  background-size: 100%;
+  background-position-y: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
 div#firefly_test {
   background: rgba(253, 239, 195, 0.5);
