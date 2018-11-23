@@ -96,7 +96,8 @@ ul#top_menu {
   border-radius: 5px;
 }
 ul#top_menu li {
-  height: 0px;
+  height: fit-content;
+  font-size: 0pt;
   color: transparent;
   transition: 0.5s;
 }
