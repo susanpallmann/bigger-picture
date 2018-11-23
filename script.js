@@ -6,7 +6,7 @@ $(document).ready(function() {
             $("#top_menu li").css("color", "transparent");
             $("#top_hamburger").css("transform", "rotate(0deg)");
         } else {
-            $("#top_menu").css("height", "50px");
+            $("#top_menu").css("height", "60px");
             $("#top_menu li").css("height", "20px");
             $("#top_menu li").css("color", "#fff");
             $("#top_hamburger").css("transform", "rotate(90deg)");
