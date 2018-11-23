@@ -72,12 +72,18 @@ ul {
   list-style-type: none;
 }
 ul#top_menu {
-  height: 0;
   position: fixed;
-  top: 50px;
+  top: 10vh;
   right: 0;
-  margin-right: 10px;
   text-align: right;
+  margin: 0px;
+  background-color: blue;
+  max-width: fit-content;
+  padding: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.5s;
+  border-radius: 5px;
 }
 ul#top_menu li {
   height: 0px;
