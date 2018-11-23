@@ -109,9 +109,11 @@ div.conservationStatus {
   background-position: center;
 }
 .conservationStatus p {
-  font-size: 1.7em;
+  font-size: 1.5em;
   font-weight: 800;
   text-align: center;
+  margin: 0px;
+  padding: 3pt;
 }
 h4.conservationStatus {
   text-align: center;
