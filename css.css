@@ -83,17 +83,18 @@ ul {
 ul#top_menu {
   max-height: fit-content;
   position: fixed;
-  top: 10vh;
+  top: 50px;
   right: 0;
   text-align: right;
   margin: 0px;
-  background-color: blue;
+  background-color: #1C4554;
   max-width: fit-content;
   padding: 10px;
   padding-top: 0;
   padding-bottom: 0;
   transition: 0.5s;
-  border-radius: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 ul#top_menu li {
   height: fit-content;
@@ -102,8 +103,9 @@ ul#top_menu li {
   transition: 0.5s;
 }
 div#hero {
-  height: 80vh;
+  height: 800pt;
   background-image: url("/images/Rainforest (Tasmanian Devil) Color Concept 2.png");
+  background-size: 100%;
 }
 div#firefly_test {
   background: rgba(253, 239, 195, 0.5);
