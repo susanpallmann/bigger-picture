@@ -10,14 +10,14 @@ $(document).ready(function() {
             $("#top_hamburger").css("transform", "rotate(90deg)");
         }
     });
-    var timer = setInterval(changeFireflyColor, 2000);
-    var timer2 = setInterval(changeFireflyColor, 3117);
+    var timer = setInterval(changeFireflyColor, 500);
+    var timer2 = setInterval(changeFireflyColor, 717);
 });
 function changeFireflyColor() {
     $(".firefly_test").each(function() {
         var position = $(this).position();
         $(this).css("opacity", Math.random());
-        $(this).css("top", position.top + 50*(Math.random()-0.5));
-        $(this).css("left", position.left + 50*(Math.random()-0.5));
+        $(this).css("top", position.top + 100*(Math.random()-0.5));
+        $(this).css("left", position.left + 100*(Math.random()-0.5));
     });
 }
