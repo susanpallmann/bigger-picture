@@ -7,6 +7,7 @@ p {
   font-family: 'Open Sans',sans-serif;
   font-size: 1em;
   line-height: 1.7em;
+  margin: 0px;
 }
 h3.populationNumber {
   font-family: 'Roboto Condensed', sans-serif;
