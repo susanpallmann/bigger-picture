@@ -155,4 +155,5 @@ h4.threatName {
 .row {
   display:flex;
   flex-wrap: wrap;
+  margin-top: 4em;
 }
