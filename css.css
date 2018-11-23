@@ -114,6 +114,7 @@ div#firefly_test {
 }
 .col_1 {
   width: 25%;
+  padding-top: 0.4em;
 }
 .col_3 {
   width: 75%;
@@ -156,4 +157,7 @@ h4.threatName {
   display:flex;
   flex-wrap: wrap;
   margin-top: 4em;
+}
+.sideBarBox {
+  margin-bottom: 2em;
 }
