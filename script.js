@@ -14,7 +14,7 @@ $(document).ready(function() {
 });
 function changeFirefly() {
     var position = $("#firefly_test").position();
-    $("#firefly_test").css("background-image", "radial-gradient(rgba(253, 239, 195, " + Math.random() + ")), transparent");
+    $("#firefly_test").css("background-image", "radial-gradient(rgba(253, 239, 195, " + Math.random() + "), transparent)");
     var e = window.event;
     var posX = e.clientX;
     var posY = e.clientY;
