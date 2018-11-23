@@ -106,6 +106,7 @@ div#firefly_test {
   height: 50px;
   background-image: url("/images/Near-Threatened.svg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 .conservationStatus p {
   font-size: 1.7em;
