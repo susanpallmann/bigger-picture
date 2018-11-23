@@ -167,6 +167,7 @@ h4.threatName {
 }
 .addax img {
   position: absolute;
+  width: 100%;
 }
 .addax {
   height: 696px;
