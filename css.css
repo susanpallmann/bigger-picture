@@ -109,7 +109,7 @@ div.firefly_test {
   border-radius: 50%;
   height: 20px;
   width: 20px;
-  position: fixed;
+  position: absolute;
   z-index: 2;
   background-image: radial-gradient(#FDEFC3, transparent, transparent);
 }
