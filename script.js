@@ -10,7 +10,8 @@ $(document).ready(function() {
             $("#top_hamburger").css("transform", "rotate(90deg)");
         }
     });
-    var timer = setInterval(changeFireflyColor, 1000);
+    var timer = setInterval(changeFireflyColor, 2000);
+    var timer2 = setInterval(changeFireflyColor, 3117);
 });
 function changeFireflyColor() {
     $(".firefly_test").each(function() {
