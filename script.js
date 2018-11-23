@@ -15,8 +15,9 @@ $(document).ready(function() {
 function changeFireflyColor() {
     $(".firefly_test").each(function() {
         if(Math.random() < 0.05) {
+            var value = Math.random();
+            $(this).css("opacity", value*value);
             var position = $(this).position();
-            $(this).css("opacity", Math.random()^2);
             $(this).css("top", position.top + 100*(Math.random()-0.5));
             $(this).css("left", position.left + 100*(Math.random()-0.5));
         }
