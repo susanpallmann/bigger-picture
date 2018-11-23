@@ -53,8 +53,8 @@ main {
 .hamburger {
   background-color: #ffffff;
   border-radius: 5pt;
-  width: 30px;
-  height: 30px;
+  width: 7.5vh;
+  height: 7.5vh;
   display: inline-block;
   transform: rotate(0deg);
   transition: transform 0.5s;
