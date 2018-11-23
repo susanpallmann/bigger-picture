@@ -102,7 +102,7 @@ div#firefly_test {
 .col_3 {
   width: 75%;
 }
-.conservationStatus {
+div.conservationStatus {
   height: 50px;
   background-image: url("/images/Near-Threatened.svg");
   background-repeat: no-repeat;
@@ -111,6 +111,9 @@ div#firefly_test {
 .conservationStatus p {
   font-size: 1.7em;
   font-weight: 800;
+  text-align: center;
+}
+h4.conservationStatus {
   text-align: center;
 }
 .infoSource {
