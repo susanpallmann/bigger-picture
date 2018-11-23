@@ -150,3 +150,7 @@ h4.threatName {
    color: #F3AF52;
   text-align: right;
 }
+row {
+  display:flex;
+  flex-wrap: wrap;
+}
