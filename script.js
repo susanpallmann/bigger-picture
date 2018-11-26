@@ -38,11 +38,10 @@ function updatePage(prevScroll, currentScroll) {
     currentScroll = $(document).scrollTop();
     $(".animal").each(function() {
       var offsetAmount = currentScroll - $(this).offset().top;
-      if (currentScroll <= $(this).offset().top && $(this).children(".space").height() < spaceHeight) {
-        $(this).css("padding-top", currentScroll - $(this).offset().top + "px");
-        $(this).children(".space").height(spaceHeight - currentScroll + $(this).offset().top);
-      }
       if (currentScroll > $(this).offset().top && $(this).children(".space").height() > 0) {
+        $(this).css("padding-top", offsetAmount + "px");
+        $(this).children(".space").height(spaceHeight - offsetAmount);
+      } else if (currentScroll < $(this).offset().top + $(this).css("padding-top", offsetAmount + "px") && $(this).children(".space").height() < spaceHeight) {
         $(this).css("padding-top", offsetAmount + "px");
         $(this).children(".space").height(spaceHeight - offsetAmount);
       }
