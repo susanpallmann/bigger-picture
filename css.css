@@ -165,12 +165,12 @@ h4.threatName {
   margin-bottom: 2em;
   margin-top: 0px;
 }
-.animal .addax {
+.animal .hero {
   height: 696px;
   overflow: hidden;
   position: relative;
 }
-.animal .addax img {
+.animal .hero img {
   height: 696px;
   width: 100%;
 }
@@ -178,7 +178,7 @@ img {
   position: absolute;
   width: 100%;
 }
-img.plants {
+img.effect-skew {
   animation-duration: 5s;
   animation-name: plantskew;
   animation-iteration-count: infinite;
