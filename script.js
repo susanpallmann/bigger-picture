@@ -45,10 +45,10 @@ function updatePage(prevScroll, currentScroll) {
         $(this).css("padding-top", offsetAmount + "px");
         $(this).children(".space").height(spaceHeight - offsetAmount);
       }
-      $(this).find(".background").css("top", 0.2*offsetAmount);
-      $(this).find(".midback").css("top", 0.1*offsetAmount);
-      $(this).find(".midground").css("top", 0.1*(spaceHeight - offsetAmount));
-      $(this).find(".foreground").css("top", 0.2*(spaceHeight - offsetAmount));
+      $(this).find(".background").css("top", 0.05*offsetAmount);
+      $(this).find(".midback").css("top", 0.025*offsetAmount);
+      $(this).find(".midground").css("top", 0.025*(spaceHeight - offsetAmount));
+      $(this).find(".foreground").css("top", 0.05*(spaceHeight - offsetAmount));
     });
     scrollValue = currentScroll;
 }
