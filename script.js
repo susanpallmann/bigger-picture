@@ -41,9 +41,6 @@ function updatePage(prevScroll, currentScroll) {
       if (currentScroll > $(this).offset().top && $(this).children(".space").height() > 0) {
         $(this).css("padding-top", offsetAmount + "px");
         $(this).children(".space").height(spaceHeight - offsetAmount);
-      } else if (currentScroll < $(this).offset().top + $(this).css("padding-top", offsetAmount + "px") && $(this).children(".space").height() < spaceHeight) {
-        $(this).css("padding-top", offsetAmount + "px");
-        $(this).children(".space").height(spaceHeight - offsetAmount);
       }
     });
     scrollValue = currentScroll;
