@@ -178,3 +178,20 @@ img {
   position: absolute;
   width: 100%;
 }
+img.plants {
+  animation-duration: 5s;
+  animation-name: plantskew;
+  animation-iteration-count: infinite;
+}
+@keyframes plantskew {
+  0% {
+    transform: skewX(-10deg);
+  }
+
+  50% {
+    transform: skewX(10deg);
+  }
+  100% {
+    transform: skewX(-10deg);
+  }
+}
