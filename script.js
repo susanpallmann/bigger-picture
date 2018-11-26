@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    scrollValue = $(document).scrollTop();
     $("#top_hamburger").click(function() {
         if ($("#top_menu").height() > 0) {
             $("#top_menu li").css("font-size", "0");
@@ -10,9 +11,17 @@ $(document).ready(function() {
             $("#top_hamburger").css("transform", "rotate(90deg)");
         }
     });
-    window.addEventListener("scroll", changeFireflyColor);
+    window.setInterval(checkScroll, 10);
 });
-function changeFireflyColor() {
+
+function checkScroll() {
+  var currentScroll = $(document).scrollTop();
+  if (scrollValue != currentScroll) {
+      scrollValue = currentScroll;
+      updatePage();
+  }
+}
+function updatePage() {
     $(".firefly_test").each(function() {
         if(Math.random() < 0.05) {
             var value = Math.random();
@@ -25,8 +34,10 @@ function changeFireflyColor() {
         }
     });
     $(".animal").each(function() {
-      if ($(document).scrollTop()>$(this).offset().top) {
+      if (scrollValue > $(this).offset().top) {
         $(this).css("position", "fixed");
+      } else {
+ 
       }
     });
 }
