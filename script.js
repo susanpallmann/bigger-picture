@@ -46,7 +46,7 @@ function updatePage(prevScroll, currentScroll) {
         $(this).children(".space").height(spaceHeight - offsetAmount);
       }
       $(this).find(".background").css("top", 0.2*offsetAmount);
-      $(this).find(".midback").css("top", 0.1*offsetAmount));
+      $(this).find(".midback").css("top", 0.1*offsetAmount);
       $(this).find(".midground").css("top", 0.1*(spaceHeight - offsetAmount));
       $(this).find(".foreground").css("top", 0.2*(spaceHeight - offsetAmount));
     });
