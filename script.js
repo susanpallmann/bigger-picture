@@ -37,18 +37,14 @@ function updatePage(prevScroll, currentScroll) {
     });
     currentScroll = $(document).scrollTop();
     $(".animal").each(function() {
-      if (currentScroll > $(this).offset().top) {
-        if ($(this).children(".space").height() > 0) {
-          $(this).css("padding-top", currentScroll - $(this).offset().top + "px");
-          $(this).children(".space").height(spaceHeight - currentScroll + $(this).offset().top);
-          console.log($(this).children(".space").height());
-        }
-      } else {
-        console.log($(this).children(".space").height());
-        if ($(this).children(".space").height() <= spaceHeight) {
-          $(this).css("padding-top", currentScroll - $(this).offset().top + "px");
-          $(this).children(".space").height(spaceHeight - currentScroll + $(this).offset().top);       
-        }
+      var offsetAmount = currentScroll - $(this).offset().top;
+      if ($(this).children(".space").height() < spaceHeight) {
+        $(this).css("padding-top", currentScroll - $(this).offset().top + "px");
+        $(this).children(".space").height(spaceHeight - currentScroll + $(this).offset().top);
+      }
+      if (currentScroll > $(this).offset().top && $(this).children(".space").height() > 0) {
+        $(this).css("padding-top", offsetAmount + "px");
+        $(this).children(".space").height(spaceHeight - offsetAmount);
       }
     });
     scrollValue = currentScroll;
