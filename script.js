@@ -11,7 +11,8 @@ $(document).ready(function() {
             $("#top_hamburger").css("transform", "rotate(90deg)");
         }
     });
-    window.setInterval(checkScroll, 10);
+    //window.setInterval(checkScroll, 10);
+    window.addEventListener("scroll", updatePage);
 });
 
 function checkScroll() {
@@ -33,11 +34,13 @@ function updatePage(prevScroll, currentScroll) {
             $(this).css("left", position.left + 100*(Math.random()-0.5));
         }
     });
+    currentScroll = $(document).scrollTop();
     $(".animal").each(function() {
       if (currentScroll > $(this).offset().top) {
-        $(this).css("margin-top", (Number($(this).css("margin-top").split("px")[0]) + currentScroll - prevScroll) + "px");
+        $(this).css("margin-top", (Number($(this).css("margin-top").split("px")[0]) + currentScroll - scrollValue) + "px");
       } else {
  
       }
     });
+    scrollValue = currentScroll;
 }
