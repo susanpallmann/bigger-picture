@@ -95,12 +95,15 @@ ul#top_menu {
 }
 span.button {
   background-color: #F3AF52;
-  font-weight: 600;
-  font-size: 1.3em;
+  font-weight: 700;
+  font-size: 1.2em;
   margin: auto;
-  width: 200px;
-  height: 50px;
-  border-radius: 10px;
+  width: 150px;
+  height: 30px;
+  border-radius: 15px;
+  display: block;
+  text-align: center;
+  margin-top: 25px;
 }
 ul#top_menu li {
   height: fit-content;
