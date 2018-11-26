@@ -187,13 +187,13 @@ img.effect-skew {
 }
 @keyframes plantskew {
   0% {
-    transform: skewX(-10deg);
+    transform: skewX(-2deg);
   }
 
   50% {
-    transform: skewX(10deg);
+    transform: skewX(2deg);
   }
   100% {
-    transform: skewX(-10deg);
+    transform: skewX(-2deg);
   }
 }
