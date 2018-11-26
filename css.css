@@ -256,11 +256,15 @@ h4.threatName {
   margin-bottom: 2em;
   margin-top: 0px;
 }
+.animal {
+  align-items: flex-start
+}
 .animal .hero {
   height: 696px;
   overflow: hidden;
   position: -webkit-sticky;
   position: sticky;
+  align-self: flex-end;
 }
 .animal .hero img {
   height: 696px;
