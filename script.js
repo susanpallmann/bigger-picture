@@ -17,11 +17,11 @@ $(document).ready(function() {
 function checkScroll() {
   var currentScroll = $(document).scrollTop();
   if (scrollValue != currentScroll) {
+      updatePage(scrollValue, currentScroll);
       scrollValue = currentScroll;
-      updatePage();
   }
 }
-function updatePage() {
+function updatePage(prevScroll, currentScroll) {
     $(".firefly_test").each(function() {
         if(Math.random() < 0.05) {
             var value = Math.random();
@@ -34,8 +34,8 @@ function updatePage() {
         }
     });
     $(".animal").each(function() {
-      if (scrollValue > $(this).offset().top) {
-        $(this).css("position", "fixed");
+      if (currentScroll > $(this).offset().top) {
+        $(this).css("margin-top", (Number($(this).css("margin-top").split("px")[0]) + currentScroll - prevScroll) + "px");
       } else {
  
       }
