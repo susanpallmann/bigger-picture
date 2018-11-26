@@ -11,7 +11,7 @@ $(document).ready(function() {
             $("#top_hamburger").css("transform", "rotate(90deg)");
         }
     });
-    window.setInterval(checkScroll, 1);
+    window.setInterval(checkScroll, 10);
 });
 
 function checkScroll() {
