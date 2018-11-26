@@ -28,7 +28,7 @@ function changeFireflyColor() {
       if ($(document).scrollTop()>$(this).offset().top) {
         console.log($(document).scrollTop());
         console.log($(this).top);
-        $(this).css("margin-top", ($(document).scrollTop() - $(this).offset().top + "px");
+        $(this).css("margin-top", $(document).scrollTop() - $(this).offset().top + "px");
       }
     });
 }
