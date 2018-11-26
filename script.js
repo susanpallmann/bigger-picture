@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    prev_scroll = $(document).scrollTop();
     $("#top_hamburger").click(function() {
         if ($("#top_menu").height() > 0) {
             $("#top_menu li").css("font-size", "0");
@@ -26,12 +25,8 @@ function changeFireflyColor() {
         }
     });
     $(".animal").each(function() {
-      var this_scroll = $(document).scrollTop();
       if ($(document).scrollTop()>$(this).offset().top) {
-        console.log($(document).scrollTop());
-        console.log($(this).top);
-        $(this).css("margin-top", $(this).css("margin-top").replace(/[^-\d\.]/g, '') + this_scroll - prev_scroll);
-        prev_scroll = this_scroll;
+        $(this).css("position", "fixed");
       }
     });
 }
