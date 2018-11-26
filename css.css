@@ -259,7 +259,8 @@ h4.threatName {
 .animal .hero {
   height: 696px;
   overflow: hidden;
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
 }
 .animal .hero img {
   height: 696px;
