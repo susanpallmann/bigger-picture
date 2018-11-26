@@ -185,6 +185,9 @@ img.effect-skew {
   animation-name: plantskew;
   animation-iteration-count: infinite;
 }
+img.foreground {
+  z-index: 5;
+}
 @keyframes plantskew {
   0% {
     transform: skewX(-2deg);
