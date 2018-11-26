@@ -26,7 +26,7 @@ function changeFireflyColor() {
     });
     $(".animal").each(function() {
       if ($(document).scrollTop()>$(this).top) {
-        $(this).css("margin-top", ($(document).scrollTop() - $(this).top()) + "px");
+        $(this).css("margin-top", ($(document).scrollTop() - $(this).top + "px");
       }
     });
 }
