@@ -183,7 +183,7 @@ div.nearThreatened {
 }
 div.criticallyEndangered {
   height: 50px;
-  background-image: url("/images/Critically-Extinct.svg");
+  background-image: url("/images/Critically-Endangered.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
