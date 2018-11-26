@@ -128,7 +128,7 @@ div.nearThreatened {
 }
 div.hunting {
   height: 50px;
-  width: 80px;
+  width: 100px;
   background-image: url("/images/Hunting.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -157,7 +157,7 @@ h4.threatName {
 .row {
   display:flex;
   flex-wrap: wrap;
-  margin-top: 4em;
+  margin-top: 2em;
 }
 .sideBarBox {
   max-width: 333px;
@@ -202,35 +202,34 @@ img.foreground {
   }
 }
 
-/* Rise up & fade in animations.*/
+/* Discount Bootstrap Responsive Grid /*
+
+
+/* Rise up & fade in animations. Borrowed from Animate.css (https://daneden.github.io/animate.css) */
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
   }
-
   to {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
   }
-
   to {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
-
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
