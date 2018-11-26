@@ -1,5 +1,6 @@
 $(document).ready(function() {
     scrollValue = $(document).scrollTop();
+    spaceHeight = $(".animal .space").height();
     $("#top_hamburger").click(function() {
         if ($("#top_menu").height() > 0) {
             $("#top_menu li").css("font-size", "0");
@@ -37,7 +38,7 @@ function updatePage(prevScroll, currentScroll) {
     currentScroll = $(document).scrollTop();
     $(".animal").each(function() {
       if (currentScroll > $(this).offset().top) {
-        $(this).css("margin-top", (Number($(this).css("margin-top").split("px")[0]) + currentScroll - scrollValue) + "px");
+        $(this).css("padding-top", currentScroll - $(this).offset().top + "px");
       } else {
  
       }
