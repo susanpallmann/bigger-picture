@@ -5,7 +5,7 @@ window.addEventListener("scroll", function(e){
   // should be similar to svg code?
   // for all children... check class type
   // if class = "layer0/layer1/layer2/layer3/cloud/etc." then do... etc.
-  $(".animal).each(function() {
+  $(".animal").each(function() {
     if ($(document).scrollTop()>$(this).top()) {
       $(this).css("margin-top", ($(document).scrollTop() - $(this).top()) + "px");
     }
