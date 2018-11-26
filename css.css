@@ -120,12 +120,6 @@ div.firefly_test {
 .col_3 {
   width: 75%;
 }
-div.nearThreatened {
-  height: 50px;
-  background-image: url("/images/Near-Threatened.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
 div.hunting {
   height: 50px;
   width: 100px;
@@ -174,7 +168,26 @@ div.invasives {
   background-position: center;
   margin: auto;
 }
+div.nearThreatened {
+  height: 50px;
+  background-image: url("/images/Near-Threatened.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .nearThreatened p {
+  font-size: 1.5em;
+  font-weight: 800;
+  text-align: center;
+  margin: 0px;
+  padding: 3pt;
+}
+div.functionallyExtinct {
+  height: 50px;
+  background-image: url("/images/Functionally-Extinct.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.functionallyExtinct p {
   font-size: 1.5em;
   font-weight: 800;
   text-align: center;
