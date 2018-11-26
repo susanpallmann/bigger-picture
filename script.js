@@ -43,7 +43,7 @@ function updatePage(prevScroll, currentScroll) {
           $(this).children(".space").height(spaceHeight - currentScroll + $(this).offset().top);
         }
       } else {
-        console.log(spaceHeight);
+        console.log($(this).children(".space").height());
         if ($(this).children(".space").height() < spaceHeight) {
           console.log("yes?");
           $(this).css("padding-top", currentScroll - $(this).offset().top + "px");
