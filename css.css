@@ -162,7 +162,7 @@ div.pollution {
 }
 div.invasives {
   height: 50px;
-  width: 100px;
+  width: 80px;
   background-image: url("/images/Invasives.svg");
   background-repeat: no-repeat;
   background-position: center;
