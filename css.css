@@ -91,6 +91,7 @@ ul#top_menu {
   transition: 5s;
   font-family: 'Open Sans',sans-serif;
   font-size: 1.2em;
+  z-index: 6;
 }
 ul#top_menu li {
   height: fit-content;
