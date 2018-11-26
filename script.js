@@ -38,6 +38,9 @@ function updatePage(prevScroll, currentScroll) {
     currentScroll = $(document).scrollTop();
     $(".animal").each(function() {
       var offsetAmount = currentScroll - $(this).offset().top;
+      if (offsetAmount > spaceHeight) {
+        offsetAmount = spaceHeight;
+      }
       if (currentScroll > $(this).offset().top && $(this).children(".space").height() > 0) {
         $(this).css("padding-top", offsetAmount + "px");
         $(this).children(".space").height(spaceHeight - offsetAmount);
