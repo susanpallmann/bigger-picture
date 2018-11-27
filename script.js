@@ -46,7 +46,7 @@ function updatePageIdle() {
       var value = Math.random();
       $(this).css("opacity", value*value);
       var position = $(this).position();
-      $(this).css("transform", "translate(" + position.top + 100*(Math.random()-0.5) + "px, " + position.left + 100*(Math.random()-0.5) + "px)");
+      $(this).css("transform", "translate(" + Math.random()*50 + "px, " + Math.random()*50 + "px)");
     }
   });
 }
