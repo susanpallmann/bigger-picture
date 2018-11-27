@@ -268,7 +268,7 @@ h4.threatName {
   margin-top: 0px;
 }
 .animal .hero {
-  height: 1vh;
+  height: 100vh;
   overflow: hidden;
   position: -webkit-sticky;
   position: sticky;
@@ -276,7 +276,7 @@ h4.threatName {
   top: 0;
 }
 .animal .hero img {
-  height: 1vh;
+  height: 100vh;
   will-change: transform;
   width: auto;
 }
