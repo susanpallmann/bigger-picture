@@ -41,10 +41,10 @@ function updatePage(prevScroll, currentScroll) {
       if (offsetAmount > spaceHeight) {
         offsetAmount = spaceHeight;
       }
-      $(this).find(".background").css("top", 0.05*offsetAmount);
-      $(this).find(".midback").css("top", 0.025*offsetAmount);
-      $(this).find(".midground").css("top", 0.025*(spaceHeight - offsetAmount));
-      $(this).find(".foreground").css("top", 0.05*(spaceHeight - offsetAmount));
+      $(this).find(".background").css("transform:", "translateZ(" + 0.05*offsetAmount + ")");
+      $(this).find(".midback").css("top", "translateZ(" + 0.025*offsetAmount + ")");
+      $(this).find(".midground").css("top", "translateZ(" + 0.025*(spaceHeight - offsetAmount) + ")");
+      $(this).find(".foreground").css("top", "translateZ(" + 0.05*(spaceHeight - offsetAmount) + ")");
     });
     scrollValue = currentScroll;
 }
