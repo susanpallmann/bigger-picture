@@ -14,7 +14,7 @@ $(document).ready(function() {
         }
     });
     window.setInterval(checkScroll, 30);
-    $("button#auto-scroll").click(function() {
+    $(".button#auto-scroll").click(function() {
       if (autoScroll == false) {
         autoScroll = true;
       } else {
