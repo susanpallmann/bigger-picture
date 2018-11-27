@@ -105,12 +105,12 @@ span.button {
   display: block;
   text-align: center;
   margin-top: 25px;
+  cursor: pointer;
 }
 span#auto-scroll {
   margin: 0;
   position: fixed;
   right: 50px;
-  cursor: pointer;
   transition: 0.5s;
   background-color: #777;
 }
