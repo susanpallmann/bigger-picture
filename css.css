@@ -256,9 +256,6 @@ h4.threatName {
   margin-bottom: 2em;
   margin-top: 0px;
 }
-.animal {
-  align-items: flex-start
-}
 .animal .hero {
   height: 696px;
   overflow: hidden;
@@ -270,8 +267,9 @@ h4.threatName {
   height: 696px;
   width: 100%;
 }
-.space {
-  height: 2000px;
+.animal .heroboundary {
+  height: 3000px;
+  align-items: flex-start;
 }
 img {
   position: absolute;
