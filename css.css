@@ -279,7 +279,6 @@ h4.threatName {
   height: 1vh;
   will-change: transform;
   width: auto;
-  right: -500px;
 }
 .animal .heroboundary {
   height: 1200px;
@@ -341,4 +340,12 @@ img {
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .animal .hero img {
+    right: -500px;
+  }
 }
