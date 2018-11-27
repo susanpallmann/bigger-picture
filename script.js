@@ -45,11 +45,11 @@ function updatePageOnScroll(prevScroll, currentScroll) {
         var totalParallax = spaceHeight + $(window).height();
         var scrollFraction = parallaxDistance/totalParallax;
         var heroHeight = $(this).find(".hero").height();
-        console.log(heroHeight);
         if (parallaxDistance < 0) {
           parallaxDistance = 0;
         }
         if (scrollFraction > 0.5) {
+          console.log("in!")
           $(this).find(".scene-lit").fadeIn();
         } else {
           $(this).find(".scene-lit").fadeOut();
