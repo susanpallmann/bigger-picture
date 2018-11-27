@@ -278,25 +278,8 @@ img {
   position: absolute;
   width: 100%;
 }
-img.effect-skew {
-  animation-duration: 5s;
-  animation-name: plantskew;
-  animation-iteration-count: infinite;
-}
 img.foreground {
   z-index: 5;
-}
-@keyframes plantskew {
-  0% {
-    transform: skewX(-2deg);
-  }
-
-  50% {
-    transform: skewX(2deg);
-  }
-  100% {
-    transform: skewX(-2deg);
-  }
 }
 
 /* Discount Bootstrap Responsive Grid /*
