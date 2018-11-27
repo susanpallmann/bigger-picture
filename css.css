@@ -290,23 +290,23 @@ img {
 }
 .animal .hero img.foreground {
   z-index: 5;
-  height: 1500px;
-  bottom: 0;
+  height: 1000px;
+  top: 0;
 }
 .animal .hero img.midground {
   z-index: 4;
-  height: 1200px;
-  bottom: 0;
+  height: 800px;
+  top: 0;
 }
 .animal .hero img.midback {
   z-index: 3;
-  height: 1200px;
-  top: 0;
+  height: 800px;
+  bottom: 0;
 }
 .animal .hero img.background {
   z-index: 2;
-  height: 1500px;
-  top: 0;
+  height: 1000px;
+  bottom: 0;
 }
 
 /* Discount Bootstrap Responsive Grid /*
