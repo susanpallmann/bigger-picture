@@ -268,7 +268,7 @@ h4.threatName {
   height: 696px;
   width: 100%;
   will-change: transform;
-  transition: transform 100ms linear;
+  transition: transform 30ms linear;
 }
 .animal .heroboundary {
   height: 3000px;
