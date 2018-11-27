@@ -56,5 +56,5 @@ function isScrolledIntoView(elem) {
 
     var elemTop = elem.offset().top;
     var elemBottom = elemTop + elem.height();
-    return (((elemBottom >= docViewTop) && (elemBottom <= docViewBottom)) || ((elemTop >= docViewTop) && (elemTop <= docViewBottom)));
+    return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom));
 }
