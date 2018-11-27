@@ -43,15 +43,21 @@ function updatePageOnScroll(prevScroll, currentScroll) {
         }
         var parallaxDistance = offsetAmount + $(window).height();
         var totalParallax = spaceHeight + $(window).height();
+        var scrollFraction = parallaxDistance/totalParallax;
         var heroHeight = $(this).find(".hero").height();
         console.log(heroHeight);
         if (parallaxDistance < 0) {
           parallaxDistance = 0;
         }
-        var backgroundTrans = ($(this).find(".background").height()-heroHeight)*(parallaxDistance/totalParallax);
-        var midbackTrans = ($(this).find(".midback").height()-heroHeight)*(parallaxDistance/totalParallax);
-        var midgroundTrans = -1*($(this).find(".midground").height()-heroHeight)*(parallaxDistance/totalParallax);
-        var foregroundTrans = -1*($(this).find(".foreground").height()-heroHeight)*(parallaxDistance/totalParallax);
+        if (scrollFraction > 0.5) {
+          $(this).find(".scene-lit").fadeIn();
+        } else {
+          $(this).find(".scene-lit").fadeOut();
+        }
+        var backgroundTrans = ($(this).find(".background").height()-heroHeight)*scrollFraction;
+        var midbackTrans = ($(this).find(".midback").height()-heroHeight)*scrollFraction;
+        var midgroundTrans = -1*($(this).find(".midground").height()-heroHeight)*scrollFraction;
+        var foregroundTrans = -1*($(this).find(".foreground").height()-heroHeight)*scrollFraction;
         $(this).find(".background").css("transform", "translateY(" + backgroundTrans + "px)");
         $(this).find(".midback").css("transform", "translateY(" + midbackTrans + "px)");
         $(this).find(".midground").css("transform", "translateY(" + midgroundTrans + "px)");
