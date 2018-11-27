@@ -34,6 +34,7 @@ function updatePage(prevScroll, currentScroll) {
         }
     });
     currentScroll = $(document).scrollTop();
+    var Utils = new Utils();
     $(".animal").each(function() {
       if (Utils.isElementInView($(this), false)) {
         var offsetAmount = currentScroll - $(this).offset().top;
@@ -80,5 +81,3 @@ Utils.prototype = {
         }
     }
 };
-
-var Utils = new Utils();
