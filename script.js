@@ -35,7 +35,7 @@ function updatePage(prevScroll, currentScroll) {
     });
     currentScroll = $(document).scrollTop();
     $(".animal").each(function() {
-      if (isScrolledIntoView(this)) {
+      if (isScrolledIntoView($(this))) {
         var offsetAmount = currentScroll - $(this).offset().top;
         var space = $(this).children(".heroboundary");
         if (offsetAmount > spaceHeight) {
@@ -54,8 +54,7 @@ function isScrolledIntoView(elem) {
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height();
 
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
-
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    var elemTop = elem.offset().top;
+    var elemBottom = elemTop + elem.height();
+    return (((elemBottom >= docViewTop) && (elemBottom <= docViewBottom)) || ((elemTop >= docViewTop) && (elemTop <= docViewBottom)));
 }
