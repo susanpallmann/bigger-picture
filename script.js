@@ -41,6 +41,7 @@ function updatePageOnScroll(prevScroll, currentScroll) {
         if (offsetAmount > spaceHeight) {
           offsetAmount = spaceHeight;
         }
+        console.log(offsetAmount);
         $(this).find(".background").css("transform", "translateY(" + (($(this).find(".background").outerHeight()-$(this).children(".hero").height())*(offsetAmount/spaceHeight)) + "px)");
         $(this).find(".midback").css("transform", "translateY(" + (($(this).find(".midback").outerHeight()-$(this).children(".hero").height())*(offsetAmount/spaceHeight)) + "px)");
         $(this).find(".midground").css("transform", "translateY(" + (-1*($(this).find(".midground").outerHeight()-$(this).children(".hero").height())*(offsetAmount/spaceHeight)) + "px)");
