@@ -17,8 +17,10 @@ $(document).ready(function() {
     $(".button#auto-scroll").click(function() {
       if (autoScroll == false) {
         autoScroll = true;
+        $(".button#auto-scroll").css("background-color", "#F3AF52");
       } else {
         autoScroll = false;
+        $(".button#auto-scroll").css("background-color", "#777");
       }
     });
 });
