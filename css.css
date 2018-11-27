@@ -348,4 +348,7 @@ img {
   .animal .hero img {
     right: -500px;
   }
+  .animal .hero .foreground:first-of-type {
+    left: -200px;
+  }
 }
