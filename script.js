@@ -17,21 +17,14 @@ $(document).ready(function() {
 
 function checkScroll() {
   var currentScroll = $(document).scrollTop();
+  updatePageIdle();
   if (scrollValue != currentScroll) {
-      updatePage(scrollValue, currentScroll);
+      updatePageOnScroll(scrollValue, currentScroll);
   }
 }
-function updatePage(prevScroll, currentScroll) {
+function updatePageOnScroll(prevScroll, currentScroll) {
     currentScroll = $(document).scrollTop();
     $(".animal").each(function() {
-      $(this).find(".firefly-test").each(function() {
-        if(Math.random() < 0.05) {
-          var value = Math.random();
-          $(this).css("opacity", value*value);
-          var position = $(this).position();
-          $(this).css("transform", "translate(" + position.top + 100*(Math.random()-0.5) + "px, " + position.left + 100*(Math.random()-0.5) + "px)");
-        }
-      });
       if (isScrolledIntoView($(this))) {
         var offsetAmount = currentScroll - $(this).offset().top;
         var space = $(this).children(".heroboundary");
@@ -45,6 +38,18 @@ function updatePage(prevScroll, currentScroll) {
       }
     });
     scrollValue = currentScroll;
+}
+
+function updatePageIdle() {
+  $(".firefly-test").each(function() {
+    if (isScrolledIntoView($(this) && Math.random() < 0.05) {
+      var value = Math.random();
+        $(this).css("opacity", value*value);
+        var position = $(this).position();
+        $(this).css("transform", "translate(" + position.top + 100*(Math.random()-0.5) + "px, " + position.left + 100*(Math.random()-0.5) + "px)");
+      }
+    }
+  });
 }
 
 function isScrolledIntoView(elem) {
