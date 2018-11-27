@@ -50,9 +50,9 @@ function updatePageOnScroll(prevScroll, currentScroll) {
         }
         if (scrollFraction > 0.5) {
           console.log("in!")
-          $(this).find(".scene-lit").fadeIn();
+          $(this).find(".scene-lit").fadeIn(2000);
         } else {
-          $(this).find(".scene-lit").fadeOut();
+          $(this).find(".scene-lit").fadeOut(2000);
         }
         var backgroundTrans = ($(this).find(".background").height()-heroHeight)*scrollFraction;
         var midbackTrans = ($(this).find(".midback").height()-heroHeight)*scrollFraction;
