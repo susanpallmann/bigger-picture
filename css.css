@@ -113,7 +113,7 @@ ul#top_menu li {
   transition: 0.5s;
 }
 div#banner {
-  height: 540pt;
+  height: 100vh;
   background-size: 100%;
   box-shadow: inset 0 -200px 200px #1C4554;
 }
