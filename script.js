@@ -44,10 +44,9 @@ function updatePageIdle() {
   $(".firefly-test").each(function() {
     if (isScrolledIntoView($(this)) && Math.random() < 0.05) {
       var value = Math.random();
-        $(this).css("opacity", value*value);
-        var position = $(this).position();
-        $(this).css("transform", "translate(" + position.top + 100*(Math.random()-0.5) + "px, " + position.left + 100*(Math.random()-0.5) + "px)");
-      }
+      $(this).css("opacity", value*value);
+      var position = $(this).position();
+      $(this).css("transform", "translate(" + position.top + 100*(Math.random()-0.5) + "px, " + position.left + 100*(Math.random()-0.5) + "px)");
     }
   });
 }
