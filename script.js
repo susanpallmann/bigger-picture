@@ -34,9 +34,8 @@ function updatePage(prevScroll, currentScroll) {
         }
     });
     currentScroll = $(document).scrollTop();
-    var Utils = new Utils();
     $(".animal").each(function() {
-      if (Utils.isElementInView($(this), false)) {
+      if (isScrolledIntoView(this)) {
         var offsetAmount = currentScroll - $(this).offset().top;
         var space = $(this).children(".heroboundary");
         if (offsetAmount > spaceHeight) {
@@ -51,9 +50,6 @@ function updatePage(prevScroll, currentScroll) {
     scrollValue = currentScroll;
 }
 
-
-
-
 function isScrolledIntoView(elem) {
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height();
@@ -63,21 +59,3 @@ function isScrolledIntoView(elem) {
 
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
-
-function Utils() {}
-
-Utils.prototype = {
-    constructor: Utils,
-    isElementInView: function (element, fullyInView) {
-        var pageTop = $(window).scrollTop();
-        var pageBottom = pageTop + $(window).height();
-        var elementTop = $(element).offset().top;
-        var elementBottom = elementTop + $(element).height();
-
-        if (fullyInView === true) {
-            return ((pageTop < elementTop) && (pageBottom > elementBottom));
-        } else {
-            return ((elementTop <= pageBottom) && (elementBottom >= pageTop));
-        }
-    }
-};
