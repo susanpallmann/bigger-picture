@@ -106,6 +106,17 @@ span.button {
   text-align: center;
   margin-top: 25px;
 }
+span#auto-scroll {
+  margin: 0;
+  position: fixed;
+  right: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: #F3AF52;
+}
+span#auto-scroll:hover {
+  background-color: #C09070;
+}
 ul#top_menu li {
   height: fit-content;
   font-size: 0pt;
