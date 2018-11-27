@@ -12,7 +12,7 @@ $(document).ready(function() {
             $("#top_hamburger").css("transform", "rotate(90deg)");
         }
     });
-    window.setInterval(updatePage, 10);
+    window.setInterval(checkScroll, 10);
 });
 
 function checkScroll() {
