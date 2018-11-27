@@ -12,8 +12,7 @@ $(document).ready(function() {
             $("#top_hamburger").css("transform", "rotate(90deg)");
         }
     });
-    //window.setInterval(checkScroll, 10);
-    window.addEventListener("scroll", updatePage);
+    window.setInterval(checkScroll, 10);
 });
 
 function checkScroll() {
@@ -41,10 +40,6 @@ function updatePage(prevScroll, currentScroll) {
       var space = $(this).children(".heroboundary");
       if (offsetAmount > spaceHeight) {
         offsetAmount = spaceHeight;
-      }
-      if (currentScroll > $(this).offset().top && currentScroll < spaceHeight) {
-//        $(this).css("padding-top", offsetAmount + "px");
-//        $(this).children(".space").height(spaceHeight - offsetAmount);
       }
       $(this).find(".background").css("top", 0.05*offsetAmount);
       $(this).find(".midback").css("top", 0.025*offsetAmount);
