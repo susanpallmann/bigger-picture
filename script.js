@@ -55,9 +55,11 @@ function updatePageOnScroll(prevScroll, currentScroll) {
           $(this).find(".scene-lit").fadeOut(2000);
         }
         if (scrollFraction > 0.3) {
-          $(this).find(".hero h2.first-image").removeClass().addClass("fadeInUp").one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function(){
-            $(this).removeClass().addClass("first-image");
-          });
+          $(this).find(".hero h2.fadeInUp").removeClass();
+          $(this).find(".hero h2.text-first").removeClass().addClass("fadeInUp");
+        } else if (scrollFraction > 0.6) {
+          $(this).find(".hero h2.fadeInUp").removeClass();
+          $(this).find(".hero h2.text-second").removeClass().addClass("fadeInUp");
         }
         var backgroundTrans = ($(this).find(".background").height()-heroHeight)*scrollFraction;
         var midbackTrans = ($(this).find(".midback").height()-heroHeight)*scrollFraction;
