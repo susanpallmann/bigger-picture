@@ -48,12 +48,6 @@ function updatePageOnScroll(prevScroll, currentScroll) {
         if (parallaxDistance < 0) {
           parallaxDistance = 0;
         }
-        if (scrollFraction > 0.5) {
-          console.log("in!")
-          $(this).find(".scene-lit").fadeIn(2000);
-        } else {
-          $(this).find(".scene-lit").fadeOut(2000);
-        }
         if (scrollFraction > 0.3) {
           $(this).find(".hero h2.fadeInUp").removeClass();
           $(this).find(".hero h2.text-first").removeClass().addClass("fadeInUp");
@@ -69,6 +63,7 @@ function updatePageOnScroll(prevScroll, currentScroll) {
         $(this).find(".midback").css("transform", "translateY(" + midbackTrans + "px)");
         $(this).find(".midground").css("transform", "translateY(" + midgroundTrans + "px)");
         $(this).find(".foreground").css("transform", "translateY(" + foregroundTrans + "px)");
+        $(this).find(".scene-lit").css("opacity", (scrollFraction*3 - 1.5))
       }
     });
     scrollValue = currentScroll;
