@@ -45,6 +45,11 @@ function updatePage(prevScroll, currentScroll) {
       $(this).find(".midback").css("transform", "translateY(" + 0.025*offsetAmount + "px)");
       $(this).find(".midground").css("transform", "translateY(" + 0.025*(spaceHeight - offsetAmount) + "px)");
       $(this).find(".foreground").css("transform", "translateY(" + 0.05*(spaceHeight - offsetAmount) + "px)");
+      if (Math.random() < 0.05) {
+        $(this).find(".effect-skew").css("transform", $(this).find(".effect-skew").css() + "skew(2deg)");
+      } else if (Math.random() < 0.05) {
+        $(this).find(".effect-skew").css("transform", $(this).find(".effect-skew").css() + "skew(-2deg)");
+      }
     });
     scrollValue = currentScroll;
 }
