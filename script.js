@@ -55,6 +55,9 @@ function updatePageIdle() {
       $(this).css("transform", "translate(" + (Math.random()*100) + "px, " + (Math.random()*100) + "px) scale(" + scaleFactor + ", " + scaleFactor + ")");
     }
   });
+  if (autoScroll == true) {
+    $(document).scrollTop($(document).scrollTop() + 2);
+  }
 }
 
 function isScrolledIntoView(elem) {
