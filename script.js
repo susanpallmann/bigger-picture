@@ -44,7 +44,9 @@ function updatePageIdle() {
   $(".firefly_test").each(function() {
     if (isScrolledIntoView($(this)) && Math.random() < 0.02) {
       var value = Math.random();
-      $(this).fadeTo("slow", value*value);
+      if (Math.random() < 0.1) {
+          $(this).fadeTo("slow", value*value);
+      }
       $(this).css("transform", "translate(" + (Math.random()*100) + "px, " + (Math.random()*100) + "px)");
     }
   });
