@@ -39,10 +39,10 @@ function updatePageOnScroll(prevScroll, currentScroll) {
         if (offsetAmount > spaceHeight) {
           offsetAmount = spaceHeight;
         }
-        $(this).find(".background").css("transform", "translateY(" + 0.05*offsetAmount + "px)");
-        $(this).find(".midback").css("transform", "translateY(" + 0.025*offsetAmount + "px)");
-        $(this).find(".midground").css("transform", "translateY(" + 0.025*(spaceHeight - offsetAmount) + "px)");
-        $(this).find(".foreground").css("transform", "translateY(" + 0.05*(spaceHeight - offsetAmount) + "px)");
+        $(this).find(".background").css("transform", "translateY(" + 0.1*offsetAmount + "px)");
+        $(this).find(".midback").css("transform", "translateY(" + 0.05*offsetAmount + "px)");
+        $(this).find(".midground").css("transform", "translateY(" + 0.05*(spaceHeight - offsetAmount) + "px)");
+        $(this).find(".foreground").css("transform", "translateY(" + 0.1*(spaceHeight - offsetAmount) + "px)");
       }
     });
     scrollValue = currentScroll;
