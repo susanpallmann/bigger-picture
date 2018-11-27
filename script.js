@@ -19,7 +19,6 @@ function checkScroll() {
   var currentScroll = $(document).scrollTop();
   if (scrollValue != currentScroll) {
       updatePage(scrollValue, currentScroll);
-      scrollValue = currentScroll;
   }
 }
 function updatePage(prevScroll, currentScroll) {
@@ -35,16 +34,51 @@ function updatePage(prevScroll, currentScroll) {
         }
     });
     currentScroll = $(document).scrollTop();
-    $(".animal").visible(true).each(function() {
-      var offsetAmount = currentScroll - $(this).offset().top;
-      var space = $(this).children(".heroboundary");
-      if (offsetAmount > spaceHeight) {
-        offsetAmount = spaceHeight;
+    $(".animal").each(function() {
+      if (Utils.isElementInView($(this), false)) {
+        var offsetAmount = currentScroll - $(this).offset().top;
+        var space = $(this).children(".heroboundary");
+        if (offsetAmount > spaceHeight) {
+          offsetAmount = spaceHeight;
+        }
+        $(this).find(".background").css("transform", "translateY(" + 0.05*offsetAmount + "px)");
+        $(this).find(".midback").css("transform", "translateY(" + 0.025*offsetAmount + "px)");
+        $(this).find(".midground").css("transform", "translateY(" + 0.025*(spaceHeight - offsetAmount) + "px)");
+        $(this).find(".foreground").css("transform", "translateY(" + 0.05*(spaceHeight - offsetAmount) + "px)");
       }
-      $(this).find(".background").css("transform", "translateY(" + 0.05*offsetAmount + "px)");
-      $(this).find(".midback").css("transform", "translateY(" + 0.025*offsetAmount + "px)");
-      $(this).find(".midground").css("transform", "translateY(" + 0.025*(spaceHeight - offsetAmount) + "px)");
-      $(this).find(".foreground").css("transform", "translateY(" + 0.05*(spaceHeight - offsetAmount) + "px)");
     });
     scrollValue = currentScroll;
 }
+
+
+
+
+function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+function Utils() {}
+
+Utils.prototype = {
+    constructor: Utils,
+    isElementInView: function (element, fullyInView) {
+        var pageTop = $(window).scrollTop();
+        var pageBottom = pageTop + $(window).height();
+        var elementTop = $(element).offset().top;
+        var elementBottom = elementTop + $(element).height();
+
+        if (fullyInView === true) {
+            return ((pageTop < elementTop) && (pageBottom > elementBottom));
+        } else {
+            return ((elementTop <= pageBottom) && (elementBottom >= pageTop));
+        }
+    }
+};
+
+var Utils = new Utils();
