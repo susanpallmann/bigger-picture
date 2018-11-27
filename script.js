@@ -35,7 +35,7 @@ function updatePage(prevScroll, currentScroll) {
         }
     });
     currentScroll = $(document).scrollTop();
-    $(".animal:visible").each(function() {
+    $(".animal").filter(":onScreen").each(function() {
       var offsetAmount = currentScroll - $(this).offset().top;
       var space = $(this).children(".heroboundary");
       if (offsetAmount > spaceHeight) {
