@@ -46,7 +46,7 @@ function updatePageIdle() {
       if (Math.random() < 0.1) {
           $(this).fadeTo("slow", Math.sqrt(Math.random()));
       }
-      $(this).css("transform", "translate(" + (Math.random()*100) + "px, " + (Math.random()*100) + "px)");
+      $(this).css("transform", "translate(" + (Math.random()*100) + "px, " + (Math.random()*100) + "px) scale(" + Math.random() + 0.5 + ")");
     }
   });
 }
