@@ -54,6 +54,9 @@ function updatePageOnScroll(prevScroll, currentScroll) {
         } else {
           $(this).find(".scene-lit").fadeOut(2000);
         }
+        if (scrollFraction > 0.3) {
+          $(this).find(".information h2").addClass("fadeInUp");
+        }
         var backgroundTrans = ($(this).find(".background").height()-heroHeight)*scrollFraction;
         var midbackTrans = ($(this).find(".midback").height()-heroHeight)*scrollFraction;
         var midgroundTrans = -1*($(this).find(".midground").height()-heroHeight)*scrollFraction;
