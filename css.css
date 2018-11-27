@@ -114,9 +114,6 @@ span#auto-scroll {
   transition: 0.5s;
   background-color: #777;
 }
-span#auto-scroll:hover {
-  background-color: #C97;
-}
 ul#top_menu li {
   height: fit-content;
   font-size: 0pt;
