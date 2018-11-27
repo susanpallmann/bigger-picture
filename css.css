@@ -124,6 +124,7 @@ div.firefly_test {
   position: absolute;
   z-index: 2;
   background-image: radial-gradient(#FDEFC3, transparent, transparent);
+  will-change: transform;
 }
 .col_1 {
   width: 25%;
