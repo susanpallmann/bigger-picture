@@ -308,6 +308,9 @@ img {
   height: 1000px;
   bottom: 0;
 }
+.animal .hero .scene-lit {
+  opacity: 0;
+}
 
 /* Discount Bootstrap Responsive Grid /*
 
