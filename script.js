@@ -45,8 +45,7 @@ function updatePageIdle() {
     if (isScrolledIntoView($(this)) && Math.random() < 0.05) {
       var value = Math.random();
       $(this).css("opacity", value*value);
-      var position = $(this).position();
-      $(this).css("transform", "translate(" + Math.random()*50 + "px, " + Math.random()*50 + "px)");
+      $(this).css("transform", "translate(" + (Math.random()*50) + "px, " + (Math.random()*50) + "px)");
     }
   });
 }
