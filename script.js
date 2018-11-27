@@ -1,6 +1,6 @@
 $(document).ready(function() {
     scrollValue = $(document).scrollTop();
-    spaceHeight = $(".animal .space").height();
+    spaceHeight = $(".animal .heroboundary").height();
     $("#top_hamburger").click(function() {
         if ($("#top_menu").height() > 0) {
             $("#top_menu li").css("font-size", "0");
@@ -38,10 +38,11 @@ function updatePage(prevScroll, currentScroll) {
     currentScroll = $(document).scrollTop();
     $(".animal").each(function() {
       var offsetAmount = currentScroll - $(this).offset().top;
+      var space = $(this).children(".heroboundary");
       if (offsetAmount > spaceHeight) {
         offsetAmount = spaceHeight;
       }
-      if (currentScroll > $(this).offset().top && currentScroll < $(this).children(".space").offset().top + $(this).children(".space").height()) {
+      if (currentScroll > $(this).offset().top && currentScroll < spaceHeight) {
 //        $(this).css("padding-top", offsetAmount + "px");
 //        $(this).children(".space").height(spaceHeight - offsetAmount);
       }
