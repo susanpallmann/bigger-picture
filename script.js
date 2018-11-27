@@ -63,7 +63,7 @@ function updatePageOnScroll(prevScroll, currentScroll) {
         $(this).find(".midback").css("transform", "translateY(" + midbackTrans + "px)");
         $(this).find(".midground").css("transform", "translateY(" + midgroundTrans + "px)");
         $(this).find(".foreground").css("transform", "translateY(" + foregroundTrans + "px)");
-        $(this).find(".scene-lit").css("opacity", (scrollFraction*3 - 1.5))
+        $(this).find(".scene-lit").css("opacity", (scrollFraction*300 - 150))
       }
     });
     scrollValue = currentScroll;
