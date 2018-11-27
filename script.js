@@ -41,7 +41,7 @@ function updatePageOnScroll(prevScroll, currentScroll) {
 }
 
 function updatePageIdle() {
-  $(".firefly-test").each(function() {
+  $(".firefly_test").each(function() {
     if (isScrolledIntoView($(this)) && Math.random() < 0.05) {
       var value = Math.random();
       $(this).css("opacity", value*value);
