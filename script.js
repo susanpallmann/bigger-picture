@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    autoScroll = false;
     scrollValue = $(document).scrollTop();
     spaceHeight = $(".animal .heroboundary").height();
     $("#top_hamburger").click(function() {
@@ -13,6 +14,13 @@ $(document).ready(function() {
         }
     });
     window.setInterval(checkScroll, 30);
+    $("button#auto-scroll").click(function() {
+      if (autoScroll == false) {
+        autoScroll = true;
+      } else {
+        autoScroll = false;
+      }
+    });
 });
 
 function checkScroll() {
