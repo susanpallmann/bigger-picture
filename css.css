@@ -268,7 +268,7 @@ h4.threatName {
   margin-top: 0px;
 }
 .animal .hero {
-  height: 696px;
+  height: 1vh;
   overflow: hidden;
   position: -webkit-sticky;
   position: sticky;
@@ -276,9 +276,10 @@ h4.threatName {
   top: 0;
 }
 .animal .hero img {
-  height: 696px;
-  width: 100%;
+  height: 1vh;
   will-change: transform;
+  width: auto;
+  right: -500px;
 }
 .animal .heroboundary {
   height: 1200px;
@@ -290,22 +291,22 @@ img {
 }
 .animal .hero img.foreground {
   z-index: 5;
-  height: 1000px;
+  height: 120vh;
   top: 0;
 }
 .animal .hero img.midground {
   z-index: 4;
-  height: 800px;
+  height: 110vh;
   top: 0;
 }
 .animal .hero img.midback {
   z-index: 3;
-  height: 800px;
+  height: 110vh;
   bottom: 0;
 }
 .animal .hero img.background {
   z-index: 2;
-  height: 1000px;
+  height: 120vh;
   bottom: 0;
 }
 
