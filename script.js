@@ -42,10 +42,16 @@ function updatePageOnScroll(prevScroll, currentScroll) {
           offsetAmount = spaceHeight;
         }
         console.log(offsetAmount);
-        $(this).find(".background").css("transform", "translateY(" + (($(this).find(".background").outerHeight()-$(this).children(".hero").height())*(offsetAmount/spaceHeight)) + "px)");
-        $(this).find(".midback").css("transform", "translateY(" + (($(this).find(".midback").outerHeight()-$(this).children(".hero").height())*(offsetAmount/spaceHeight)) + "px)");
-        $(this).find(".midground").css("transform", "translateY(" + (-1*($(this).find(".midground").outerHeight()-$(this).children(".hero").height())*(offsetAmount/spaceHeight)) + "px)");
-        $(this).find(".foreground").css("transform", "translateY(" + (-1*($(this).find(".foreground").outerHeight()-$(this).children(".hero").height())*(offsetAmount/spaceHeight)) + "px)");
+        var parallaxDistance = offsetAmount + $(window).height();
+        var totalParallax = spaceHeight + $(window).height();
+        var heroHeight = $("this").find(".hero").first().height();
+        if (parallaxDistance < 0) {
+          parallaxDistance = 0;
+        }
+        $(this).find(".background").css("transform", "translateY(" + (($(this).find(".background").height()-heroHeight)*(parallaxDistance/totalParallax)) + "px)");
+        $(this).find(".midback").css("transform", "translateY(" + (($(this).find(".midback").height()-heroHeight)*(parallaxDistance/totalParallax)) + "px)");
+        $(this).find(".midground").css("transform", "translateY(" + (-1*($(this).find(".midground").height()-heroHeight)*(parallaxDistance/totalParallax)) + "px)");
+        $(this).find(".foreground").css("transform", "translateY(" + (-1*($(this).find(".foreground").height()-heroHeight)*(offsetAmount/totalParallax)) + "px)");
       }
     });
     scrollValue = currentScroll;
