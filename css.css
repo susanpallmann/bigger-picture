@@ -262,6 +262,7 @@ h4.threatName {
   position: -webkit-sticky;
   position: sticky;
   align-self: flex-end;
+  top: 0;
 }
 .animal .hero img {
   height: 696px;
