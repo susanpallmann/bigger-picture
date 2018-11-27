@@ -42,7 +42,7 @@ function updatePageOnScroll(prevScroll, currentScroll) {
 
 function updatePageIdle() {
   $(".firefly_test").each(function() {
-    if (isScrolledIntoView($(this)) && Math.random() < 0.05) {
+    if (isScrolledIntoView($(this)) && Math.random() < 0.02) {
       var value = Math.random();
       $(this).fadeTo("slow", value*value);
       $(this).css("transform", "translate(" + (Math.random()*50) + "px, " + (Math.random()*50) + "px)");
