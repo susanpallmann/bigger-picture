@@ -112,10 +112,10 @@ span#auto-scroll {
   right: 50px;
   cursor: pointer;
   transition: 0.5s;
-  background-color: #F3AF52;
+  background-color: #777;
 }
 span#auto-scroll:hover {
-  background-color: #C09070;
+  background-color: #C97;
 }
 ul#top_menu li {
   height: fit-content;
