@@ -41,17 +41,21 @@ function updatePageOnScroll(prevScroll, currentScroll) {
         if (offsetAmount > spaceHeight) {
           offsetAmount = spaceHeight;
         }
-        console.log(offsetAmount);
         var parallaxDistance = offsetAmount + $(window).height();
         var totalParallax = spaceHeight + $(window).height();
         var heroHeight = $("this").find(".hero").first().height();
+        console.log(heroHeight);
         if (parallaxDistance < 0) {
           parallaxDistance = 0;
         }
-        $(this).find(".background").css("transform", "translateY(" + (($(this).find(".background").height()-heroHeight)*(parallaxDistance/totalParallax)) + "px)");
-        $(this).find(".midback").css("transform", "translateY(" + (($(this).find(".midback").height()-heroHeight)*(parallaxDistance/totalParallax)) + "px)");
-        $(this).find(".midground").css("transform", "translateY(" + (-1*($(this).find(".midground").height()-heroHeight)*(parallaxDistance/totalParallax)) + "px)");
-        $(this).find(".foreground").css("transform", "translateY(" + (-1*($(this).find(".foreground").height()-heroHeight)*(offsetAmount/totalParallax)) + "px)");
+        var backgroundTrans = ($(this).find(".background").height()-heroHeight)*(parallaxDistance/totalParallax);
+        var midbackTrans = ($(this).find(".midback").height()-heroHeight)*(parallaxDistance/totalParallax);
+        var midgroundTrans = -1*($(this).find(".midground").height()-heroHeight)*(parallaxDistance/totalParallax);
+        var foregroundTrans = -1*($(this).find(".foreground").height()-heroHeight)*(parallaxDistance/totalParallax);
+        $(this).find(".background").css("transform", "translateY(" + backgroundTrans + "px)");
+        $(this).find(".midback").css("transform", "translateY(" + midbackTrans + "px)");
+        $(this).find(".midground").css("transform", "translateY(" + midgroundTrans + "px)");
+        $(this).find(".foreground").css("transform", "translateY(" + foregroundTrans + "px)");
       }
     });
     scrollValue = currentScroll;
