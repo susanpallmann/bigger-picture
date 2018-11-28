@@ -308,9 +308,69 @@ img {
   height: 120vh;
   bottom: 0;
 }
-
+#hamburgerTop.open {
+  animation: hamburgerTopBar 1s normal forwards ease-in-out;
+}
+#hamburgerMid.open {
+  animation: hamburgerMidBar 1s normal forwards ease-in-out;
+}
+#hamburgerBottom.open {
+  animation: hamburgerBottomBar 1s normal forwards ease-in-out;
+}
+#hamburgerTop.close {
+  animation: hamburgerTopBar 1s normal reverse ease-in-out;
+}
+#hamburgerMid.close {
+  animation: hamburgerMidBar 1s normal reverse ease-in-out;
+}
+#hamburgerBottom.close {
+  animation: hamburgerMidBar 1s normal reverse ease-in-out;
+}
 /* Discount Bootstrap Responsive Grid /*
 
+/* Hamburger CSS Animation */
+@keyframes hamburgerTopBar {
+  0% {
+    transform: translateX(0px);
+  }
+  10% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+  90% {
+    transform: translateX(15px) rotate(60deg);
+  }
+  100% {
+    transform: translateX(15px) rotate(45deg);
+  }
+}
+@keyframes hamburgerMidBar {
+  49% {
+    height: 6px;
+  }
+  50% {
+    height: 0;
+  }
+}
+@keyframes hamburgerBottomBar {
+  0% {
+    transform: translateX(0px);
+  }
+  10% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-15px);
+  }
+  90% {
+    transform: translateX(-15px) rotate(-60deg);
+  }
+  100% {
+    transform: translateX(-15px) rotate(-45deg);
+  }
+}
 
 /* Rise up & fade in animations. Borrowed from Animate.css (https://daneden.github.io/animate.css) */
 @-webkit-keyframes fadeInUp {
