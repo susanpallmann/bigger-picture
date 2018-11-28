@@ -6,11 +6,17 @@ $(document).ready(function() {
     spaceHeight = $(".animal .heroboundary").height();
     $("#top_hamburger").click(function() {
         if ($("#top_menu").height() > 0) {
-            $(this).addClass("closed").delay(1000).removeClass("closed");
+            $(this).addClass("closed");
+            setTimeout(function() {
+              $(this).removeClass("closed");
+            }, 1000);
             $("#top_menu li").css("font-size", "0");
             $("#top_menu li").css("color", "transparent");
         } else {
-            $(this).addClass("open").delay(1000).removeClass("open");
+            $(this).addClass("open");
+            setTimeout(function() {
+              $(this).removeClass("open");
+            }, 1000);
             $("#top_menu li").css("font-size", "1.2em");
             $("#top_menu li").css("color", "#fff");
         }
