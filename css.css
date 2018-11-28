@@ -331,19 +331,19 @@ img {
 /* Hamburger CSS Animation */
 @keyframes hamburgerTopBar {
   0% {
-    transform: translateX(0px);
+    transform: translateY(0px);
   }
   10% {
-    transform: translateX(-5px);
+    transform: translateY(-5px);
   }
   50% {
-    transform: translateX(15px);
+    transform: translateY(15px);
   }
   90% {
-    transform: translateX(15px) rotate(60deg);
+    transform: translateY(15px) rotate(60deg);
   }
   100% {
-    transform: translateX(15px) rotate(45deg);
+    transform: translateY(15px) rotate(45deg);
   }
 }
 @keyframes hamburgerMidBar {
@@ -356,19 +356,19 @@ img {
 }
 @keyframes hamburgerBottomBar {
   0% {
-    transform: translateX(0px);
+    transform: translateY(0px);
   }
   10% {
-    transform: translateX(5px);
+    transform: translateY(5px);
   }
   50% {
-    transform: translateX(-15px);
+    transform: translateY(-15px);
   }
   90% {
-    transform: translateX(-15px) rotate(-60deg);
+    transform: translateY(-15px) rotate(-60deg);
   }
   100% {
-    transform: translateX(-15px) rotate(-45deg);
+    transform: translateY(-15px) rotate(-45deg);
   }
 }
 
