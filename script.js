@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    autoScrollSpeed = 4;
     animationIterations = 0;
     autoScroll = false;
     scrollValue = $(document).scrollTop();
@@ -86,10 +85,16 @@ function updatePageIdle() {
     }
   });
   if (autoScroll == true) {
-    $(document).scrollTop($(document).scrollTop() + autoScrollSpeed);
+    scrollDownOne();
+    setTimeout(scrollDownOne, 7);
+    setTimeout(scrollDownOne, 8);
+    setTimeout(scrollDownOne, 7);
   }
 }
 
+function scrollDownOne() {
+  $(document).scrollTop($(document).scrollTop() + 1);
+}
 function isScrolledIntoView(elem) {
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height();
