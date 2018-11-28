@@ -7,18 +7,18 @@ $(document).ready(function() {
     $("#top_hamburger").click(function() {
         if ($("#top_menu").height() > 0) {
             $(this).addClass("closed");
-            setTimeout(function() {
-              $(this).removeClass("closed");
-            }, 1000);
             $("#top_menu li").css("font-size", "0");
             $("#top_menu li").css("color", "transparent");
+            window.setTimeout(function() {
+              $(this).removeClass("closed");
+            }, 1000);
         } else {
             $(this).addClass("open");
-            setTimeout(function() {
-              $(this).removeClass("open");
-            }, 1000);
             $("#top_menu li").css("font-size", "1.2em");
             $("#top_menu li").css("color", "#fff");
+            window.setTimeout(function() {
+              $(this).removeClass("closed");
+            }, 1000);
         }
     });
     window.setInterval(checkScroll, 30);
