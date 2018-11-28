@@ -322,22 +322,22 @@ img {
   top: 12px;
 }
 .open #hamburgerTop {
-  animation: hamburgerTopBar 1s ease-in-out 0s 1 normal;
+  animation: hamburgerTopBar 1s ease-in-out 0s normal;
 }
 .open #hamburgerMid {
-  animation: hamburgerMidBar 1s ease-in-out 0s 1 normal;
+  animation: hamburgerMidBar 1s ease-in-out 0s normal;
 }
 .open #hamburgerBottom {
-  animation: hamburgerBottomBar 1s ease-in-out 0s 1 normal;
+  animation: hamburgerBottomBar 1s ease-in-out 0s normal;
 }
 .closed #hamburgerTop {
-  animation: hamburgerTopBar 1s ease-in-out 0s 1 reverse;
+  animation: hamburgerTopBar 1s ease-in-out 0s reverse;
 }
 .closed #hamburgerMid {
-  animation: hamburgerMidBar 1s ease-in-out 0s 1 reverse;
+  animation: hamburgerMidBar 1s ease-in-out 0s reverse;
 }
 .closed #hamburgerBottom {
-  animation: hamburgerBottomBar 1s ease-in-out 0s 1 reverse;
+  animation: hamburgerBottomBar 1s ease-in-out 0s reverse;
 }
 /* Discount Bootstrap Responsive Grid /*
 
