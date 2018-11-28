@@ -308,6 +308,23 @@ img {
   height: 120vh;
   bottom: 0;
 }
+#top_hamburger span {
+  background-color: red;
+  height: 6px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  border-radius: 3px;
+}
+#hamburgerTop {
+  top: 0;
+}
+#hamburgerMid {
+  top: 12px;
+}
+#hamburgerBottom {
+  top: 24px;
+}
 .open #hamburgerTop {
   animation: hamburgerTopBar 1s ease-in-out 0s 1 normal;
 }
@@ -334,16 +351,16 @@ img {
     transform: translateY(0px);
   }
   10% {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
   }
   50% {
-    transform: translateY(15px);
+    transform: translateY(12px);
   }
   90% {
-    transform: translateY(15px) rotate(60deg);
+    transform: translateY(12px) rotate(60deg);
   }
   100% {
-    transform: translateY(15px) rotate(45deg);
+    transform: translateY(12px) rotate(45deg);
   }
 }
 @keyframes hamburgerMidBar {
@@ -359,16 +376,16 @@ img {
     transform: translateY(0px);
   }
   10% {
-    transform: translateY(5px);
+    transform: translateY(6px);
   }
   50% {
-    transform: translateY(-15px);
+    transform: translateY(-18px);
   }
   90% {
-    transform: translateY(-15px) rotate(-60deg);
+    transform: translateY(-18px) rotate(-60deg);
   }
   100% {
-    transform: translateY(-15px) rotate(-45deg);
+    transform: translateY(-18px) rotate(-45deg);
   }
 }
 
