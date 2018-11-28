@@ -9,15 +9,15 @@ $(document).ready(function() {
             $(this).addClass("closed");
             $("#top_menu li").css("font-size", "0");
             $("#top_menu li").css("color", "transparent");
-            window.setTimeout(function() {
-              $(this).removeClass("closed");
+            setTimeout(function() {
+              $("#top_hamburger").removeClass("closed");
             }, 1000);
         } else {
             $(this).addClass("open");
             $("#top_menu li").css("font-size", "1.2em");
             $("#top_menu li").css("color", "#fff");
-            window.setTimeout(function() {
-              $(this).removeClass("closed");
+            setTimeout(function() {
+              $("#top_hamburger").removeClass("closed");
             }, 1000);
         }
     });
