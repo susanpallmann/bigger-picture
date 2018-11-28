@@ -271,6 +271,17 @@ h4.threatName {
   align-self: flex-end;
   top: 0;
 }
+.animal .hero div {
+  position: absolute;
+  top: 300px;
+  z-index: 5;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 1.65em;
+  line-height: 1.15em;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
 .animal .hero img {
   height: 100vh;
   will-change: transform;
