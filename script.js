@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    autoScrollSpeed = 4;
     autoScroll = false;
     scrollValue = $(document).scrollTop();
     spaceHeight = $(".animal .heroboundary").height();
@@ -77,7 +78,7 @@ function updatePageIdle() {
     }
   });
   if (autoScroll == true) {
-    $(document).scrollTop($(document).scrollTop() + 2);
+    $(document).scrollTop($(document).scrollTop() + autoScrollSpeed);
   }
 }
 
