@@ -1,5 +1,6 @@
 $(document).ready(function() {
     autoScrollSpeed = 4;
+    animationIterations = 0;
     autoScroll = false;
     scrollValue = $(document).scrollTop();
     spaceHeight = $(".animal .heroboundary").height();
@@ -7,11 +8,15 @@ $(document).ready(function() {
         if ($(this).hasClass("open")) {
             $(this).removeClass("open");
             $(this).addClass("closed");
+            animationIterations ++;
+            $(this).children().css("animation-iteration-count", animationIterations);
             $("#top_menu li").css("font-size", "0");
             $("#top_menu li").css("color", "transparent");
         } else {
             $(this).removeClass("closed");
             $(this).addClass("open");
+            animationIterations ++;
+            $(this).children().css("animation-iteration-count", animationIterations);
             $("#top_menu li").css("font-size", "1.2em");
             $("#top_menu li").css("color", "#fff");
         }
