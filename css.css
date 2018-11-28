@@ -364,15 +364,15 @@ img {
   }
   50% {
     width: 100%;
-    transform: translateY(12px);
+    transform: translateY(9px);
   }
   90% {
     width: 120%;
-    transform: translateY(12px) translateX(-10%) rotate(60deg);
+    transform: translateY(9px) translateX(-10%) rotate(60deg);
   }
   100% {
     width: 100%;
-    transform: translateY(12px) translateX(0) rotate(45deg);
+    transform: translateY(9px) translateX(0) rotate(45deg);
   }
 }
 @keyframes hamburgerMidBar {
@@ -400,15 +400,15 @@ img {
   }
   50% {
     width: 100%;
-    transform: translateY(-12px);
+    transform: translateY(-9px);
   }
   90% {
     width: 120%;
-    transform: translateY(-12px) translateX(-10%) rotate(-60deg);
+    transform: translateY(-9px) translateX(-10%) rotate(-60deg);
   }
   100% {
     width: 100%;
-    transform: translateY(-12px) translateX(0) rotate(-45deg);
+    transform: translateY(-9px) translateX(0) rotate(-45deg);
   }
 }
 
