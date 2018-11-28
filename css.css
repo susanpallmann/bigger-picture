@@ -273,6 +273,12 @@ h4.threatName {
   align-self: flex-end;
   top: 0;
 }
+.animal .hero:nth-child(1) {
+  top: 500px;
+}
+.animal .hero:nth-child(2) {
+  top: 1100px;
+}
 .animal .hero div.text {
   position: absolute;
   z-index: 5;
