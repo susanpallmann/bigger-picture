@@ -96,6 +96,8 @@ function updatePageIdle() {
   $(".populationNumber").each(function() {
     if (Math.random() < 0.5 && isScrolledIntoView($(this)) && ($(this).offset().top > $(window).height()/2 + $(window).scrollTop())) {
       $(this).text((Math.floor(Math.random() * (99999)) + 1).toLocaleString());
+    } else {
+      $(this).text($(this).attr("alt"));
     }
   });
 }
