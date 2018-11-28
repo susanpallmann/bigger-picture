@@ -273,7 +273,6 @@ h4.threatName {
 }
 .animal .hero div.text {
   position: absolute;
-  top: 300px;
   z-index: 5;
   font-family: 'Open Sans',sans-serif;
   font-size: 1.65em;
