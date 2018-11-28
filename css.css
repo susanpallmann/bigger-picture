@@ -368,11 +368,11 @@ img {
   }
   90% {
     width: 120%;
-    transform: translateY(12px) rotate(60deg);
+    transform: translateY(12px) translateX(-10%) rotate(60deg);
   }
   100% {
     width: 100%;
-    transform: translateY(12px) rotate(45deg);
+    transform: translateY(12px) translateX(0) rotate(45deg);
   }
 }
 @keyframes hamburgerMidBar {
@@ -404,11 +404,11 @@ img {
   }
   90% {
     width: 120%;
-    transform: translateY(-12px) rotate(-60deg);
+    transform: translateY(-12px) translateX(-10%) rotate(-60deg);
   }
   100% {
     width: 100%;
-    transform: translateY(-12px) rotate(-45deg);
+    transform: translateY(-12px) translateX(0) rotate(-45deg);
   }
 }
 
