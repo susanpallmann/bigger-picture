@@ -101,9 +101,6 @@ function updatePageIdle() {
     }
   });
 }
-function numberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
 function scrollDownOne() {
   $(document).scrollTop($(document).scrollTop() + 1);
 }
