@@ -5,18 +5,12 @@ $(document).ready(function() {
     scrollValue = $(document).scrollTop();
     spaceHeight = $(".animal .heroboundary").height();
     $("#top_hamburger").click(function() {
-        if ($(this).hasClass("open")) {
-            $(this).removeClass("open");
-            $(this).addClass("closed");
-            animationIterations ++;
-            $(this).children().css("animation-iteration-count", animationIterations);
+        if ($("#top_menu").height() > 0) {
+            $(this).addClass("closed").delay(1000).removeClass("closed");
             $("#top_menu li").css("font-size", "0");
             $("#top_menu li").css("color", "transparent");
         } else {
-            $(this).removeClass("closed");
-            $(this).addClass("open");
-            animationIterations ++;
-            $(this).children().css("animation-iteration-count", animationIterations);
+            $(this).addClass("open").delay(1000).removeClass("open");
             $("#top_menu li").css("font-size", "1.2em");
             $("#top_menu li").css("color", "#fff");
         }
