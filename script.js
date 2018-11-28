@@ -4,7 +4,8 @@ $(document).ready(function() {
     scrollValue = $(document).scrollTop();
     spaceHeight = $(".animal .heroboundary").height();
     $("#top_hamburger").click(function() {
-        if ($("#top_menu").height() > 0) {
+        if ($(this).hasClass("animcomplete")) {
+            $(this).removeClass("animcomplete");
             $(this).addClass("closed");
             $("#top_menu li").css("font-size", "0");
             $("#top_menu li").css("color", "transparent");
@@ -17,6 +18,7 @@ $(document).ready(function() {
             $("#top_menu li").css("color", "#fff");
             setTimeout(function() {
               $("#top_hamburger").removeClass("open");
+              $("#top_hamburger").addClass("animcomplete");
             }, 700);
         }
     });
