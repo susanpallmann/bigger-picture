@@ -334,14 +334,14 @@ img {
 }
 .animcomplete #hamburgerTop {
   width: 100%;
-  transform: translateY(9px) translateX(0) rotate(45deg);
+  transform: translateY(12px) translateX(0) rotate(45deg);
 }
 .animcomplete #hamburgerMid {
   height: 0;
 }
 .animcomplete #hamburgerBottom {
   width: 100%;
-  transform: translateY(-9px) translateX(0) rotate(-45deg);
+  transform: translateY(-6px) translateX(0) rotate(-45deg);
 }
 .open #hamburgerTop {
   animation: hamburgerTopBar 0.7s ease-in-out 0s infinite normal forwards;
@@ -375,15 +375,15 @@ img {
   }
   50% {
     width: 100%;
-    transform: translateY(9px);
+    transform: translateY(12px);
   }
   90% {
     width: 120%;
-    transform: translateY(9px) translateX(-10%) rotate(60deg);
+    transform: translateY(12px) translateX(-10%) rotate(60deg);
   }
   100% {
     width: 100%;
-    transform: translateY(9px) translateX(0) rotate(45deg);
+    transform: translateY(12px) translateX(0) rotate(45deg);
   }
 }
 @keyframes hamburgerMidBar {
@@ -411,15 +411,15 @@ img {
   }
   50% {
     width: 100%;
-    transform: translateY(-9px);
+    transform: translateY(-6px);
   }
   90% {
     width: 120%;
-    transform: translateY(-9px) translateX(-10%) rotate(-60deg);
+    transform: translateY(-6px) translateX(-10%) rotate(-60deg);
   }
   100% {
     width: 100%;
-    transform: translateY(-9px) translateX(0) rotate(-45deg);
+    transform: translateY(-6px) translateX(0) rotate(-45deg);
   }
 }
 
