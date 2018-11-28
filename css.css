@@ -60,13 +60,9 @@ main {
   margin: 0;
 }
 .hamburger {
-  background-color: #ffffff;
-  border-radius: 10px;
   width: 30px;
   height: 30px;
   display: inline-block;
-  transform: rotate(0deg);
-  transition: transform 0.5s;
 }
 .hamburger:hover {
   cursor: pointer;
@@ -309,7 +305,7 @@ img {
   bottom: 0;
 }
 #top_hamburger span {
-  background-color: red;
+  background-color: white;
   height: 6px;
   display: block;
   position: absolute;
@@ -341,7 +337,7 @@ img {
   animation: hamburgerMidBar 1s ease-in-out 0s 1 reverse;
 }
 .closed #hamburgerBottom {
-  animation: hamburgerMidBar 1s ease-in-out 0s 1 reverse;
+  animation: hamburgerBottomBar 1s ease-in-out 0s 1 reverse;
 }
 /* Discount Bootstrap Responsive Grid /*
 
