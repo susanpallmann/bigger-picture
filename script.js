@@ -10,14 +10,14 @@ $(document).ready(function() {
             $("#top_menu li").css("color", "transparent");
             setTimeout(function() {
               $("#top_hamburger").removeClass("closed");
-            }, 1000);
+            }, 700);
         } else {
             $(this).addClass("open");
             $("#top_menu li").css("font-size", "1.2em");
             $("#top_menu li").css("color", "#fff");
             setTimeout(function() {
               $("#top_hamburger").removeClass("open");
-            }, 1000);
+            }, 700);
         }
     });
     window.setInterval(checkScroll, 30);
