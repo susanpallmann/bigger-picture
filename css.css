@@ -332,6 +332,17 @@ img {
 #hamburgerBottom {
   top: 12px;
 }
+.animcomplete #hamburgerTop {
+  width: 100%;
+  transform: translateY(9px) translateX(0) rotate(45deg);
+}
+.animcomplete #hamburgerMid {
+  height: 0;
+}
+.animcomplete #hamburgerBottom {
+  width: 100%;
+  transform: translateY(-9px) translateX(0) rotate(-45deg);
+}
 .open #hamburgerTop {
   animation: hamburgerTopBar 0.7s ease-in-out 0s infinite normal forwards;
 }
