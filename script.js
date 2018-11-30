@@ -141,7 +141,7 @@ function updatePageIdle() {
     }
   });
   $(".footprint").each(function() {
-    if(isScrolledIntoView($(this))) {
+    if(isScrolledIntoFullView($(this))) {
       $(this).css("opacity", "1");
     } else {
       $(this).css("opacity", "0");
@@ -158,4 +158,12 @@ function isScrolledIntoView(elem) {
     var elemTop = elem.offset().top;
     var elemBottom = elemTop + elem.height();
     return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom));
+}
+function isScrolledIntoFullView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = elem.offset().top;
+    var elemBottom = elemTop + elem.height();
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
