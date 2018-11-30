@@ -134,7 +134,7 @@ function updatePageIdle() {
   });
   $(".footprint").each(function() {
     if(isScrolledIntoView($(this))) {
-      $(this).fadeTo(1, 1);
+      $(this).css("opacity", "1");
     } else {
       $(this).css("opacity", "0");
     }
