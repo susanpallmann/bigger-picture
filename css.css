@@ -352,22 +352,22 @@ img {
   transform: translateY(-6px) translateX(0) rotate(-45deg);
 }
 .open #hamburgerTop {
-  animation: hamburgerTopBar 0.7s ease-in-out 0s infinite normal forwards;
+  animation: hamburgerTopBar 0.5s ease-in-out 0s infinite normal forwards;
 }
 .open #hamburgerMid {
-  animation: hamburgerMidBar 0.7s ease-in-out 0s infinite normal forwards;
+  animation: hamburgerMidBar 0.5s ease-in-out 0s infinite normal forwards;
 }
 .open #hamburgerBottom {
-  animation: hamburgerBottomBar 0.7s ease-in-out 0s infinite normal forwards;
+  animation: hamburgerBottomBar 0.5s ease-in-out 0s infinite normal forwards;
 }
 .closed #hamburgerTop {
-  animation: hamburgerTopBar 0.7s ease-in-out 0s infinite reverse forwards;
+  animation: hamburgerTopBar 0.5s ease-in-out 0s infinite reverse forwards;
 }
 .closed #hamburgerMid {
-  animation: hamburgerMidBar 0.7s ease-in-out 0s infinite reverse forwards;
+  animation: hamburgerMidBar 0.5s ease-in-out 0s infinite reverse forwards;
 }
 .closed #hamburgerBottom {
-  animation: hamburgerBottomBar 0.7s ease-in-out 0s infinite reverse forwards;
+  animation: hamburgerBottomBar 0.5s ease-in-out 0s infinite reverse forwards;
 }
 /* Discount Bootstrap Responsive Grid /*
 
