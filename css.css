@@ -295,6 +295,13 @@ h4.threatName {
   will-change: transform;
   width: auto;
 }
+.animal .hero .blueoverlay {
+  background-color: rgba(29, 68, 84, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  position: absolute;
+}
 .animal .heroboundary {
   height: 400vh;
   align-items: flex-start;
