@@ -33,6 +33,7 @@ $(document).ready(function() {
             }, hamburgerAnimSpeed);
         }
     });
+    scrollDownOne();
     window.setInterval(checkScroll, 30);
     $(".button#auto-scroll").click(function() {
       if (!autoScroll) {
@@ -43,6 +44,7 @@ $(document).ready(function() {
         $(".button#auto-scroll").css("background-color", "#777");
       }
     });
+    $(document).scrollTop($(document).scrollTop() - 1);
 });
 
 function checkScroll() {
@@ -97,7 +99,6 @@ function updatePageOnScroll(prevScroll, currentScroll) {
       }
     });
     scrollValue = currentScroll;
-    scrollDownOne();
 }
 
 function updatePageIdle() {
