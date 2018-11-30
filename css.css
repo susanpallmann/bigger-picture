@@ -318,7 +318,7 @@ img {
   position: absolute;
   width: 100%;
 }
-.animal .hero img.footprint-first, .animal .hero img.footprint-second, .animal .hero img.footprint-third {
+.animal .heroboundary img.footprint-first, .animal .hero img.footprint-second, .animal .hero img.footprint-third {
   z-index: 6;
   width: 100px;
   height: 100px;
@@ -327,14 +327,15 @@ img {
   margin-right: auto;
   right: 0;
   left: 0;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2));
 }
-.animal .hero img.footprint-first {
+.animal .heroboundary img.footprint-first {
   transform: translate(-50px, 0px);
 }
-.animal .hero img.footprint-second {
+.animal .heroboundary img.footprint-second {
   transform: translate(50px, 50px);
 }
-.animal .hero img.footprint-third {
+.animal .heroboundary img.footprint-third {
   transform: translate(-30px, 100px);
 }
 .animal .hero img.foreground {
