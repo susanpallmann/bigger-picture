@@ -318,7 +318,8 @@ img {
   position: absolute;
   width: 100%;
 }
-.animal .heroboundary img.footprint-first, .animal .hero img.footprint-second, .animal .hero img.footprint-third {
+.animal .heroboundary img.footprint-first, .animal .heroboundary img.footprint-second, .animal .heroboundary img.footprint-third {
+  position: absolute;
   z-index: 6;
   width: 100px;
   height: 100px;
