@@ -97,6 +97,7 @@ function updatePageOnScroll(prevScroll, currentScroll) {
       }
     });
     scrollValue = currentScroll;
+    scrollDownOne();
 }
 
 function updatePageIdle() {
