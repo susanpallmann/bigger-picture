@@ -313,6 +313,7 @@ h4.threatName {
 .animal .heroboundary {
   height: 400vh;
   align-items: flex-start;
+  position: relative;
 }
 img {
   position: absolute;
@@ -331,13 +332,13 @@ img {
   filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2));
 }
 .animal .heroboundary img.footprint-first {
-  transform: translate(-50px, 0px);
+  transform: translate(-25px, -50px);
 }
 .animal .heroboundary img.footprint-second {
-  transform: translate(50px, 50px);
+  transform: translate(25px, -25px);
 }
 .animal .heroboundary img.footprint-third {
-  transform: translate(-30px, 100px);
+  transform: translate(-15px, 0px);
 }
 .animal .hero img.foreground {
   z-index: 5;
