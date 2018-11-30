@@ -98,7 +98,7 @@ function updatePageIdle() {
     var targetNumber = $(this).attr("alt");
     if (isScrolledIntoView($(this))) {
       if (populationNumberTimer > 0) {
-        $(this).text(Math.round(((100-populationNumberTimer)/100)*targetNumber)).toLocaleString());
+        $(this).text(Math.round(((100-populationNumberTimer)/100)*targetNumber).toLocaleString());
         populationNumberTimer --;
       } else {
         $(this).text(targetNumber);
