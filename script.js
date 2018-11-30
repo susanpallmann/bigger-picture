@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    populationAnimSpeed = 600;
+    populationAnimSpeed = 400;
     populationNumberTimer = populationAnimSpeed/30;
     animationIterations = 0;
     autoScroll = false;
