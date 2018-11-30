@@ -1,5 +1,6 @@
 $(document).ready(function() {
-    populationNumberTimer = 100;
+    populationAnimSpeed = 1000;
+    populationNumberTimer = populationAnimSpeed/30;
     animationIterations = 0;
     autoScroll = false;
     scrollValue = $(document).scrollTop();
@@ -98,7 +99,7 @@ function updatePageIdle() {
     var targetNumber = Number($(this).attr("alt").replace(",", ""));
     if (isScrolledIntoView($(this))) {
       if (populationNumberTimer > 0) {
-        $(this).text(Math.round(((100-populationNumberTimer)/100)*targetNumber).toLocaleString());
+        $(this).text(Math.round(((populationAnimSpeed/30-populationNumberTimer)/100)*targetNumber).toLocaleString());
         populationNumberTimer --;
       } else {
         $(this).text(targetNumber.toLocaleString());
@@ -107,7 +108,7 @@ function updatePageIdle() {
       $(this).text(targetNumber.toLocaleString());
       populationCounter --;
       if (populationCounter <= 0) {
-        populationNumberTimer = 100;
+        populationNumberTimer = populationAnimSpeed/30;
       }
     }
   });
