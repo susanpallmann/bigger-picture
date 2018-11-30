@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    populationNumberTimer = 100;
     animationIterations = 0;
     autoScroll = false;
     scrollValue = $(document).scrollTop();
@@ -94,10 +95,16 @@ function updatePageIdle() {
   }
   var docViewTop
   $(".populationNumber").each(function() {
-    if (isScrolledIntoView($(this)) && ($(this).offset().top > $(window).height()/2 + $(window).scrollTop())) {
-      $(this).text((Math.floor(Math.random() * (99999)) + 1).toLocaleString());
+    if (isScrolledIntoView($(this))) {
+      if (populationNumberTimer > 0) {
+        $(this).text((Math.floor(Math.random() * (99999)) + 1).toLocaleString());
+        populationNumberTimer --;
+      } else {
+        $(this).text($(this).attr("alt"));
+      }
     } else {
       $(this).text($(this).attr("alt"));
+      populationNumberTimer = 100;
     }
   });
 }
