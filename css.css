@@ -446,7 +446,7 @@ img {
   80% {
     box-shadow: none;
     width: 120%;
-    transform: translateY(-12px) rotate(60deg);
+    transform: translateY(-12px) translateX(-10%) rotate(60deg);
   }
   100% {
     box-shadow: none;
