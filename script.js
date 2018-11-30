@@ -11,7 +11,7 @@ $(document).ready(function() {
             $("#top_menu li").css("color", "transparent");
             setTimeout(function() {
               $("#top_hamburger").removeClass("closed");
-            }, 700);
+            }, 500);
         } else {
             $(this).addClass("open");
             $("#top_menu li").css("font-size", "1.2em");
