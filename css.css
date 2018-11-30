@@ -355,11 +355,11 @@ img {
 }
 #top_hamburger.animcomplete span#hamburgerMid {
   width: 100%;
-  transform: translateY(-6px) translateX(0) rotate(-45deg);
+  transform: translateY(0) translateX(0) rotate(-45deg);
 }
 #top_hamburger.animcomplete span#hamburgerBottom {
   width: 100%;
-  transform: translateY(12px) translateX(0) rotate(45deg);
+  transform: translateY(-12px) translateX(0) rotate(45deg);
   box-shadow: none;
 }
 .open #hamburgerTop {
@@ -420,11 +420,11 @@ img {
   }
   80% {
     width: 120%;
-    transform: translateY(-6px) translateX(-10%) rotate(-60deg);
+    transform: translateX(-10%) rotate(-60deg);
   }
   100% {
     width: 100%;
-    transform: translateY(-6px) translateX(0) rotate(-45deg);
+    transform: rotate(-45deg);
   }
 }
 @keyframes hamburgerBottomBar {
@@ -446,12 +446,12 @@ img {
   80% {
     box-shadow: none;
     width: 120%;
-    transform: rotate(60deg);
+    transform: translateY(-12px) rotate(60deg);
   }
   100% {
     box-shadow: none;
     width: 100%;
-    transform: rotate(45deg);
+    transform: translateY(-12px) rotate(45deg);
   }
 }
 
