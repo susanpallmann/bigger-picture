@@ -93,7 +93,7 @@ function updatePageIdle() {
     setTimeout(scrollDownOne, 8);
     setTimeout(scrollDownOne, 7);
   }
-  var docViewTop
+  var populationCounter = $(".populationNumber").length;
   $(".populationNumber").each(function() {
     if (isScrolledIntoView($(this))) {
       if (populationNumberTimer > 0) {
@@ -104,7 +104,10 @@ function updatePageIdle() {
       }
     } else {
       $(this).text($(this).attr("alt"));
-      populationNumberTimer = 100;
+      populationCounter --;
+      if (populationCounter <= 0) {
+        populationNumberTimer = 100;
+      }
     }
   });
 }
