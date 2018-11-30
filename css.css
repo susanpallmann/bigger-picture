@@ -318,6 +318,25 @@ img {
   position: absolute;
   width: 100%;
 }
+img.footprint-first, img.footprint-second, img.footprint-third {
+  z-index: 6;
+  width: 200px;
+  height: 200px;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+}
+img.footprint-first {
+  transform: translate(-50px, -50px);
+}
+img.footprint-second {
+  transform: translate(50px, 0px);
+}
+img.footprint-third {
+  transform: translate(-30px, 50px);
+}
 .animal .hero img.foreground {
   z-index: 5;
   height: 120vh;
