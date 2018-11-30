@@ -89,7 +89,8 @@ function updatePageOnScroll(prevScroll, currentScroll) {
         var midgroundTrans = -1*($(this).find(".midground").height()-heroHeight)*scrollFraction;
         var foregroundTrans = -1*($(this).find(".foreground").height()-heroHeight)*scrollFraction;
         $(this).find(".text").css("transform", "translateY(" + (-1*offsetAmount) + "px)");
-        $(this).find(".background").css("transform", "translateY(" + backgroundTrans + "px)");
+        $(this).find(".background").css("transform", "translateY(" + backgroundTrans + "px)")
+                                   .css("filter", "blur(" + (1-scrollFraction) + ")");
         $(this).find(".midback").css("transform", "translateY(" + midbackTrans + "px)");
         $(this).find(".midground").css("transform", "translateY(" + midgroundTrans + "px)");
         $(this).find(".foreground").css("transform", "translateY(" + foregroundTrans + "px)");
