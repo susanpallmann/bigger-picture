@@ -1,10 +1,14 @@
 $(document).ready(function() {
-    populationAnimSpeed = 510;
+    
+    // Adjust these values
+    populationAnimSpeed = 510;  // Speed of population number animation (milliseconds)
+    
+    // Do not adjust these values
     populationNumberTimer = populationAnimSpeed/30;
-    animationIterations = 0;
     autoScroll = false;
     scrollValue = $(document).scrollTop();
     spaceHeight = $(".animal .heroboundary").height();
+    
     $("#top_hamburger").click(function() {
         if ($(this).hasClass("animcomplete")) {
             $(this).removeClass("animcomplete");
