@@ -11,7 +11,7 @@ $(document).ready(function() {
             $("#top_menu li").css("color", "transparent");
             setTimeout(function() {
               $("#top_hamburger").removeClass("closed");
-            }, 500);
+            }, 300);
         } else {
             $(this).addClass("open");
             $("#top_menu li").css("font-size", "1.2em");
@@ -19,7 +19,7 @@ $(document).ready(function() {
             setTimeout(function() {
               $("#top_hamburger").removeClass("open");
               $("#top_hamburger").addClass("animcomplete");
-            }, 500);
+            }, 300);
         }
     });
     window.setInterval(checkScroll, 30);
