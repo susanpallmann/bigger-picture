@@ -105,7 +105,7 @@ function updatePageIdle() {
         $(this).text(targetNumber.toLocaleString());
       }
     } else {
-      $(this).text(targetNumber.toLocaleString());
+      $(this).text("0");
       populationCounter --;
       if (populationCounter <= 0) {
         populationNumberTimer = populationAnimSpeed/30;
