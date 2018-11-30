@@ -349,15 +349,15 @@ img {
 #hamburgerBottom {
   top: 12px;
 }
-#top_hamburger .animcomplete span#hamburgerTop {
+#top_hamburger.animcomplete span#hamburgerTop {
   width: 100%;
   transform: translateY(12px) translateX(0) rotate(45deg);
 }
-#top_hamburger .animcomplete span#hamburgerMid {
+#top_hamburger.animcomplete span#hamburgerMid {
   width: 100%;
   transform: translateY(-6px) translateX(0) rotate(-45deg);
 }
-#top_hamburger .animcomplete span#hamburgerBottom {
+#top_hamburger.animcomplete span#hamburgerBottom {
   width: 100%;
   transform: translateY(12px) translateX(0) rotate(45deg);
   box-shadow: none;
