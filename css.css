@@ -301,7 +301,7 @@ h4.threatName {
   height: 100%;
   z-index: 4;
   position: absolute;
-  box-shadow: inset 0 -500px 500px -500px #1c4554;
+  box-shadow: inset 0 -150px 100px -100px #1c4554;
 }
 .animal .heroboundary {
   height: 400vh;
