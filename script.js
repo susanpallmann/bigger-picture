@@ -35,7 +35,7 @@ $(document).ready(function() {
     });
     window.setInterval(checkScroll, 30);
     $(".button#auto-scroll").click(function() {
-      if (autoScroll == false) {
+      if (!autoScroll) {
         autoScroll = true;
         $(".button#auto-scroll").css("background-color", "#F3AF52");
       } else {
@@ -54,6 +54,7 @@ function checkScroll() {
 }
 function updatePageOnScroll(prevScroll, currentScroll) {
     currentScroll = $(document).scrollTop();
+    var heroTop = $(this).find(".hero").offset().top;
     $(".animal").each(function() {
       if (isScrolledIntoView($(this))) {
         var offsetAmount = currentScroll - $(this).offset().top;
@@ -67,6 +68,13 @@ function updatePageOnScroll(prevScroll, currentScroll) {
         var heroHeight = $(this).find(".hero").height();
         if (parallaxDistance < 0) {
           parallaxDistance = 0;
+        }
+        if (Math.abs($(this).find(".hero").offset().top - currentScroll) < 2) {
+            console.log("yes");
+            if (autoScroll) {
+                scrollDownOne();
+                setTimeout(scrollDownOne, 15);
+            }
         }
         if (scrollFraction > 0.3) {
           $(this).find(".hero h2.fadeInUp").removeClass();
@@ -97,7 +105,7 @@ function updatePageIdle() {
       $(this).css("transform", "translate(" + (Math.random()*100) + "px, " + (Math.random()*100) + "px) scale(" + scaleFactor + ", " + scaleFactor + ")");
     }
   });
-  if (autoScroll == true) {
+  if (autoScroll) {
     scrollDownOne();
     setTimeout(scrollDownOne, 7);
     setTimeout(scrollDownOne, 8);
