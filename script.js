@@ -95,15 +95,16 @@ function updatePageIdle() {
   }
   var populationCounter = $(".populationNumber").length;
   $(".populationNumber").each(function() {
+    var targetNumber = $(this).attr("alt");
     if (isScrolledIntoView($(this))) {
       if (populationNumberTimer > 0) {
-        $(this).text((Math.floor(Math.random() * (99999)) + 1).toLocaleString());
+        $(this).text(Math.round(((100-populationNumberTimer)/100)*targetNumber)).toLocaleString());
         populationNumberTimer --;
       } else {
-        $(this).text($(this).attr("alt"));
+        $(this).text(targetNumber);
       }
     } else {
-      $(this).text($(this).attr("alt"));
+      $(this).text(targetNumber);
       populationCounter --;
       if (populationCounter <= 0) {
         populationNumberTimer = 100;
