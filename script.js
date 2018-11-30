@@ -1,13 +1,16 @@
 $(document).ready(function() {
     
-    // Adjust these values
-    populationAnimSpeed = 510;  // Speed of population number animation (milliseconds)
+    /* Adjust these global variables */
+    // Speed of population number animation (milliseconds). Ideally, keep it divisible by 30.
+    populationAnimSpeed = 510;
+    /* End adjustable variables */
     
-    // Do not adjust these values
+    /* Do not adjust these global variables */
     populationNumberTimer = populationAnimSpeed/30;
     autoScroll = false;
     scrollValue = $(document).scrollTop();
     spaceHeight = $(".animal .heroboundary").height();
+    /* End global variables */
     
     $("#top_hamburger").click(function() {
         if ($(this).hasClass("animcomplete")) {
