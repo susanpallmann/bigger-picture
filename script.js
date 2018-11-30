@@ -54,8 +54,8 @@ function checkScroll() {
 }
 function updatePageOnScroll(prevScroll, currentScroll) {
     currentScroll = $(document).scrollTop();
-    var heroTop = $(this).find(".hero").offset().top;
     $(".animal").each(function() {
+      var heroTop = $(this).find(".hero").offset().top;
       if (isScrolledIntoView($(this))) {
         var offsetAmount = currentScroll - $(this).offset().top;
         var space = $(this).children(".heroboundary");
