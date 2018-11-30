@@ -3,6 +3,8 @@ $(document).ready(function() {
     /* Adjust these global variables */
     // Speed of population number animation (milliseconds). Ideally, keep it divisible by 30.
     populationAnimSpeed = 510;
+    // Speed of hamburger animation (milliseconds). Should match CSS animation speed.
+    hamburgerAnimSpeed = 400;
     /* End adjustable variables */
     
     /* Do not adjust these global variables */
@@ -20,7 +22,7 @@ $(document).ready(function() {
             $("#top_menu li").css("color", "transparent");
             setTimeout(function() {
               $("#top_hamburger").removeClass("closed");
-            }, 400);
+            }, hamburgerAnimSpeed);
         } else {
             $(this).addClass("open");
             $("#top_menu li").css("font-size", "1.2em");
@@ -28,7 +30,7 @@ $(document).ready(function() {
             setTimeout(function() {
               $("#top_hamburger").removeClass("open");
               $("#top_hamburger").addClass("animcomplete");
-            }, 400);
+            }, hamburgerAnimSpeed);
         }
     });
     window.setInterval(checkScroll, 30);
