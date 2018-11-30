@@ -408,11 +408,11 @@ img {
 @keyframes hamburgerMidBar {
   0% {
     width: 100%;
-    transform: translateY(0px);
+    transform: translateY(0);
   }
-  20% {
+  49% {
     width: 100%;
-    transform: translateY(6px);
+    transform: translateY(0);
   }
   50% {
     width: 100%;
@@ -429,14 +429,17 @@ img {
 }
 @keyframes hamburgerBottomBar {
   0% {
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
     width: 100%;
-    transform: translateY(0);
+    transform: translateY(0px);
+  }
+  20% {
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    transform: translateY(6px);
   }
   49% {
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    transform: translateY(0);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   }
   50% {
     box-shadow: none;
