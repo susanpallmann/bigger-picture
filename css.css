@@ -377,7 +377,7 @@ img {
     width: 100%;
     transform: translateY(0px);
   }
-  10% {
+  20% {
     width: 100%;
     transform: translateY(-6px);
   }
@@ -385,7 +385,7 @@ img {
     width: 100%;
     transform: translateY(12px);
   }
-  90% {
+  80% {
     width: 120%;
     transform: translateY(12px) translateX(-10%) rotate(60deg);
   }
@@ -413,7 +413,7 @@ img {
     width: 100%;
     transform: translateY(0px);
   }
-  10% {
+  20% {
     width: 100%;
     transform: translateY(6px);
   }
@@ -421,7 +421,7 @@ img {
     width: 100%;
     transform: translateY(-6px);
   }
-  90% {
+  80% {
     width: 120%;
     transform: translateY(-6px) translateX(-10%) rotate(-60deg);
   }
