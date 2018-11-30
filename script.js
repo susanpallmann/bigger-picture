@@ -131,6 +131,13 @@ function updatePageIdle() {
       }
     }
   });
+  $(".footprint").each(function() {
+    if(isScrolledIntoView($(this))) {
+      $(this).css("opacity", ($(this).css("opacity")+0.05));
+    } else {
+      $(this).css("opacity", "0");
+    }
+  });
 }
 function scrollDownOne() {
   $(document).scrollTop($(document).scrollTop() + 1);
