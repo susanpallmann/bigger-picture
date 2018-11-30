@@ -19,7 +19,7 @@ $(document).ready(function() {
             setTimeout(function() {
               $("#top_hamburger").removeClass("open");
               $("#top_hamburger").addClass("animcomplete");
-            }, 700);
+            }, 500);
         }
     });
     window.setInterval(checkScroll, 30);
