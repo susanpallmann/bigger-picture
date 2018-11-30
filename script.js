@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    populationAnimSpeed = 1000;
+    populationAnimSpeed = 600;
     populationNumberTimer = populationAnimSpeed/30;
     animationIterations = 0;
     autoScroll = false;
@@ -99,7 +99,7 @@ function updatePageIdle() {
     var targetNumber = Number($(this).attr("alt").replace(",", ""));
     if (isScrolledIntoView($(this))) {
       if (populationNumberTimer > 0) {
-        $(this).text(Math.round(((populationAnimSpeed/30-populationNumberTimer)/100)*targetNumber).toLocaleString());
+        $(this).text(Math.round(((populationAnimSpeed/30-populationNumberTimer)/(populationAnimSpeed/30))*targetNumber).toLocaleString());
         populationNumberTimer --;
       } else {
         $(this).text(targetNumber.toLocaleString());
