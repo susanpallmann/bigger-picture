@@ -295,12 +295,17 @@ h4.threatName {
   will-change: transform;
   width: auto;
 }
-.animal .hero .blueoverlay {
-  background-color: rgba(28, 69, 84, 1);
+.animal .hero .blueoverlay, .animal .hero .bluebottomgradient {
   width: 100%;
   height: 100%;
   z-index: 4;
   position: absolute;
+}
+.animal .hero .blueoverlay {
+  background-color: rgba(28, 69, 84, 1);
+}
+.animal .hero .bluebottomgradient {
+  z-index: 5;
   box-shadow: inset 0 -150px 100px -100px #1c4554;
 }
 .animal .heroboundary {
