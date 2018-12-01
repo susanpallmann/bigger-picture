@@ -562,10 +562,16 @@ footer .information {
 }
 slogan {
   text-align: center;
+  font-size: 0.9em;
+  font-weight: 700;
 }
 footer {
   text-align: center;
+  font-size: 0.9em;
+  font-weight: 600;
 }
 copyright {
   text-align: center;
+  font-size: 0.9em;
+  font-weight: 700;
 }
