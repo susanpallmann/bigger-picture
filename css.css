@@ -367,6 +367,16 @@ img {
   height: 120vh;
   bottom: 0;
 }
+.animal .hero .sun {
+  background-color: #fec;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 200px;
+  right: 500px;
+  border-radius: 50px;
+  z-index: 3;
+}
 #top_hamburger span {
   background-color: white;
   height: 6px;
