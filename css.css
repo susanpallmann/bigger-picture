@@ -334,18 +334,18 @@ img {
   transition: opacity 1s;
 }
 .animal .heroboundary span.footprint {
-  transform: translate(50px, 25px);
+  transform: translate(50px, 0px);
   font-size: 32px;
   width: 300px;
 }
 .animal .heroboundary img.footprint-first {
-  transform: translate(-25px, -50px);
+  transform: translate(-25px, -75px);
 }
 .animal .heroboundary img.footprint-second {
-  transform: translate(25px, -15px);
+  transform: translate(25px, -40px);
 }
 .animal .heroboundary img.footprint-third {
-  transform: translate(-15px, 30px);
+  transform: translate(-15px, 5px);
 }
 .animal .hero img.foreground {
   z-index: 5;
