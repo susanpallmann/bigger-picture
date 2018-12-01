@@ -96,6 +96,7 @@ function updatePageOnScroll(prevScroll, currentScroll) {
             $(this).find(".background").css("filter", "blur(" + ((0.7-scrollFraction)*32) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
             $(this).find(".midback").css("filter", "blur(" + ((0.7-scrollFraction)*16) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
             $(this).find(".midground").css("filter", "blur(" + ((0.7-scrollFraction)*8) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
+            $(this).find(".foreground").css("filter", "blur(0)");
         } else {
             $(this).find(".background").css("saturate(100%)");
             $(this).find(".midback").css("saturate(100%)");
