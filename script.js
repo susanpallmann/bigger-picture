@@ -100,7 +100,7 @@ function updatePageOnScroll(prevScroll, currentScroll) {
             $(this).find(".background").css("saturate(100%)");
             $(this).find(".midback").css("saturate(100%)");
             $(this).find(".midground").css("saturate(100%)");
-            $(this).find(".foreground").css("filter", "blur(" + ((scrollFraction-0.7)*8) + "px)");
+            $(this).find(".foreground").css("filter", "blur(" + ((scrollFraction-0.7)*32) + "px)");
         }
         $(this).find(".scene-lit").css("opacity", (scrollFraction*4 - 2));
         $(this).find(".blueoverlay").css("background-color", "rgba(28, 69, 84, " + (1-scrollFraction) + ")");
