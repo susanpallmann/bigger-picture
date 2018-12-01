@@ -99,10 +99,10 @@ function updatePageOnScroll(prevScroll, currentScroll) {
             $(this).find(".midback").css("filter", "blur(" + ((0.7-scrollFraction)*16) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
             $(this).find(".midground").css("filter", "blur(" + ((0.7-scrollFraction)*8) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
         } else {
-            $(this).find(".sun").css("");
-            $(this).find(".background").css("");
-            $(this).find(".midback").css("");
-            $(this).find(".midground").css("");
+            $(this).find(".sun").css("filter", "");
+            $(this).find(".background").css("filter", "");
+            $(this).find(".midback").css("filter", "");
+            $(this).find(".midground").css("filter", "");
         }
         $(this).find(".scene-lit").css("opacity", (scrollFraction*4 - 2));
         $(this).find(".blueoverlay").css("background-color", "rgba(28, 69, 84, " + (1-scrollFraction) + ")");
