@@ -547,4 +547,17 @@ img {
 /* Footer Classes & Similar Toe-Related Styles */
 footer .information {
   border-top: rgba(0,0,0,0.3);
+  min-height: auto;
+}
+.toTop {
+  text-align: center;
+}
+slogan {
+  text-align: center;
+}
+footer {
+  text-align: center;
+}
+copyright {
+  text-align: center;
 }
