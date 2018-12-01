@@ -71,7 +71,6 @@ function updatePageOnScroll(prevScroll, currentScroll) {
           parallaxDistance = 0;
         }
         if (Math.abs($(this).find(".hero").offset().top - currentScroll) < 2) {
-            console.log("yes");
             if (autoScroll) {
                 scrollDownOne();
                 setTimeout(scrollDownOne, 15);
@@ -97,11 +96,11 @@ function updatePageOnScroll(prevScroll, currentScroll) {
             $(this).find(".background").css("filter", "blur(" + ((0.7-scrollFraction)*32) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
             $(this).find(".midback").css("filter", "blur(" + ((0.7-scrollFraction)*16) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
             $(this).find(".midground").css("filter", "blur(" + ((0.7-scrollFraction)*8) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
-            $(this).find(".foreground").css("filter", "blur(" + ((scrollFraction-0.7)*8) + "px)");
         } else {
             $(this).find(".background").css("saturate(100%)");
             $(this).find(".midback").css("saturate(100%)");
             $(this).find(".midground").css("saturate(100%)");
+            $(this).find(".foreground").css("filter", "blur(" + ((scrollFraction-0.7)*8) + "px)");
         }
         $(this).find(".scene-lit").css("opacity", (scrollFraction*4 - 2));
         $(this).find(".blueoverlay").css("background-color", "rgba(28, 69, 84, " + (1-scrollFraction) + ")");
