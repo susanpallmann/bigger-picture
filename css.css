@@ -544,3 +544,7 @@ img {
     left: -200px;
   }
 }
+/* Footer Classes & Similar Toe-Related Styles */
+footer .information {
+  border-top: rgba(0,0,0,0.3);
+}
