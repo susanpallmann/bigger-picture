@@ -143,6 +143,9 @@ div.firefly_test {
 .col_3 {
   width: 75%;
 }
+.col_4 {
+  width: 100%;
+}
 .col_33 {
   width: 33.33%;
 }
@@ -554,6 +557,8 @@ footer .information {
 }
 .toTop {
   text-align: center;
+  width: 25%;
+  margin: auto;
 }
 slogan {
   text-align: center;
