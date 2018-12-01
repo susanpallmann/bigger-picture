@@ -576,7 +576,7 @@ footer .information {
   font-weight: 700;
 }
 /* Media Queries for Responsive Grid */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 750px) {
   .col_1 {
     width: 100%;
     padding-top: 0.4em;
@@ -592,7 +592,7 @@ footer .information {
     width: 100%;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 750px) {
   .col_1 {
     width: 25%;
     padding-top: 0.4em;
