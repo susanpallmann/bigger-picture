@@ -560,17 +560,17 @@ footer .information {
   width: 25%;
   margin: auto;
 }
-slogan {
+.slogan {
   text-align: center;
   font-size: 0.9em;
   font-weight: 700;
 }
-footer {
+.footer {
   text-align: center;
   font-size: 0.9em;
   font-weight: 600;
 }
-copyright {
+.copyright {
   text-align: center;
   font-size: 0.9em;
   font-weight: 700;
