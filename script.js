@@ -88,13 +88,13 @@ function updatePageOnScroll(prevScroll, currentScroll) {
         var midgroundTrans = -1*($(this).find(".midground").height()-heroHeight)*scrollFraction;
         var foregroundTrans = -1*($(this).find(".foreground").height()-heroHeight)*scrollFraction;
         $(this).find(".text").css("transform", "translateY(" + (-1*offsetAmount) + "px)");
-        $(this).find(".sun").css("transform", "translate(" + (Math.sqrt(scrollFraction)*-100) + ", " + (Math.sqrt(scrollFraction)*-100) + "px)");
+        $(this).find(".sun").css("transform", "translate(" + (Math.sqrt(scrollFraction)*-100) + "px, " + (Math.sqrt(scrollFraction)*-100) + "px)");
         $(this).find(".background").css("transform", "translateY(" + backgroundTrans + "px)");
         $(this).find(".midback").css("transform", "translateY(" + midbackTrans + "px)");
         $(this).find(".midground").css("transform", "translateY(" + midgroundTrans + "px)");
         $(this).find(".foreground").css("transform", "translateY(" + foregroundTrans + "px)");
         if (scrollFraction < 0.7) {
-            $(this).find(".sun").css("filter", "blur(" + ((0.7-scrollFraction)*64) + "px)");
+            $(this).find(".sun").css("filter", "blur(" + ((0.7-scrollFraction)*32) + "px)");
             $(this).find(".background").css("filter", "blur(" + ((0.7-scrollFraction)*32) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
             $(this).find(".midback").css("filter", "blur(" + ((0.7-scrollFraction)*16) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
             $(this).find(".midground").css("filter", "blur(" + ((0.7-scrollFraction)*8) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
