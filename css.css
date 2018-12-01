@@ -372,8 +372,8 @@ img {
   width: 100px;
   height: 100px;
   position: absolute;
-  top: 500px;
-  right: 200px;
+  top: 400px;
+  right: 100px;
   border-radius: 50px;
   z-index: 3;
 }
