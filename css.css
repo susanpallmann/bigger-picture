@@ -575,3 +575,35 @@ footer .information {
   font-size: 0.9em;
   font-weight: 700;
 }
+/* Media Queries for Responsive Grid */
+@media only screen and (max-width: 768px) {
+  .col_1 {
+    width: 100%;
+    padding-top: 0.4em;
+    display: flex;
+  }
+  .col_3 {
+    width: 100%;
+  }
+  .col_4 {
+    width: 100%;
+  }
+  .col_33 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .col_1 {
+    width: 25%;
+    padding-top: 0.4em;
+  }
+  .col_3 {
+    width: 75%;
+  }
+  .col_4 {
+    width: 100%;
+  }
+  .col_33 {
+    width: 33.33%;
+  }
+}
