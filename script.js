@@ -103,7 +103,7 @@ function updatePageOnScroll(prevScroll, currentScroll) {
             $(this).find(".midground").css("saturate(100%)");
         }
         $(this).find(".scene-lit").css("opacity", (scrollFraction*4 - 2));
-        $(this).find(".blueoverlay").css("background-color", "rgba(28, 69, 84, " + (1-(2/3)*scrollFraction) + ")");
+        $(this).find(".blueoverlay").css("background-color", "rgba(28, 69, 84, " + (1-scrollFraction) + ")");
       }
     });
     scrollValue = currentScroll;
