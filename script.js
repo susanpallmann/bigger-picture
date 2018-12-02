@@ -117,7 +117,7 @@ function updatePageOnScroll(prevScroll, currentScroll) {
                 $(this).find(".midback").css("filter", "");
                 $(this).find(".midground").css("filter", "");
             }
-            $(this).find(".blueoverlay").css("background-color", "rgba(28, 69, 84, " + (scrollFraction) + ")");
+            $(this).find(".blueoverlay").css("background-color", "rgba(28, 69, 84, " + ((scrollFraction*(2/3))-(1/3)) + ")");
         } else {
             if (scrollFraction < 0.7) {
                 $(this).find(".sun").css("filter", "blur(" + ((0.7-scrollFraction)*32) + "px)");
