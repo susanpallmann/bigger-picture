@@ -338,8 +338,8 @@ img {
   transition: opacity 1s;
 }
 .animal .heroboundary span.footprint {
-  transform: translate(50px, 0px);
-  font-size: 32px;
+  transform: translate(77px, 0px);
+  font-size: 1.5em;
   width: 300px;
 }
 .animal .heroboundary img.footprint-first {
