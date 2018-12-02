@@ -341,6 +341,7 @@ img {
 .animal .heroboundary span.footprint {
   transform: translate(77px, 0px);
   font-size: 1.5em;
+  font-weight: 600;
   width: 300px;
 }
 .animal .heroboundary img.footprint-first {
