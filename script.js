@@ -105,7 +105,11 @@ function updatePageOnScroll(prevScroll, currentScroll) {
             $(this).find(".midground").css("filter", "");
         }
         $(this).find(".scene-lit").css("opacity", (scrollFraction*4 - 2));
-        $(this).find(".blueoverlay").css("background-color", "rgba(28, 69, 84, " + (1-scrollFraction) + ")");
+        if ($(this).attr("id") === "rhino") {
+            $(this).find(".blueoverlay").css("background-color", "rgba(28, 69, 84, " + (scrollFraction-1) + ")");
+        } else {
+            $(this).find(".blueoverlay").css("background-color", "rgba(28, 69, 84, " + (1-scrollFraction) + ")");
+        }
       }
     });
     scrollValue = currentScroll;
