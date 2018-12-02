@@ -590,6 +590,10 @@ footer .information {
   .col_33 {
     width: 100%;
   }
+  .animal .hero div.text {
+    font-size: 2em;
+    line-spacing: 1.35em;
+  }
 }
 @media only screen and (min-width: 750px) {
   .col_1 {
