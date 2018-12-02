@@ -106,7 +106,7 @@ function updatePageOnScroll(prevScroll, currentScroll) {
         }
         $(this).find(".scene-lit").css("opacity", (scrollFraction*4 - 2));
         if ($(this).attr("id") === "rhino") {
-            if (scrollFraction < 0.7) {
+            if (scrollFraction > 0.7) {
                 $(this).find(".sun").css("filter", "blur(" + ((0.7-scrollFraction)*32) + "px)");
                 $(this).find(".background").css("filter", "blur(" + ((0.7-scrollFraction)*32) + "px) saturate(" + (1-(scrollFraction/2+0.65)) + ")");
                 $(this).find(".midback").css("filter", "blur(" + ((0.7-scrollFraction)*16) + "px) saturate(" + (1-(scrollFraction/2+0.65)) + ")");
