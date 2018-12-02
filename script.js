@@ -142,13 +142,36 @@ function updatePageIdle() {
       }
     }
   });
-  $(".footprint").each(function() {
+  $(".footprint-first").each(function() {
     if(isScrolledIntoFullView($(this))) {
       $(this).css("opacity", "1");
     } else {
       $(this).css("opacity", "0");
     }
   });
+  $(".footprint-second").each(function() {
+    var element = $(this);
+    if(isScrolledIntoFullView($(this))) {
+      setTimeout(function() {
+        element.css("opacity", "1");
+      }, 1000);
+    } else {
+      $(this).css("opacity", "0");
+    }
+  });
+  $(".footprint-third").each(function() {
+    var element = $(this);
+    if(isScrolledIntoFullView($(this))) {
+      setTimeout(function() {
+        element.css("opacity", "1");
+      }, 2000);
+    } else {
+      $(this).css("opacity", "0");
+    }
+  });
+}
+function fadeIn(element) {
+    element.css("opacity", "1");
 }
 function scrollDownOne() {
   $(document).scrollTop($(document).scrollTop() + 1);
