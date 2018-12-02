@@ -51,6 +51,7 @@ header {
   -webkit-transform: translateZ(0);
 }
 header table {
+  min-height: 60px;
   width: 100%;
 }
 header h1 {
