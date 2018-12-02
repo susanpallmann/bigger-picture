@@ -352,25 +352,23 @@ img {
 .animal .heroboundary img.footprint-third {
   transform: translate(-15px, 5px) rotate(180deg);
 }
-.animal .hero img.foreground {
+.animal .hero img.foreground, .animal .hero img.midground {
   z-index: 5;
-  height: 120vh;
+  width: 100%;
+  height: auto;
   top: 0;
 }
 .animal .hero img.midground {
   z-index: 4;
-  height: 110vh;
-  top: 0;
 }
-.animal .hero img.midback {
+.animal .hero img.midback, .animal .hero img.background {
   z-index: 3;
-  height: 110vh;
+  width: 100%;
+  height: auto;
   bottom: 0;
 }
 .animal .hero img.background {
   z-index: 2;
-  height: 120vh;
-  bottom: 0;
 }
 .animal .hero .sun {
   background-color: #fff7f0;
