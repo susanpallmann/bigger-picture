@@ -336,7 +336,6 @@ img {
   right: 0;
   left: 0;
   filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2));
-  opacity: 0;
   transition: opacity 1s;
 }
 .animal .heroboundary span.footprint {
