@@ -595,7 +595,7 @@ footer .information {
   .animal .hero img.midback, .animal .hero img.midground {
     z-index: 3;
     width: auto;
-    height: 120vh;
+    height: 110vh;
     top: 0;
   }
   .animal .hero img.midground {
@@ -604,7 +604,7 @@ footer .information {
   .animal .hero img.foreground, .animal .hero img.background {
     z-index: 5;
     width: auto;
-    height: 110vh;
+    height: 120vh;
     bottom: 0;
   }
   .animal .hero img.background {
