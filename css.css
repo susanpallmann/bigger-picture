@@ -607,4 +607,22 @@ footer .information {
   .col_33 {
     width: 33.33%;
   }
+  .animal .hero img.midback, .animal .hero img.midground {
+    z-index: 3;
+    width: auto;
+    height: 120vh;
+    top: 0;
+  }
+  .animal .hero img.midground {
+    z-index: 4;
+  }
+  .animal .hero img.foreground, .animal .hero img.background {
+    z-index: 5;
+    width: auto;
+    height: 110vh;
+    bottom: 0;
+  }
+  .animal .hero img.background {
+    z-index: 2;
+  }
 }
