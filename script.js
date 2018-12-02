@@ -154,7 +154,7 @@ function updatePageIdle() {
     if(isScrolledIntoFullView($(this))) {
       setTimeout(function() {
         element.css("opacity", "1");
-      }, 1000);
+      }, 500);
     } else {
       $(this).css("opacity", "0");
     }
@@ -164,7 +164,7 @@ function updatePageIdle() {
     if(isScrolledIntoFullView($(this))) {
       setTimeout(function() {
         element.css("opacity", "1");
-      }, 2000);
+      }, 1000);
     } else {
       $(this).css("opacity", "0");
     }
