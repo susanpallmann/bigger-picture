@@ -9,7 +9,6 @@ $(document).ready(function() {
     
     /* Do not adjust these global variables */
     populationNumberTimer = populationAnimSpeed/30;
-    autoScroll = false;
     scrollValue = $(document).scrollTop();
     spaceHeight = $(".animal .heroboundary").height();
     /* End global variables */
@@ -34,15 +33,6 @@ $(document).ready(function() {
         }
     });
     window.setInterval(checkScroll, 30);
-    $(".button#auto-scroll").click(function() {
-      if (!autoScroll) {
-        autoScroll = true;
-        $(".button#auto-scroll").css("background-color", "#F3AF52");
-      } else {
-        autoScroll = false;
-        $(".button#auto-scroll").css("background-color", "#777");
-      }
-    });
     updatePageOnScroll(scrollValue, scrollValue);
 });
 
@@ -69,12 +59,6 @@ function updatePageOnScroll(prevScroll, currentScroll) {
         var heroHeight = $(this).find(".hero").height();
         if (parallaxDistance < 0) {
           parallaxDistance = 0;
-        }
-        if (Math.abs($(this).find(".hero").offset().top - currentScroll) < 2) {
-            if (autoScroll) {
-                scrollDownOne();
-                setTimeout(scrollDownOne, 15);
-            }
         }
         if (scrollFraction > 0.3) {
           $(this).find(".hero h2.fadeInUp").removeClass();
@@ -146,12 +130,6 @@ function updatePageIdle() {
       $(this).css("transform", "translate(" + (Math.random()*100) + "px, " + (Math.random()*100) + "px) scale(" + scaleFactor + ", " + scaleFactor + ")");
     }
   });
-  if (autoScroll) {
-    scrollDownOne();
-    setTimeout(scrollDownOne, 7);
-    setTimeout(scrollDownOne, 8);
-    setTimeout(scrollDownOne, 7);
-  }
   var populationCounter = $(".populationNumber").length;
   $(".populationNumber").each(function() {
     var targetNumber = Number($(this).attr("alt").replace(",", ""));
@@ -200,9 +178,6 @@ function updatePageIdle() {
 }
 function fadeIn(element) {
     element.css("opacity", "1");
-}
-function scrollDownOne() {
-  $(document).scrollTop($(document).scrollTop() + 1);
 }
 function isScrolledIntoView(elem) {
     var docViewTop = $(window).scrollTop();
