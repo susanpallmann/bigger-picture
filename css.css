@@ -592,21 +592,6 @@ footer .information {
     font-size: 2em;
     line-spacing: 1.35em;
   }
-}
-@media only screen and (min-width: 750px) {
-  .col_1 {
-    width: 25%;
-    padding-top: 0.4em;
-  }
-  .col_3 {
-    width: 75%;
-  }
-  .col_4 {
-    width: 100%;
-  }
-  .col_33 {
-    width: 33.33%;
-  }
   .animal .hero img.midback, .animal .hero img.midground {
     z-index: 3;
     width: auto;
@@ -624,5 +609,20 @@ footer .information {
   }
   .animal .hero img.background {
     z-index: 2;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .col_1 {
+    width: 25%;
+    padding-top: 0.4em;
+  }
+  .col_3 {
+    width: 75%;
+  }
+  .col_4 {
+    width: 100%;
+  }
+  .col_33 {
+    width: 33.33%;
   }
 }
