@@ -345,13 +345,13 @@ img {
   width: 300px;
 }
 .animal .heroboundary img.footprint-first {
-  transform: translate(-25px, -75px);
+  transform: translate(-25px, -75px) rotate(180deg);
 }
 .animal .heroboundary img.footprint-second {
-  transform: translate(25px, -40px);
+  transform: translate(25px, -40px) rotate(180deg);
 }
 .animal .heroboundary img.footprint-third {
-  transform: translate(-15px, 5px);
+  transform: translate(-15px, 5px) rotate(180deg);
 }
 .animal .hero img.foreground {
   z-index: 5;
