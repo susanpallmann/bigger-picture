@@ -671,6 +671,7 @@ footer .information .row {
     filter: blur(2px);
   }
 }
+/* Tablet Media Queries */
 @media only screen and (min-width: 750px) and (max-width: 992px) {
   .animal .hero img {
     height: 100vh !important;
@@ -681,6 +682,9 @@ footer .information .row {
     height: 100vh !important;
     width: auto !important;
     right: -300px;
+  }
+  #rhino.animal .hero img.night {
+    top: 0;
   }
   #addax.animal .hero img {
     height: 100vh !important;
