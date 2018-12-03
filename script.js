@@ -32,9 +32,8 @@ $(document).ready(function() {
             }, hamburgerAnimSpeed);
         }
     });
-    $(".toTop").click(function() {
-        scrollToTop();
-    });
+    $(".toTop").click(scrollToTop);
+    $("h1").click(scrollToTop);
     window.setInterval(checkScroll, 30);
     updatePageOnScroll(scrollValue, scrollValue);
 });
