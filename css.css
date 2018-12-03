@@ -572,7 +572,7 @@ img {
 }
 #home-header .callAction h2 {
   font-size: 3em;
-  font-weight: 600;
+  font-weight: 700;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   max-width: 700px;
   margin: auto;
@@ -580,7 +580,7 @@ img {
 /* Globe Spinning Animation */
 #home-header img {
   animation-name: spin;
-  animation-duration: 50000ms;
+  animation-duration: 80000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear; 
   position: relative;
