@@ -11,7 +11,7 @@ $(document).ready(function() {
     populationNumberTimer = populationAnimSpeed/30;
     scrollValue = $(document).scrollTop();
     spaceHeight = $(".animal .heroboundary").height();
-    screenWidth = screen.width;
+    screenWidth = Number(screen.width.split("px")[0]);
     /* End global variables */
     
     $("#top_hamburger").click(function() {
