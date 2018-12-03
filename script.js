@@ -135,7 +135,6 @@ function updatePageOnScroll(prevScroll, currentScroll) {
                   $(this).find(".midback").css("filter", "blur(" + ((0.7-scrollFraction)*16) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
                   $(this).find(".midground").css("filter", "blur(" + ((0.7-scrollFraction)*8) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
                 }
-                else {
             } else {
                 $(this).find(".sun").css("filter", "");
                 $(this).find(".background").css("filter", "");
