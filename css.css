@@ -746,6 +746,10 @@ span.footprint {
   background-color: #83ae9c;
   height: 1vh;
 }
+#home-header .information {
+  position: absolute;
+  top: 40%;
+}
 /* Globe Spinning Animation */
 #home-header img {
   animation-name: spin;
