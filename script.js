@@ -115,9 +115,9 @@ function updatePageOnScroll(prevScroll, currentScroll) {
                 }
             } else {
                 $(this).find(".sun").css("filter", "blur(" + ((scrollFraction-0.5)*32) + "px)");
-                $(this).find(".background").css("filter", "blur(" + ((scrollFraction-0.5)*32) + "px) saturate(" + (1-(scrollFraction/2+0.65)) + ")");
-                $(this).find(".midback").css("filter", "blur(" + ((scrollFraction-0.5)*16) + "px) saturate(" + (1-(scrollFraction/2+0.65)) + ")");
-                $(this).find(".midground").css("filter", "blur(" + ((scrollFraction-0.5)*8) + "px) saturate(" + (1-(scrollFraction/2+0.65)) + ")");
+                $(this).find(".background").css("filter", "blur(" + ((scrollFraction-0.5)*32) + "px) saturate(" + (scrollFraction/2+0.775) + ")");
+                $(this).find(".midback").css("filter", "blur(" + ((scrollFraction-0.5)*16) + "px) saturate(" + (scrollFraction/2+0.775) + ")");
+                $(this).find(".midground").css("filter", "blur(" + ((scrollFraction-0.5)*8) + "px) saturate(" + (scrollFraction/2+0.775) + ")");
                 $(this).find(".nightsky").css("opacity", "0");
                 $(this).find(".night").css("opacity", "0");
             }
