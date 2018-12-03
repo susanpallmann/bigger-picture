@@ -322,7 +322,7 @@ h4.threatName {
   position: relative;
 }
 #tamarin #waterfall {
-  bottom: 200px;
+  bottom: 0;
   top: unset;
 }
 img {
