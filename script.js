@@ -125,11 +125,6 @@ function updatePageOnScroll(prevScroll, currentScroll) {
                   $(this).find(".midback").css("filter", "blur(" + ((0.55-scrollFraction)*16) + "px) saturate(" + (scrollFraction/2+0.775) + ")");
                   $(this).find(".midground").css("filter", "blur(" + ((0.55-scrollFraction)*8) + "px) saturate(" + (scrollFraction/2+0.775) + ")");
                 }
-                else {
-                  $(this).find(".sun").css("filter", "blur(" + 2 + "px)");
-                  $(this).find(".background").css("filter", "blur(" + 4 + "px)");
-                  $(this).find(".midback").css("filter", "blur(" + 2 + "px)");
-                }
             }
             $(this).find(".blueoverlay").css("background-color", "rgba(28, 69, 84, " + ((scrollFraction*(1/2))+(1/4)) + ")");
         } else {
@@ -141,10 +136,6 @@ function updatePageOnScroll(prevScroll, currentScroll) {
                   $(this).find(".midground").css("filter", "blur(" + ((0.7-scrollFraction)*8) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
                 }
                 else {
-                  $(this).find(".sun").css("filter", "blur(" + 2 + "px)");
-                  $(this).find(".background").css("filter", "blur(" + 4 + "px)");
-                  $(this).find(".midback").css("filter", "blur(" + 2 + "px)");
-                }
             } else {
                 $(this).find(".sun").css("filter", "");
                 $(this).find(".background").css("filter", "");
