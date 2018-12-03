@@ -658,7 +658,11 @@ footer .information .row {
 @media only screen and (min-width: 750px) and (max-width: 992px) {
   .animal .hero img {
     height: 100vh !important;
-    width: auto;
+    width: auto !important;
+    right: -700px;
+  }
+  .animal .hero .foreground:first-of-type {
+    left: -200px;
   }
 }
 @media only screen and (min-width: 750px) {
