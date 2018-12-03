@@ -690,6 +690,9 @@ footer .information .row {
   .animal .hero img.background {
     z-index: 2;
   }
+  #home-header .callAction h2 {
+  font-size: 2em;
+}
   /* god willing this will add blur to backgrounds on mobile only*/
   .sun {
     filter: blur(3px);
@@ -753,9 +756,11 @@ span.footprint {
   width: 100%;
 }
 #home-header .callAction h2 {
-  font-size: 1.2em;
+  font-size: 3em;
   font-weight: 600;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  margin: auto;
 }
 /* Globe Spinning Animation */
 #home-header img {
