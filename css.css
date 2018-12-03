@@ -327,6 +327,7 @@ h4.threatName {
   z-index: 5;
 }
 #rhino img.night {
+  opacity: 0;
   z-index: 6;
   top: 100px;
 }
