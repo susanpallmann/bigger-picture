@@ -5,13 +5,15 @@ $(document).ready(function() {
     populationAnimSpeed = 510;
     // Speed of hamburger animation (milliseconds). Should match CSS animation speed.
     hamburgerAnimSpeed = 400;
+    // The minimum width (px) at which dynamic opacity functions still occur.
+    mediaCutOff = 750;
     /* End adjustable variables */
     
     /* Do not adjust these global variables */
     populationNumberTimer = populationAnimSpeed/30;
     scrollValue = $(document).scrollTop();
     spaceHeight = $(".animal .heroboundary").height();
-    screenWidth = Number(screen.width.split("px")[0]);
+    screenWidth = screen.width;
     /* End global variables */
     
     $("#top_hamburger").click(function() {
@@ -85,10 +87,12 @@ function updatePageOnScroll(prevScroll, currentScroll) {
         $(this).find(".scene-lit").css("opacity", (scrollFraction*4 - 2));
         if ($(this).attr("id") === "rhino") {
             if (scrollFraction > 0.55) {
-                $(this).find(".sun").css("filter", "");
-                $(this).find(".background").css("filter", "");
-                $(this).find(".midback").css("filter", "");
-                $(this).find(".midground").css("filter", "");
+                if (screenWidth > mediaCutOff) {
+                    $(this).find(".sun").css("filter", "");
+                    $(this).find(".background").css("filter", "");
+                    $(this).find(".midback").css("filter", "");
+                    $(this).find(".midground").css("filter", "");
+                }
                 $(this).find(".nightsky").css("opacity", "1");
                 $(this).find("#star1").css("opacity", "1");
                 if (scrollFraction > 0.6) {
@@ -119,7 +123,7 @@ function updatePageOnScroll(prevScroll, currentScroll) {
             } else {
                 $(this).find(".nightsky").css("opacity", "0");
                 $(this).find(".night").css("opacity", "0");
-                if (screenWidth > 750) {
+                if (screenWidth > mediaCutOff) {
                   $(this).find(".sun").css("filter", "blur(" + ((0.55-scrollFraction)*32) + "px)");
                   $(this).find(".background").css("filter", "blur(" + ((0.55-scrollFraction)*32) + "px) saturate(" + (scrollFraction/2+0.775) + ")");
                   $(this).find(".midback").css("filter", "blur(" + ((0.55-scrollFraction)*16) + "px) saturate(" + (scrollFraction/2+0.775) + ")");
@@ -128,14 +132,12 @@ function updatePageOnScroll(prevScroll, currentScroll) {
             }
             $(this).find(".blueoverlay").css("background-color", "rgba(28, 69, 84, " + ((scrollFraction*(1/2))+(1/4)) + ")");
         } else {
-            if (scrollFraction < 0.7) {
-                if (screenWidth > 750) {
-                  $(this).find(".sun").css("filter", "blur(" + ((0.7-scrollFraction)*32) + "px)");
-                  $(this).find(".background").css("filter", "blur(" + ((0.7-scrollFraction)*32) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
-                  $(this).find(".midback").css("filter", "blur(" + ((0.7-scrollFraction)*16) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
-                  $(this).find(".midground").css("filter", "blur(" + ((0.7-scrollFraction)*8) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
-                }
-            } else {
+            if (scrollFraction < 0.7 && screenWidth > mediaCutOff) {
+                $(this).find(".sun").css("filter", "blur(" + ((0.7-scrollFraction)*32) + "px)");
+                $(this).find(".background").css("filter", "blur(" + ((0.7-scrollFraction)*32) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
+                $(this).find(".midback").css("filter", "blur(" + ((0.7-scrollFraction)*16) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
+                $(this).find(".midground").css("filter", "blur(" + ((0.7-scrollFraction)*8) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
+            } else if (screenWidth > mediaCutOff) {
                 $(this).find(".sun").css("filter", "");
                 $(this).find(".background").css("filter", "");
                 $(this).find(".midback").css("filter", "");
