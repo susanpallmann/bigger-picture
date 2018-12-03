@@ -68,6 +68,7 @@ function updatePageOnScroll(prevScroll, currentScroll) {
           $(this).find(".hero h2.text-second").removeClass().addClass("fadeInUp");
         }
         var backgroundTrans = ($(this).find(".background").height()-heroHeight)*scrollFraction;
+        var waterfallTrans = (($(this).find("#waterfall").height()-heroHeight)*scrollFraction)*3;
         var midbackTrans = ($(this).find(".midback").height()-heroHeight)*scrollFraction;
         var midgroundTrans = -1*($(this).find(".midground").height()-heroHeight)*scrollFraction;
         var foregroundTrans = -1*($(this).find(".foreground").height()-heroHeight)*scrollFraction;
@@ -76,7 +77,7 @@ function updatePageOnScroll(prevScroll, currentScroll) {
         $(this).find(".background").css("transform", "translateY(" + backgroundTrans + "px)");
         $(this).find(".midback").css("transform", "translateY(" + midbackTrans + "px)");
         $(this).find(".midground").css("transform", "translateY(" + midgroundTrans + "px)");
-        $(this).find("#waterfall").css("transform", "translateY(" + midbackTrans*2 + "px)");
+        $(this).find("#waterfall").css("transform", "translateY(" + waterfallTrans + "px)");
         $(this).find(".foreground").css("transform", "translateY(" + foregroundTrans + "px)");
         $(this).find(".scene-lit").css("opacity", (scrollFraction*4 - 2));
         if ($(this).attr("id") === "rhino") {
