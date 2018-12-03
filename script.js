@@ -104,11 +104,14 @@ function updatePageOnScroll(prevScroll, currentScroll) {
                     $(this).find("#star4").css("opacity", "0");
                 }
                 if (scrollFraction > 0.7) {
-                    $(this).find(".night:not(.stars)").css("opacity", "1");
                     $(this).find("#star5").css("opacity", "1");
                 } else {
-                    $(this).find(".night:not(.stars)").css("opacity", "0");
                     $(this).find("#star5").css("opacity", "0");
+                }
+                if (scrollFraction > 0.75) {
+                    $(this).find(".night:not(.stars)").css("opacity", "1");
+                } else {
+                    $(this).find(".night:not(.stars)").css("opacity", "0");
                 }
             } else {
                 $(this).find(".sun").css("filter", "");
