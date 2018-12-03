@@ -7,6 +7,22 @@ $(document).ready(function() {
     hamburgerAnimSpeed = 400;
     // The minimum width (px) at which dynamic opacity functions still occur.
     mediaCutOff = 750;
+    // The vertical speed of the sun for a given species.
+    sunVertical_Bison = -200;
+    sunVertical_Devil = -300;
+    sunVertical_Tamarin = -300;
+    sunVertical_Condor = -200;
+    sunVertical_Addax = -200;
+    sunVertical_Stickbug = -300;
+    sunVertical_Rhino = 200;
+    // The horizontal speed of the sun for a given species.
+    sunHorizontal_Bison = 200;
+    sunHorizontal_Devil = 200;
+    sunHorizontal_Tamarin = 100;
+    sunHorizontal_Condor = 200;
+    sunHorizontal_Addax = 200;
+    sunHorizontal_Stickbug = 100;
+    sunHorizontal_Rhino = -200;
     /* End adjustable variables */
     
     /* Do not adjust these global variables */
@@ -80,19 +96,19 @@ function updatePageOnScroll(prevScroll, currentScroll) {
         $(this).find(".text").css("transform", "translateY(" + (-1*offsetAmount) + "px)");
         var thisId = $(this).attr("id");
         if (thisId === "bison") {
-            $(this).find(".sun").css("transform", "translate(" + (Math.sqrt(1-scrollFraction)*200) + "px, " + (Math.sqrt(scrollFraction)*-200) + "px)");
+            $(this).find(".sun").css("transform", "translate(" + (Math.sqrt(1-scrollFraction)*sunHorizontalBison) + "px, " + (Math.sqrt(scrollFraction)*sunVerticalBison) + "px)");
         } else if (thisId === "devil") {
-            $(this).find(".sun").css("transform", "translate(" + (Math.sqrt(1-scrollFraction)*200) + "px, " + (Math.sqrt(scrollFraction)*-300) + "px)");
+            $(this).find(".sun").css("transform", "translate(" + (Math.sqrt(1-scrollFraction)*sunHorizontalDevil) + "px, " + (Math.sqrt(scrollFraction)*sunVerticalDevil) + "px)");
         } else if (thisId === "tamarin") {
-            $(this).find(".sun").css("transform", "translate(" + (Math.sqrt(1-scrollFraction)*100) + "px, " + (Math.sqrt(scrollFraction)*-300) + "px)");
+            $(this).find(".sun").css("transform", "translate(" + (Math.sqrt(1-scrollFraction)*sunHorizontalTamarin) + "px, " + (Math.sqrt(scrollFraction)*sunVerticalTamarin) + "px)");
         } else if (thisId === "condor") {
-            $(this).find(".sun").css("transform", "translate(" + (Math.sqrt(1-scrollFraction)*200) + "px, " + (Math.sqrt(scrollFraction)*-200) + "px)");
+            $(this).find(".sun").css("transform", "translate(" + (Math.sqrt(1-scrollFraction)*sunHorizontalCondor) + "px, " + (Math.sqrt(scrollFraction)*sunVerticalCondor) + "px)");
         } else if (thisId === "addax") {
-            $(this).find(".sun").css("transform", "translate(" + (Math.sqrt(1-scrollFraction)*200) + "px, " + (Math.sqrt(scrollFraction)*-200) + "px)");
+            $(this).find(".sun").css("transform", "translate(" + (Math.sqrt(1-scrollFraction)*sunHorizontalAddax) + "px, " + (Math.sqrt(scrollFraction)*sunVerticalAddax) + "px)");
         } else if (thisId === "stickbug") {
-            $(this).find(".sun").css("transform", "translate(" + (Math.sqrt(1-scrollFraction)*100) + "px, " + (Math.sqrt(scrollFraction)*-300) + "px)");
+            $(this).find(".sun").css("transform", "translate(" + (Math.sqrt(1-scrollFraction)*sunHorizontalStickbug) + "px, " + (Math.sqrt(scrollFraction)*sunVerticalStickbug) + "px)");
         } else if (thisId === "rhino") {
-            $(this).find(".sun").css("transform", "translate(" + (Math.sqrt(1-scrollFraction)*-200) + "px, " + (Math.sqrt(scrollFraction)*200) + "px)");
+            $(this).find(".sun").css("transform", "translate(" + (Math.sqrt(1-scrollFraction)*sunHorizontalRhino) + "px, " + (Math.sqrt(scrollFraction)*sunVerticalRhino) + "px)");
         }
         $(this).find(".background").css("transform", "translateY(" + backgroundTrans + "px)");
         $(this).find(".midback").css("transform", "translateY(" + midbackTrans + "px)");
