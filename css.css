@@ -637,3 +637,7 @@ footer .information {
   height: 80px;
   background-size: contain;
 }
+.toTop img {
+  size: auto;
+  position: inherit;
+}
