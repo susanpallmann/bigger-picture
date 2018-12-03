@@ -651,11 +651,24 @@ footer .information .row {
   #rhino.animal .hero img {
     right: -300px;
   }
+  #rhino.animal .hero img.night {
+    top: 0;
+  }
   #addax.animal .hero img {
     right: -450px;
   }
   .animal .hero img.background {
     z-index: 2;
+  }
+  /* god willing this will add blur to backgrounds on mobile only*/
+  .sun {
+    filter: blur(3px);
+  }
+  .background {
+    filter: blur(3px);
+  }
+  .midback {
+    filter: blur(2px);
   }
 }
 @media only screen and (min-width: 750px) and (max-width: 992px) {
