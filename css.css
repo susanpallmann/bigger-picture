@@ -638,6 +638,6 @@ footer .information {
   background-size: contain;
 }
 .toTop img {
-  size: auto;
+  width: auto;
   position: inherit;
 }
