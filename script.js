@@ -266,7 +266,7 @@ function scrollToTop() {
     }
 }
 function scrollToFirst() {
-    var scrollPosition = $(window).scrollTop() + 10/($(window).scrollTop()+1);
+    var scrollPosition = $(window).scrollTop() + 10;
     window.scrollTo(0, scrollPosition);
     if (scrollPosition < $("#bison").offset().top) {
         setTimeout(scrollToFirst, 30);
