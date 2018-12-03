@@ -749,6 +749,13 @@ span.footprint {
 #home-header .callAction {
   position: absolute;
   top: 40%;
+  text-align: center;
+  width: 100%;
+}
+#home-header .callAction h2 {
+  font-size: 1.2em;
+  font-weight: 600;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 /* Globe Spinning Animation */
 #home-header img {
