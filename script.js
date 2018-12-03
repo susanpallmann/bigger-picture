@@ -254,9 +254,9 @@ function isScrolledIntoFullView(elem) {
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
 function scrollToTop() {
-    var scrollPosition = $(window).scrollTop()*29/30 - 5;
+    var scrollPosition = $(window).scrollTop()*4/5 - 10;
     window.scrollTo(0, scrollPosition);
     if (scrollPosition > 0) {
-        setTimeout(scrollToTop, 5);
+        setTimeout(scrollToTop, 30);
     }
 }
