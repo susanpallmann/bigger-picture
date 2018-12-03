@@ -87,11 +87,28 @@ function updatePageOnScroll(prevScroll, currentScroll) {
                 $(this).find(".midback").css("filter", "blur(" + ((0.55-scrollFraction)*16) + "px) saturate(" + (1-(scrollFraction/2+0.65)) + ")");
                 $(this).find(".midground").css("filter", "blur(" + ((0.55-scrollFraction)*8) + "px) saturate(" + (1-(scrollFraction/2+0.65)) + ")");
                 $(this).find(".nightsky").css("opacity", "1");
-                $(this).find(".stars").css("opacity", "1");
-                if (scrollFraction > 0.65) {
+                $(this).find("#star1").css("opacity", "1");
+                if (scrollFraction > 0.6) {
+                    $(this).find("#star2").css("opacity", "1");
+                } else {
+                    $(this).find("#star2").css("opacity", "0");
+                }
+                if (scrollFraction > 0.63) {
+                    $(this).find("#star3").css("opacity", "1");
+                } else {
+                    $(this).find("#star3").css("opacity", "0");
+                }
+                if (scrollFraction > 0.68) {
+                    $(this).find("#star4").css("opacity", "1");
+                } else {
+                    $(this).find("#star4").css("opacity", "0");
+                }
+                if (scrollFraction > 0.7) {
                     $(this).find(".night:not(.stars)").css("opacity", "1");
+                    $(this).find("#star5").css("opacity", "1");
                 } else {
                     $(this).find(".night:not(.stars)").css("opacity", "0");
+                    $(this).find("#star5").css("opacity", "0");
                 }
             } else {
                 $(this).find(".sun").css("filter", "");
@@ -99,7 +116,7 @@ function updatePageOnScroll(prevScroll, currentScroll) {
                 $(this).find(".midback").css("filter", "");
                 $(this).find(".midground").css("filter", "");
                 $(this).find(".nightsky").css("opacity", "0");
-                $(this).find(".stars").css("opacity", "0");
+                $(this).find("#star1").css("opacity", "0");
             }
             $(this).find(".blueoverlay").css("background-color", "rgba(28, 69, 84, " + ((scrollFraction*(1/2))+(1/4)) + ")");
         } else {
