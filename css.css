@@ -577,6 +577,9 @@ img {
   max-width: 700px;
   margin: auto;
 }
+#home-header .callAction .button {
+  width: 290px;
+}
 /* Globe Spinning Animation */
 #home-header img {
   animation-name: spin;
