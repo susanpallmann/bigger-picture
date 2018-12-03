@@ -380,8 +380,8 @@ img {
   width: 100px;
   height: 100px;
   position: absolute;
-  top: 300px;
-  right: 500px;
+  top: 200px;
+  right: 600px;
   border-radius: 50px;
   z-index: 3;
 }
