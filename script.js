@@ -101,7 +101,7 @@ function updatePageOnScroll(prevScroll, currentScroll) {
         $(this).find(".foreground").css("transform", "translateY(" + foregroundTrans + "px)");
         $(this).find(".scene-lit").css("opacity", (scrollFraction*4 - 2));
         if ($(this).attr("id") === "rhino") {
-            if (scrollFraction > 0.55) {
+            if (scrollFraction > 0.4) {
                 if (screenWidth > mediaCutOff) {
                     $(this).find(".sun").css("filter", "");
                     $(this).find(".background").css("filter", "");
@@ -110,27 +110,27 @@ function updatePageOnScroll(prevScroll, currentScroll) {
                 }
                 $(this).find(".nightsky").css("opacity", "1");
                 $(this).find("#star1").css("opacity", "1");
-                if (scrollFraction > 0.6) {
+                if (scrollFraction > 0.45) {
                     $(this).find("#star2").css("opacity", "1");
                 } else {
                     $(this).find("#star2").css("opacity", "0");
                 }
-                if (scrollFraction > 0.63) {
+                if (scrollFraction > 0.47) {
                     $(this).find("#star3").css("opacity", "1");
                 } else {
                     $(this).find("#star3").css("opacity", "0");
                 }
-                if (scrollFraction > 0.68) {
+                if (scrollFraction > 0.50) {
                     $(this).find("#star4").css("opacity", "1");
                 } else {
                     $(this).find("#star4").css("opacity", "0");
                 }
-                if (scrollFraction > 0.7) {
+                if (scrollFraction > 0.55) {
                     $(this).find("#star5").css("opacity", "1");
                 } else {
                     $(this).find("#star5").css("opacity", "0");
                 }
-                if (scrollFraction > 0.75) {
+                if (scrollFraction > 0.6) {
                     $(this).find(".night:not(.stars)").css("opacity", "1");
                 } else {
                     $(this).find(".night:not(.stars)").css("opacity", "0");
