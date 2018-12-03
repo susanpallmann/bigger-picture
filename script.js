@@ -82,10 +82,10 @@ function updatePageOnScroll(prevScroll, currentScroll) {
         $(this).find(".scene-lit").css("opacity", (scrollFraction*4 - 2));
         if ($(this).attr("id") === "rhino") {
             if (scrollFraction > 0.55) {
-                $(this).find(".sun").css("filter", "blur(" + ((scrollFraction-0.5)*32) + "px)");
-                $(this).find(".background").css("filter", "blur(" + ((scrollFraction-0.5)*32) + "px) saturate(" + (1-(scrollFraction/2+0.65)) + ")");
-                $(this).find(".midback").css("filter", "blur(" + ((scrollFraction-0.5)*16) + "px) saturate(" + (1-(scrollFraction/2+0.65)) + ")");
-                $(this).find(".midground").css("filter", "blur(" + ((scrollFraction-0.5)*8) + "px) saturate(" + (1-(scrollFraction/2+0.65)) + ")");
+                $(this).find(".sun").css("filter", "");
+                $(this).find(".background").css("filter", "");
+                $(this).find(".midback").css("filter", "");
+                $(this).find(".midground").css("filter", "");
                 $(this).find(".nightsky").css("opacity", "1");
                 $(this).find("#star1").css("opacity", "1");
                 if (scrollFraction > 0.6) {
@@ -114,10 +114,10 @@ function updatePageOnScroll(prevScroll, currentScroll) {
                     $(this).find(".night:not(.stars)").css("opacity", "0");
                 }
             } else {
-                $(this).find(".sun").css("filter", "");
-                $(this).find(".background").css("filter", "");
-                $(this).find(".midback").css("filter", "");
-                $(this).find(".midground").css("filter", "");
+                $(this).find(".sun").css("filter", "blur(" + ((scrollFraction-0.5)*32) + "px)");
+                $(this).find(".background").css("filter", "blur(" + ((scrollFraction-0.5)*32) + "px) saturate(" + (1-(scrollFraction/2+0.65)) + ")");
+                $(this).find(".midback").css("filter", "blur(" + ((scrollFraction-0.5)*16) + "px) saturate(" + (1-(scrollFraction/2+0.65)) + ")");
+                $(this).find(".midground").css("filter", "blur(" + ((scrollFraction-0.5)*8) + "px) saturate(" + (1-(scrollFraction/2+0.65)) + ")");
                 $(this).find(".nightsky").css("opacity", "0");
                 $(this).find(".night").css("opacity", "0");
             }
