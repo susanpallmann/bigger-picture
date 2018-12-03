@@ -597,7 +597,6 @@ footer .information {
   background-image: url("/images/Footer Feet.png");
   background-repeat: repeat-x;
   height: 80px;
-  background-size: contain;
 }
 .toTop img {
   width: auto;
