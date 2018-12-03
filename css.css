@@ -58,6 +58,7 @@ header h1 {
   font-size: 4vh;
   margin: 0;
   margin-left: 10px;
+  cursor: pointer;
 }
 main {
   margin: 0;
@@ -606,6 +607,7 @@ footer .information {
 .toTop img {
   width: auto;
   position: inherit;
+  cursor: pointer;
 }
 footer .information .row {
   margin-top: 1em;
