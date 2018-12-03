@@ -584,13 +584,28 @@ footer .information {
 }
 .footer {
   text-align: center;
-  font-size: 0.9em;
+  font-size: 0.75em;
   font-weight: 600;
+  color: #f3af52;
 }
 .copyright {
   text-align: center;
-  font-size: 0.9em;
+  font-size: 0.75em;
   font-weight: 700;
+  color: #e87753;
+}
+.footer-feet-yes-that-is-a-pun {
+  background-image: url("/images/Footer Feet.png");
+  background-repeat: repeat-x;
+  height: 80px;
+  background-size: contain;
+}
+.toTop img {
+  width: auto;
+  position: inherit;
+}
+footer .information .row {
+  margin-top: 1em;
 }
 /* Media Queries for Responsive Grid */
 @media only screen and (max-width: 750px) {
@@ -645,14 +660,4 @@ footer .information {
   .col_33 {
     width: 33.33%;
   }
-}
-.footer-feet-yes-that-is-a-pun {
-  background-image: url("/images/Footer Feet.png");
-  background-repeat: repeat-x;
-  height: 80px;
-  background-size: contain;
-}
-.toTop img {
-  width: auto;
-  position: inherit;
 }
