@@ -304,17 +304,23 @@ h4.threatName {
   will-change: transform;
   width: auto;
 }
-.animal .hero .blueoverlay, .animal .hero .bluebottomgradient {
+.animal .hero .blueoverlay, .animal .hero .bluebottomgradient, #rhino .nightsky {
   width: 100%;
   height: 100%;
   z-index: 4;
   position: absolute;
 }
-.animal .hero .blueoverlay {
+.animal .hero .blueoverlay, #rhino .nightsky {
   background-color: rgba(28, 69, 84, 1);
 }
 .animal .hero .bluebottomgradient {
   box-shadow: inset 0 -150px 100px -100px #1c4554;
+}
+#rhino .nightsky {
+  z-index: 5;
+}
+#rhino img.night {
+  z-index: 6;
 }
 .animal .heroboundary {
   height: 400vh;
