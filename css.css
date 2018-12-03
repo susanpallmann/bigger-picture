@@ -559,39 +559,40 @@ img {
     transform: translateY(-12px) rotate(45deg);
   }
 }
-
-/* Rise up & fade in animations. Borrowed from Animate.css (https://daneden.github.io/animate.css) */
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+#home-header {
+  overflow: hidden;
+  background-color: #83ae9c;
+  height: 90vh;
 }
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+#home-header .callAction {
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  width: 100%;
 }
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
+#home-header .callAction h2 {
+  font-size: 3em;
+  font-weight: 600;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  margin: auto;
 }
-
-
-
+/* Globe Spinning Animation */
+#home-header img {
+  animation-name: spin;
+  animation-duration: 50000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  position: relative;
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
 @media screen and (max-width: 750px) {
   .animal .hero img {
     right: -500px;
@@ -743,38 +744,4 @@ footer .information .row {
 span.footprint {
   width: 200px !important;
   text-align: center !important;
-}
-#home-header {
-  overflow: hidden;
-  background-color: #83ae9c;
-  height: 90vh;
-}
-#home-header .callAction {
-  position: absolute;
-  top: 40%;
-  text-align: center;
-  width: 100%;
-}
-#home-header .callAction h2 {
-  font-size: 3em;
-  font-weight: 600;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  max-width: 700px;
-  margin: auto;
-}
-/* Globe Spinning Animation */
-#home-header img {
-  animation-name: spin;
-  animation-duration: 50000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; 
-  position: relative;
-}
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
 }
