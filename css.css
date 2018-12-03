@@ -55,9 +55,9 @@ header table {
   width: 100%;
 }
 header h1 {
-  font-size: 30pt;
+  font-size: 4vh;
   margin: 0;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 main {
   margin: 0;
@@ -68,6 +68,8 @@ main {
   height: 30px;
   margin-right: 10px;
   display: inline-block;
+  float: right;
+margin-top: 4pt;
 }
 .hamburger:hover {
   cursor: pointer;
