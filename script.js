@@ -81,14 +81,14 @@ function updatePageOnScroll(prevScroll, currentScroll) {
         $(this).find(".foreground").css("transform", "translateY(" + foregroundTrans + "px)");
         $(this).find(".scene-lit").css("opacity", (scrollFraction*4 - 2));
         if ($(this).attr("id") === "rhino") {
-            if (scrollFraction > 0.7) {
-                $(this).find(".sun").css("filter", "blur(" + ((0.7-scrollFraction)*32) + "px)");
-                $(this).find(".background").css("filter", "blur(" + ((0.7-scrollFraction)*32) + "px) saturate(" + (1-(scrollFraction/2+0.65)) + ")");
-                $(this).find(".midback").css("filter", "blur(" + ((0.7-scrollFraction)*16) + "px) saturate(" + (1-(scrollFraction/2+0.65)) + ")");
-                $(this).find(".midground").css("filter", "blur(" + ((0.7-scrollFraction)*8) + "px) saturate(" + (1-(scrollFraction/2+0.65)) + ")");
+            if (scrollFraction > 0.55) {
+                $(this).find(".sun").css("filter", "blur(" + ((0.55-scrollFraction)*32) + "px)");
+                $(this).find(".background").css("filter", "blur(" + ((0.55-scrollFraction)*32) + "px) saturate(" + (1-(scrollFraction/2+0.65)) + ")");
+                $(this).find(".midback").css("filter", "blur(" + ((0.55-scrollFraction)*16) + "px) saturate(" + (1-(scrollFraction/2+0.65)) + ")");
+                $(this).find(".midground").css("filter", "blur(" + ((0.55-scrollFraction)*8) + "px) saturate(" + (1-(scrollFraction/2+0.65)) + ")");
                 $(this).find(".nightsky").css("opacity", "1");
                 $(this).find(".stars").css("opacity", "1");
-                if (scrollFraction > 0.8) {
+                if (scrollFraction > 0.65) {
                     $(this).find(".night:not(.stars)").css("opacity", "1");
                 } else {
                     $(this).find(".night:not(.stars)").css("opacity", "0");
