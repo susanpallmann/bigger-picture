@@ -565,7 +565,7 @@ img {
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
   .animal .hero img {
     right: -500px;
   }
