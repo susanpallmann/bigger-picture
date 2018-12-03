@@ -584,6 +584,7 @@ img {
   animation-iteration-count: infinite;
   animation-timing-function: linear; 
   position: relative;
+  top: 20%;
 }
 @keyframes spin {
     from {
