@@ -119,7 +119,7 @@ function updatePageOnScroll(prevScroll, currentScroll) {
                 $(this).find(".midback").css("filter", "");
                 $(this).find(".midground").css("filter", "");
                 $(this).find(".nightsky").css("opacity", "0");
-                $(this).find("#star1").css("opacity", "0");
+                $(this).find(".night").css("opacity", "0");
             }
             $(this).find(".blueoverlay").css("background-color", "rgba(28, 69, 84, " + ((scrollFraction*(1/2))+(1/4)) + ")");
         } else {
