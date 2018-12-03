@@ -405,8 +405,8 @@ img {
   z-index: 3;
 }
 #bison .hero .sun {
-  top: 200px;
-  right: 600px;
+  top: 400px;
+  right: 500px;
 }
 #devil .hero .sun {
   top: 200px;
@@ -414,8 +414,8 @@ img {
 }
 #tamarin .hero .sun {
   z-index: 4;
-  top: 200px;
-  right: 600px;
+  top: 300px;
+  right: 550px;
 }
 #condor .hero .sun {
   top: 200px;
