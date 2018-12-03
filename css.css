@@ -663,6 +663,6 @@ footer .information .row {
   }
 }
 span.footprint {
-  width: 200px;
-  text-align: center;
+  width: 200px !important;
+  text-align: center !important;
 }
