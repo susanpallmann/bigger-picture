@@ -317,7 +317,7 @@ h4.threatName {
   box-shadow: inset 0 -150px 100px -100px #1c4554;
 }
 #rhino .nightsky, #rhino .night {
-  transition: opacity 1s;
+  transition: opacity 3s;
 }
 #rhino .nightsky {
   z-index: 5;
