@@ -76,18 +76,8 @@ function updatePageOnScroll(prevScroll, currentScroll) {
         $(this).find(".background").css("transform", "translateY(" + backgroundTrans + "px)");
         $(this).find(".midback").css("transform", "translateY(" + midbackTrans + "px)");
         $(this).find(".midground").css("transform", "translateY(" + midgroundTrans + "px)");
+        $(this).find("#waterfall").css("transform", "translateY(" + midgroundTrans*2 + "px)");
         $(this).find(".foreground").css("transform", "translateY(" + foregroundTrans + "px)");
-        if (scrollFraction < 0.7) {
-            $(this).find(".sun").css("filter", "blur(" + ((0.7-scrollFraction)*32) + "px)");
-            $(this).find(".background").css("filter", "blur(" + ((0.7-scrollFraction)*32) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
-            $(this).find(".midback").css("filter", "blur(" + ((0.7-scrollFraction)*16) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
-            $(this).find(".midground").css("filter", "blur(" + ((0.7-scrollFraction)*8) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
-        } else {
-            $(this).find(".sun").css("filter", "");
-            $(this).find(".background").css("filter", "");
-            $(this).find(".midback").css("filter", "");
-            $(this).find(".midground").css("filter", "");
-        }
         $(this).find(".scene-lit").css("opacity", (scrollFraction*4 - 2));
         if ($(this).attr("id") === "rhino") {
             if (scrollFraction > 0.7) {
