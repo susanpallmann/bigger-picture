@@ -54,7 +54,7 @@ $(document).ready(function() {
     $(".toTop").click(scrollToTop);
     $("h1").click(scrollToTop);
     window.setInterval(checkScroll, 30);
-    updatePageOnScroll(scrollValue, $(document).scrollTop());
+    updatePageOnScroll(-1, 0);
 });
 
 function checkScroll() {
