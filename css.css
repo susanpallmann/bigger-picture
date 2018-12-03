@@ -662,3 +662,7 @@ footer .information .row {
     width: 33.33%;
   }
 }
+span.footprint {
+  width: 200px;
+  text-align: center;
+}
