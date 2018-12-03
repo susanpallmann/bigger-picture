@@ -76,7 +76,7 @@ function updatePageOnScroll(prevScroll, currentScroll) {
         $(this).find(".background").css("transform", "translateY(" + backgroundTrans + "px)");
         $(this).find(".midback").css("transform", "translateY(" + midbackTrans + "px)");
         $(this).find(".midground").css("transform", "translateY(" + midgroundTrans + "px)");
-        $(this).find("#waterfall").css("transform", "translateY(" + midgroundTrans*2 + "px)");
+        $(this).find("#waterfall").css("transform", "translateY(" + midbackTrans*2 + "px)");
         $(this).find(".foreground").css("transform", "translateY(" + foregroundTrans + "px)");
         $(this).find(".scene-lit").css("opacity", (scrollFraction*4 - 2));
         if ($(this).attr("id") === "rhino") {
