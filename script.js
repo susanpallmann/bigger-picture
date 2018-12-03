@@ -87,6 +87,10 @@ function updatePageOnScroll(prevScroll, currentScroll) {
                 $(this).find(".midback").css("filter", "blur(" + ((0.7-scrollFraction)*16) + "px) saturate(" + (1-(scrollFraction/2+0.65)) + ")");
                 $(this).find(".midground").css("filter", "blur(" + ((0.7-scrollFraction)*8) + "px) saturate(" + (1-(scrollFraction/2+0.65)) + ")");
                 $(this).find(".nightsky").css("opacity", "1");
+                $(this).find(".night").first().css("opacity", "1");
+                if (scrollFraction > 0.8) {
+                    $(this).find(".night").css("opacity", "1");
+                }
             } else {
                 $(this).find(".sun").css("filter", "");
                 $(this).find(".background").css("filter", "");
