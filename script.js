@@ -27,7 +27,7 @@ $(document).ready(function() {
     
     /* Do not adjust these global variables */
     populationNumberTimer = populationAnimSpeed/30;
-    scrollValue = $(document).scrollTop();
+    scrollValue = -100;
     spaceHeight = $(".animal .heroboundary").height();
     screenWidth = screen.width;
     /* End global variables */
