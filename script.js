@@ -8,21 +8,21 @@ $(document).ready(function() {
     // The minimum width (px) at which dynamic opacity functions still occur.
     mediaCutOff = 750;
     // The vertical speed of the sun for a given species.
-    sunVertical_Bison = -200;
-    sunVertical_Devil = -300;
-    sunVertical_Tamarin = -300;
-    sunVertical_Condor = -200;
-    sunVertical_Addax = -200;
-    sunVertical_Stickbug = -300;
-    sunVertical_Rhino = 200;
+    sunVerticalBison = -200;
+    sunVerticalDevil = -300;
+    sunVerticalTamarin = -300;
+    sunVerticalCondor = -200;
+    sunVerticalAddax = -200;
+    sunVerticalStickbug = -300;
+    sunVerticalRhino = 200;
     // The horizontal speed of the sun for a given species.
-    sunHorizontal_Bison = 200;
-    sunHorizontal_Devil = 200;
-    sunHorizontal_Tamarin = 100;
-    sunHorizontal_Condor = 200;
-    sunHorizontal_Addax = 200;
-    sunHorizontal_Stickbug = 100;
-    sunHorizontal_Rhino = -200;
+    sunHorizontalBison = 200;
+    sunHorizontalDevil = 200;
+    sunHorizontalTamarin = 100;
+    sunHorizontalCondor = 200;
+    sunHorizontalAddax = 200;
+    sunHorizontalStickbug = 100;
+    sunHorizontalRhino = -200;
     /* End adjustable variables */
     
     /* Do not adjust these global variables */
