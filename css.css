@@ -101,6 +101,7 @@ ul#top_menu {
   font-family: 'Open Sans',sans-serif;
   font-size: 1.2em;
   z-index: 6;
+  font-weight: 700;
 }
 span.button {
   background-color: #F3AF52;
