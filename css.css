@@ -634,6 +634,7 @@ footer {
   font-size: 0.75em;
   font-weight: 600;
   color: #f3af52;
+  cursor: pointer;
 }
 .copyright {
   text-align: center;
