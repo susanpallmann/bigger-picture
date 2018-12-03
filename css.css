@@ -648,8 +648,11 @@ footer .information .row {
     height: 120vh;
     bottom: 0;
   }
-  #rhino .hero img.foreground {
-    right: -350px;
+  #rhino.animal .hero img {
+    right: -300px;
+  }
+  #addax.animal .hero img {
+    right: -450px;
   }
   .animal .hero img.background {
     z-index: 2;
@@ -659,7 +662,17 @@ footer .information .row {
   .animal .hero img {
     height: 100vh !important;
     width: auto !important;
-    right: -700px;
+    right: -500px;
+  }
+  #rhino.animal .hero img {
+    height: 100vh !important;
+    width: auto !important;
+    right: -300px;
+  }
+  #addax.animal .hero img {
+    height: 100vh !important;
+    width: auto !important;
+    right: -450px;
   }
   .animal .hero .foreground:first-of-type {
     left: -200px;
