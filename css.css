@@ -746,7 +746,7 @@ span.footprint {
   background-color: #83ae9c;
   height: 90vh;
 }
-#home-header .information {
+#home-header .callAction {
   position: absolute;
   top: 40%;
 }
@@ -757,7 +757,6 @@ span.footprint {
   animation-iteration-count: infinite;
   animation-timing-function: linear; 
   position: relative;
-  top: -50px;
 }
 @keyframes spin {
     from {
