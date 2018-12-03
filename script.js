@@ -217,5 +217,11 @@ function isScrolledIntoFullView(elem) {
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
 function scrollToTop() {
-    window.scrollTo(0, 1000);
+    var scrollPosition = $(document).scrollTop();
+    window.scrollTo(0, scrollPosition - 10);
+    while(scrollPosition > 0) {
+        setTimeout(function() {
+            window.scrollTo(0, scrollPosition - 10);
+        }, 10);
+    }
 }
