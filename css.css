@@ -401,10 +401,36 @@ img {
   width: 100px;
   height: 100px;
   position: absolute;
-  top: 200px;
-  right: 600px;
   border-radius: 50px;
   z-index: 3;
+}
+#bison .hero .sun {
+  top: 200px;
+  right: 600px;
+}
+#devil .hero .sun {
+  top: 200px;
+  right: 600px;
+}
+#tamarin .hero .sun {
+  top: 200px;
+  right: 600px;
+}
+#condor .hero .sun {
+  top: 200px;
+  right: 600px;
+}
+#addax .hero .sun {
+  top: 200px;
+  right: 600px;
+}
+#stickbug .hero .sun {
+  top: 200px;
+  right: 600px;
+}
+#rhino .hero .sun {
+  top: 200px;
+  right: 600px;
 }
 #top_hamburger span {
   background-color: white;
