@@ -744,6 +744,7 @@ span.footprint {
 #home-header {
   overflow: hidden;
   background-color: #83ae9c;
+  height: 1vh;
 }
 /* Globe Spinning Animation */
 #home-header img {
@@ -751,6 +752,8 @@ span.footprint {
   animation-duration: 50000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear; 
+  position: relative;
+  top: -50px;
 }
 @keyframes spin {
     from {
