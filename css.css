@@ -630,7 +630,7 @@ footer {
   text-align: center;
   font-size: 0.75em;
   font-weight: 700;
-  color: #e87753;
+  color: rgba(255,255,255,0.4);
 }
 .footer-feet-yes-that-is-a-pun {
   background-image: url("/images/Footer Feet.png");
