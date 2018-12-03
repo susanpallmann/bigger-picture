@@ -53,6 +53,7 @@ $(document).ready(function() {
     });
     $(".toTop").click(scrollToTop);
     $("h1").click(scrollToTop);
+    $(".toFirst").click(scrollToFirst);
     window.setInterval(checkScroll, 30);
     updatePageOnScroll(-1, 0);
 });
@@ -270,6 +271,6 @@ function scrollToFirst() {
     if (scrollPosition < $("#bison").offset().top) {
         setTimeout(scrollToFirst, 30);
     } else {
-        $(window).scrollTop(0, $("#bison").offset().top);
+        window.scrollTo(0, $("#bison").offset().top);
     }
 }
