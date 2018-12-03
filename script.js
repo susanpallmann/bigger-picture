@@ -125,28 +125,32 @@ function updatePageOnScroll(prevScroll, currentScroll) {
                     $(this).find(".midground").css("filter", "");
                 }
                 $(this).find(".nightsky").css("opacity", "1");
-                $(this).find("#star1").css("opacity", "1");
                 if (scrollFraction > 0.45) {
+                    $(this).find("#star1").css("opacity", "1");
+                } else {
+                    $(this).find("#star1").css("opacity", "0");
+                }
+                if (scrollFraction > 0.48) {
                     $(this).find("#star2").css("opacity", "1");
                 } else {
                     $(this).find("#star2").css("opacity", "0");
                 }
-                if (scrollFraction > 0.47) {
+                if (scrollFraction > 0.51) {
                     $(this).find("#star3").css("opacity", "1");
                 } else {
                     $(this).find("#star3").css("opacity", "0");
                 }
-                if (scrollFraction > 0.50) {
+                if (scrollFraction > 0.54) {
                     $(this).find("#star4").css("opacity", "1");
                 } else {
                     $(this).find("#star4").css("opacity", "0");
                 }
-                if (scrollFraction > 0.55) {
+                if (scrollFraction > 0.58) {
                     $(this).find("#star5").css("opacity", "1");
                 } else {
                     $(this).find("#star5").css("opacity", "0");
                 }
-                if (scrollFraction > 0.6) {
+                if (scrollFraction > 0.62) {
                     $(this).find(".night:not(.stars)").css("opacity", "1");
                 } else {
                     $(this).find(".night:not(.stars)").css("opacity", "0");
