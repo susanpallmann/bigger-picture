@@ -114,12 +114,12 @@ function updatePageOnScroll(prevScroll, currentScroll) {
                     $(this).find(".night:not(.stars)").css("opacity", "0");
                 }
             } else {
-                $(this).find(".sun").css("filter", "blur(" + ((scrollFraction-0.5)*32) + "px)");
-                $(this).find(".background").css("filter", "blur(" + ((scrollFraction-0.5)*32) + "px) saturate(" + (scrollFraction/2+0.775) + ")");
-                $(this).find(".midback").css("filter", "blur(" + ((scrollFraction-0.5)*16) + "px) saturate(" + (scrollFraction/2+0.775) + ")");
-                $(this).find(".midground").css("filter", "blur(" + ((scrollFraction-0.5)*8) + "px) saturate(" + (scrollFraction/2+0.775) + ")");
                 $(this).find(".nightsky").css("opacity", "0");
                 $(this).find(".night").css("opacity", "0");
+                $(this).find(".sun").css("filter", "blur(" + ((scrollFraction)*32) + "px)");
+                $(this).find(".background").css("filter", "blur(" + ((scrollFraction)*32) + "px) saturate(" + (scrollFraction/2+0.775) + ")");
+                $(this).find(".midback").css("filter", "blur(" + ((scrollFraction)*16) + "px) saturate(" + (scrollFraction/2+0.775) + ")");
+                $(this).find(".midground").css("filter", "blur(" + ((scrollFraction)*8) + "px) saturate(" + (scrollFraction/2+0.775) + ")");
             }
             $(this).find(".blueoverlay").css("background-color", "rgba(28, 69, 84, " + ((scrollFraction*(1/2))+(1/4)) + ")");
         } else {
