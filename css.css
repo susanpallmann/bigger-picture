@@ -746,3 +746,8 @@ span.footprint {
   width: 200px !important;
   text-align: center !important;
 }
+@media only screen and (min-width: 992px) {
+  #home-header .callAction {
+    top: 50%;
+  }
+}
