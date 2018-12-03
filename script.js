@@ -264,3 +264,12 @@ function scrollToTop() {
         setTimeout(scrollToTop, 30);
     }
 }
+function scrollToFirst() {
+    var scrollPosition = $(window).scrollTop()*4/5 - 10;
+    window.scrollTo(0, scrollPosition);
+    if (scrollPosition < $("#bison").offset().top) {
+        setTimeout(scrollToFirst, 30);
+    } else {
+        $(window).scrollTop(0, $("#bison").offset().top);
+    }
+}
