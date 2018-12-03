@@ -741,3 +741,7 @@ span.footprint {
   width: 200px !important;
   text-align: center !important;
 }
+#home-header {
+  overflow: hidden;
+  background-color: #83ae9c;
+}
