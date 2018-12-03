@@ -631,3 +631,7 @@ footer .information {
     width: 33.33%;
   }
 }
+.footer-feet-yes-that-is-a-pun {
+  background-image: url("/images/Footer Feet.svg");
+  background-repeat: repeat-x;
+}
