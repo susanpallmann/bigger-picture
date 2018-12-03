@@ -78,7 +78,22 @@ function updatePageOnScroll(prevScroll, currentScroll) {
         var midgroundTrans = -1*($(this).find(".midground").height()-heroHeight)*scrollFraction;
         var foregroundTrans = -1*($(this).find(".foreground").height()-heroHeight)*scrollFraction;
         $(this).find(".text").css("transform", "translateY(" + (-1*offsetAmount) + "px)");
-        $(this).find(".sun").css("transform", "translate(" + (Math.sqrt(1-scrollFraction)*200) + "px, " + (Math.sqrt(scrollFraction)*-200) + "px)");
+        var thisId = $(this).attr("id");
+        if (thisId === "bison") {
+            $(this).find(".sun").css("transform", "translate(" + (Math.sqrt(1-scrollFraction)*200) + "px, " + (Math.sqrt(scrollFraction)*-200) + "px)");
+        } else if (thisId === "devil") {
+            $(this).find(".sun").css("transform", "translate(" + (Math.sqrt(1-scrollFraction)*200) + "px, " + (Math.sqrt(scrollFraction)*-300) + "px)");
+        } else if (thisId === "tamarin") {
+            $(this).find(".sun").css("transform", "translate(" + (Math.sqrt(1-scrollFraction)*100) + "px, " + (Math.sqrt(scrollFraction)*-300) + "px)");
+        } else if (thisId === "condor") {
+            $(this).find(".sun").css("transform", "translate(" + (Math.sqrt(1-scrollFraction)*200) + "px, " + (Math.sqrt(scrollFraction)*-200) + "px)");
+        } else if (thisId === "addax") {
+            $(this).find(".sun").css("transform", "translate(" + (Math.sqrt(1-scrollFraction)*200) + "px, " + (Math.sqrt(scrollFraction)*-200) + "px)");
+        } else if (thisId === "stickbug") {
+            $(this).find(".sun").css("transform", "translate(" + (Math.sqrt(1-scrollFraction)*100) + "px, " + (Math.sqrt(scrollFraction)*-300) + "px)");
+        } else if (thisId === "rhino") {
+            $(this).find(".sun").css("transform", "translate(" + (Math.sqrt(1-scrollFraction)*-200) + "px, " + (Math.sqrt(scrollFraction)*200) + "px)");
+        }
         $(this).find(".background").css("transform", "translateY(" + backgroundTrans + "px)");
         $(this).find(".midback").css("transform", "translateY(" + midbackTrans + "px)");
         $(this).find(".midground").css("transform", "translateY(" + midgroundTrans + "px)");
