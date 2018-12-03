@@ -72,6 +72,9 @@ main {
 .hamburger:hover {
   cursor: pointer;
 }
+.hamburger-cell {
+  text-align: right;
+}
 .information {
   max-width: 700px;
   margin: auto;
