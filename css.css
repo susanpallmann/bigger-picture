@@ -701,12 +701,10 @@ footer .information .row {
 /* Tablet Media Queries */
 @media only screen and (min-width: 750px) and (max-width: 992px) {
   .animal .hero img {
-    height: 100vh !important;
     width: auto !important;
     right: -500px;
   }
   #rhino.animal .hero img {
-    height: 100vh !important;
     width: auto !important;
     right: -300px;
   }
@@ -714,7 +712,6 @@ footer .information .row {
     top: 0;
   }
   #addax.animal .hero img {
-    height: 100vh !important;
     width: auto !important;
     right: -450px;
   }
