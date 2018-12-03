@@ -11,6 +11,7 @@ $(document).ready(function() {
     populationNumberTimer = populationAnimSpeed/30;
     scrollValue = $(document).scrollTop();
     spaceHeight = $(".animal .heroboundary").height();
+    screenWidth = screen.width;
     /* End global variables */
     
     $("#top_hamburger").click(function() {
@@ -118,18 +119,32 @@ function updatePageOnScroll(prevScroll, currentScroll) {
             } else {
                 $(this).find(".nightsky").css("opacity", "0");
                 $(this).find(".night").css("opacity", "0");
-                //$(this).find(".sun").css("filter", "blur(" + ((0.55-scrollFraction)*32) + "px)");
-                //$(this).find(".background").css("filter", "blur(" + ((0.55-scrollFraction)*32) + "px) saturate(" + (scrollFraction/2+0.775) + ")");
-                //$(this).find(".midback").css("filter", "blur(" + ((0.55-scrollFraction)*16) + "px) saturate(" + (scrollFraction/2+0.775) + ")");
-                //$(this).find(".midground").css("filter", "blur(" + ((0.55-scrollFraction)*8) + "px) saturate(" + (scrollFraction/2+0.775) + ")");
+                if (screenWidth > 750) {
+                  $(this).find(".sun").css("filter", "blur(" + ((0.55-scrollFraction)*32) + "px)");
+                  $(this).find(".background").css("filter", "blur(" + ((0.55-scrollFraction)*32) + "px) saturate(" + (scrollFraction/2+0.775) + ")");
+                  $(this).find(".midback").css("filter", "blur(" + ((0.55-scrollFraction)*16) + "px) saturate(" + (scrollFraction/2+0.775) + ")");
+                  $(this).find(".midground").css("filter", "blur(" + ((0.55-scrollFraction)*8) + "px) saturate(" + (scrollFraction/2+0.775) + ")");
+                }
+                else {
+                  $(this).find(".sun").css("filter", "blur(" + 2 + "px)");
+                  $(this).find(".background").css("filter", "blur(" + 4 + "px)");
+                  $(this).find(".midback").css("filter", "blur(" + 2 + "px)");
+                }
             }
             $(this).find(".blueoverlay").css("background-color", "rgba(28, 69, 84, " + ((scrollFraction*(1/2))+(1/4)) + ")");
         } else {
             if (scrollFraction < 0.7) {
-                //$(this).find(".sun").css("filter", "blur(" + ((0.7-scrollFraction)*32) + "px)");
-                //$(this).find(".background").css("filter", "blur(" + ((0.7-scrollFraction)*32) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
-                //$(this).find(".midback").css("filter", "blur(" + ((0.7-scrollFraction)*16) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
-                //$(this).find(".midground").css("filter", "blur(" + ((0.7-scrollFraction)*8) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
+                if (screenWidth > 750) {
+                  $(this).find(".sun").css("filter", "blur(" + ((0.7-scrollFraction)*32) + "px)");
+                  $(this).find(".background").css("filter", "blur(" + ((0.7-scrollFraction)*32) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
+                  $(this).find(".midback").css("filter", "blur(" + ((0.7-scrollFraction)*16) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
+                  $(this).find(".midground").css("filter", "blur(" + ((0.7-scrollFraction)*8) + "px) saturate(" + (scrollFraction/2+0.65) + ")");
+                }
+                else {
+                  $(this).find(".sun").css("filter", "blur(" + 2 + "px)");
+                  $(this).find(".background").css("filter", "blur(" + 4 + "px)");
+                  $(this).find(".midback").css("filter", "blur(" + 2 + "px)");
+                }
             } else {
                 $(this).find(".sun").css("filter", "");
                 $(this).find(".background").css("filter", "");
