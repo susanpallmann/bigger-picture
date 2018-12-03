@@ -62,7 +62,6 @@ header h1 {
 main {
   margin: 0;
   width: 100%;
-  overflow: hidden;
 }
 .hamburger {
   width: 40px;
