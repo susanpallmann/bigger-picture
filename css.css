@@ -615,6 +615,9 @@ footer .information {
   font-size: 0.9em;
   font-weight: 700;
 }
+footer {
+  margin-top: 7em;
+}
 .footer {
   text-align: center;
   font-size: 0.75em;
