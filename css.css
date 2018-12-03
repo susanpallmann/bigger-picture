@@ -641,6 +641,9 @@ footer .information .row {
     height: 120vh;
     bottom: 0;
   }
+  #rhino .hero img.foreground {
+    right: -350px;
+  }
   .animal .hero img.background {
     z-index: 2;
   }
