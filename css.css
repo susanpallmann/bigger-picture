@@ -655,6 +655,12 @@ footer .information .row {
     z-index: 2;
   }
 }
+@media only screen and (min-width: 750px) and (max-width: 992px) {
+  .animal .hero img {
+    height: 100vh !important;
+    width: auto;
+  }
+}
 @media only screen and (min-width: 750px) {
   .col_1 {
     width: 25%;
