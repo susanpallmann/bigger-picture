@@ -86,13 +86,13 @@ function updatePageOnScroll(prevScroll, currentScroll) {
                 $(this).find(".background").css("filter", "blur(" + ((0.7-scrollFraction)*32) + "px) saturate(" + (1-(scrollFraction/2+0.65)) + ")");
                 $(this).find(".midback").css("filter", "blur(" + ((0.7-scrollFraction)*16) + "px) saturate(" + (1-(scrollFraction/2+0.65)) + ")");
                 $(this).find(".midground").css("filter", "blur(" + ((0.7-scrollFraction)*8) + "px) saturate(" + (1-(scrollFraction/2+0.65)) + ")");
-                $(this).find("img:not(.scene-lit)").css("opacity", "0");
+                $(this).find(".nightsky").css("opacity", "1");
             } else {
                 $(this).find(".sun").css("filter", "");
                 $(this).find(".background").css("filter", "");
                 $(this).find(".midback").css("filter", "");
                 $(this).find(".midground").css("filter", "");
-                $(this).find("img:not(.scene-lit)").css("opacity", "1");
+                $(this).find(".nightsky").css("opacity", "0");
             }
             $(this).find(".blueoverlay").css("background-color", "rgba(28, 69, 84, " + ((scrollFraction*(1/2))+(1/4)) + ")");
         } else {
