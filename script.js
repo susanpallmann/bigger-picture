@@ -213,3 +213,6 @@ function isScrolledIntoFullView(elem) {
     var elemBottom = elemTop + elem.height();
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
+function scrollToTop() {
+    window.scrollTo(0, 1000);
+}
