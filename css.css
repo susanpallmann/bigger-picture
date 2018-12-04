@@ -411,7 +411,7 @@ img {
   height: 100px;
   position: absolute;
   border-radius: 50px;
-  z-index: 3;
+  z-index: 2;
 }
 #bison .hero .sun {
   top: 400px;
