@@ -674,6 +674,9 @@ footer .information .row {
   .animal .hero div.text {
     font-size: 2em;
     line-spacing: 1.35em;
+    padding-left: 5pt;
+    padding-right: 5pt;
+    box-sizing: border-box;
   }
   .animal .hero img.midback, .animal .hero img.midground {
     z-index: 3;
@@ -698,6 +701,9 @@ footer .information .row {
   }
   #addax.animal .hero img {
     right: -450px;
+  }
+  #bison.animal .hero img {
+    right: -680px;
   }
   .animal .hero img.background {
     z-index: 2;
@@ -733,8 +739,17 @@ footer .information .row {
     width: auto !important;
     right: -450px;
   }
+  #bison.animal .hero img {
+    width: auto !important;
+    right: -850px;
+  }
   .animal .hero .foreground:first-of-type {
     left: -200px;
+  }
+  .animal .hero div.text {
+    padding-left: 5pt;
+    padding-right: 5pt;
+    box-sizing: border-box;
   }
 }
 @media only screen and (min-width: 750px) {
