@@ -7,7 +7,7 @@ $(document).ready(function() {
     hamburgerAnimSpeed = 400;
     // The minimum width (px) at which dynamic opacity functions still occur.
     mediaCutOff = 750;
-    // The vertical speed of the sun for a given species.
+    // The vertical movement of the sun (pixels) for a given species.
     sunVerticalBison = -200;
     sunVerticalDevil = -300;
     sunVerticalTamarin = -300;
@@ -15,7 +15,7 @@ $(document).ready(function() {
     sunVerticalAddax = -200;
     sunVerticalStickbug = -300;
     sunVerticalRhino = 200;
-    // The horizontal speed of the sun for a given species.
+    // The horizontal movement of the sun (pixels) for a given species.
     sunHorizontalBison = 200;
     sunHorizontalDevil = 200;
     sunHorizontalTamarin = 100;
