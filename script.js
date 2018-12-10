@@ -274,3 +274,33 @@ function scrollToFirst() {
         window.scrollTo(0, $("#bison").offset().top);
     }
 }
+function historicMap() {
+  var historicMap = document.getElementsByClassName('historic');
+  var currentMap = document.getElementsByClassName('current');
+  var historicStyle = getComputedStyle(historicMap);
+  var activeButton = document.getElementByClassName('active');
+  var inactiveButton = document.getElementByClassName('inactive');
+  if (historicStyle.opacity == 1) {
+  }
+  else {
+  document.getElementsByClassName('historic').style.opacity = 1;
+  document.getElementsByClassName('current').style.opacity = 0;
+  activeButton.removeClass('active').addClass('inactive');
+  inactiveButton.removeClass('inactive').addClass('active');
+  }
+}
+function currentMap() {
+  var currentMap = document.getElementsByClassName('current');
+  var historicMap = document.getElementsByClassName('historic');
+  var currentStyle = getComputedStyle(currentMap);
+  var activeButton = document.getElementByClassName('active');
+  var inactiveButton = document.getElementByClassName('inactive');
+  if (currentStyle.opacity == 1) {
+  }
+  else {
+  document.getElementsByClassName('current').style.opacity = 1;
+  document.getElementsByClassName('historic').style.opacity = 0;
+  activeButton.removeClass('active').addClass('inactive');
+  inactiveButton.removeClass('inactive').addClass('active');
+  }
+}
