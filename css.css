@@ -716,6 +716,9 @@ footer .information .row {
   .col_33 {
     width: 100%;
   }
+  .informationheader {
+    text-align: center;
+  }
   .animal .hero div.text {
     font-size: 2em;
     line-spacing: 1.35em;
