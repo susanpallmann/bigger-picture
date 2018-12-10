@@ -163,6 +163,7 @@ ul#top_menu {
 .button.callaction {
   background-color: #F37852;
   cursor: pointer;
+  display: inline-block;
 }
 span#auto-scroll {
   margin: 0;
