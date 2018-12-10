@@ -196,6 +196,9 @@ div.firefly_test {
   width: 25%;
   padding-top: 0.4em;
 }
+.col_2 {
+  width: 50%
+}
 .col_3 {
   width: 75%;
 }
@@ -398,9 +401,6 @@ h4.threatName {
   position: absolute;
   width: 100%;
 }
-  .col_2 {
-    width: 50%;
-  }
 .animal .heroboundary .footprint {
   position: absolute;
   z-index: 6;
@@ -715,6 +715,13 @@ footer .information .row {
   }
   .col_33 {
     width: 100%;
+  }
+  .mapbuttonsquery {
+    text-align: center;
+  }
+  .button.map {
+    margin-left: 10pt;
+    margin-right: 10pt;
   }
   .informationheader {
     text-align: center;
