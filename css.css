@@ -134,14 +134,14 @@ span.button {
 span.button.map.active {
   background-color: #6C7B7B;
   cursor: default;
-  transition: color 0.6s;
-  -webkit-transition: color 0.6s;
+  transition: background-color 0.6s;
+  -webkit-transition: background-color 0.6s;
 }
 span.button.map.inactive {
   background-color: #509A9B;
   cursor: pointer;
-  transition: color 0.6s;
-  -webkit-transition: color 0.6s;
+  transition: background-color 0.6s;
+  -webkit-transition: background-color 0.6s;
 }
 span.button.callaction {
   background-color: #F37852;
