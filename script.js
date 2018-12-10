@@ -278,8 +278,8 @@ function historicMap() {
   var historicMap = document.getElementsByClassName('historic')[0];
   var currentMap = document.getElementsByClassName('current')[0];
   var historicStyle = getComputedStyle(historicMap);
-  var activeButton = document.getElementByClassName('active')[0];
-  var inactiveButton = document.getElementByClassName('inactive')[0];
+  var activeButton = document.getElementsByClassName('active')[0];
+  var inactiveButton = document.getElementsByClassName('inactive')[0];
   if (historicStyle.opacity == 1) {
   }
   else {
@@ -293,7 +293,7 @@ function currentMap() {
   var currentMap = document.getElementsByClassName('current')[0];
   var historicMap = document.getElementsByClassName('historic')[0];
   var currentStyle = getComputedStyle(currentMap);
-  var activeButton = document.getElementByClassName('active')[0];
+  var activeButton = document.getElementsByClassName('active')[0];
   var inactiveButton = document.getElementByClassName('inactive')[0];
   if (currentStyle.opacity == 1) {
   }
