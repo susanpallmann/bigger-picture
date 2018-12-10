@@ -8,6 +8,11 @@ h1 {
 li a {
   cursor: pointer;
 }
+mapimagecontainer {
+  width: 250px;
+  height: 250px;
+  margin:auto;
+}
 img.mapimage {
   position: absolute;
   width: 250px;
