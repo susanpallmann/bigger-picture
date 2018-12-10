@@ -275,31 +275,31 @@ function scrollToFirst() {
     }
 }
 function historicMap() {
-  var historicMap = document.getElementsByClassName('historic');
-  var currentMap = document.getElementsByClassName('current');
+  var historicMap = document.getElementsByClassName('historic')[0];
+  var currentMap = document.getElementsByClassName('current')[0];
   var historicStyle = getComputedStyle(historicMap);
-  var activeButton = document.getElementByClassName('active');
-  var inactiveButton = document.getElementByClassName('inactive');
+  var activeButton = document.getElementByClassName('active')[0];
+  var inactiveButton = document.getElementByClassName('inactive')[0];
   if (historicStyle.opacity == 1) {
   }
   else {
-  document.getElementsByClassName('historic').style.opacity = 1;
-  document.getElementsByClassName('current').style.opacity = 0;
+  document.getElementsByClassName('historic')[0].style.opacity = 1;
+  document.getElementsByClassName('current')[0].style.opacity = 0;
   activeButton.removeClass('active').addClass('inactive');
   inactiveButton.removeClass('inactive').addClass('active');
   }
 }
 function currentMap() {
-  var currentMap = document.getElementsByClassName('current');
-  var historicMap = document.getElementsByClassName('historic');
+  var currentMap = document.getElementsByClassName('current')[0];
+  var historicMap = document.getElementsByClassName('historic')[0];
   var currentStyle = getComputedStyle(currentMap);
-  var activeButton = document.getElementByClassName('active');
-  var inactiveButton = document.getElementByClassName('inactive');
+  var activeButton = document.getElementByClassName('active')[0];
+  var inactiveButton = document.getElementByClassName('inactive')[0];
   if (currentStyle.opacity == 1) {
   }
   else {
-  document.getElementsByClassName('current').style.opacity = 1;
-  document.getElementsByClassName('historic').style.opacity = 0;
+  document.getElementsByClassName('current')[0].style.opacity = 1;
+  document.getElementsByClassName('historic')[0].style.opacity = 0;
   activeButton.removeClass('active').addClass('inactive');
   inactiveButton.removeClass('inactive').addClass('active');
   }
