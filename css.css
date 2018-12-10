@@ -663,6 +663,7 @@ h4.threatName {
 footer .information {
   border-top: rgba(0,0,0,0.3);
   min-height: auto;
+  margin-bottom: 0px;
 }
 .toTop {
   text-align: center;
