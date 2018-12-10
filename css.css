@@ -634,6 +634,7 @@ h4.threatName {
   animation-timing-function: linear; 
   position: relative;
   top: 20%;
+  width: 100%;
 }
 @keyframes spin {
     from {
