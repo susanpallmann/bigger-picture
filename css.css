@@ -691,6 +691,9 @@ footer {
   font-size: 0.75em;
   font-weight: 700;
   color: rgba(255,255,255,0.4);
+  padding-bottom: 1em;
+  background-color: #1D3740;
+  padding-top: 1em;
 }
 .footer-feet-yes-that-is-a-pun {
   background-image: url("/images/Footer Feet.png");
