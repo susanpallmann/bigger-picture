@@ -12,6 +12,7 @@ li a {
   width: 250px;
   height: 250px;
   margin:auto;
+  margin-bottom: 20pt;
 }
 img.mapimage {
   position: absolute;
