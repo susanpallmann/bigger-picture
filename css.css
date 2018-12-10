@@ -8,7 +8,7 @@ h1 {
 li a {
   cursor: pointer;
 }
-img.map {
+img.mapimage {
   positon: absolute;
   width: 250px;
 }
