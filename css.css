@@ -368,7 +368,7 @@ h4.threatName {
   bottom: 0;
   top: unset;
 }
-img {
+.heroboundary img {
   position: absolute;
   width: 100%;
 }
