@@ -703,7 +703,8 @@ footer {
   cursor: pointer;
 }
 footer .information .row {
-  margin-top: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 /* Media Queries for Responsive Grid */
 @media only screen and (max-width: 750px) {
@@ -723,6 +724,7 @@ footer .information .row {
   }
   .col_33 {
     width: 100%;
+    margin-top: 10pt;
   }
   .mapbuttonsquery {
     text-align: center;
@@ -780,7 +782,10 @@ footer .information .row {
   }
   #home-header .callAction h2 {
   font-size: 2em;
-}
+  }
+  .footer {
+    text-align: center;
+  }
   /* god willing this will add blur to backgrounds on mobile only*/
   .sun {
     filter: blur(3px);
