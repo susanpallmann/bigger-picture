@@ -294,7 +294,7 @@ function currentMap() {
   var historicMap = document.getElementsByClassName('historic')[0];
   var currentStyle = getComputedStyle(currentMap);
   var activeButton = document.getElementsByClassName('active')[0];
-  var inactiveButton = document.getElementByClassName('inactive')[0];
+  var inactiveButton = document.getElementsByClassName('inactive')[0];
   if (currentStyle.opacity == 1) {
   }
   else {
