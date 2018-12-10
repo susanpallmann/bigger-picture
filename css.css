@@ -48,6 +48,9 @@ h2 {
   line-height: 1.15em;
   font-weight: 600;
 }
+.informationheader {
+  margin-top: 5pt;
+}
 span.bad {
   color: #F37852;
 }
