@@ -732,6 +732,10 @@ footer .information .row {
   .button.callaction {
     display: block;
   }
+  .row.supporting {
+    margin-top: 70pt;
+    margin-bottom: 70pt;
+  } 
   .informationheader {
     text-align: center;
   }
