@@ -125,6 +125,18 @@ span.button {
   margin-top: 25px;
   cursor: pointer;
 }
+span.button.map.active {
+  background-color: #6C7B7B;
+  cursor: default;
+}
+span.button.map.inactive {
+  background-color: #509A9B;
+  cursor: pointer;
+}
+span.button.callaction {
+  background-color: #F37852;
+  cursor: pointer;
+}
 span#auto-scroll {
   margin: 0;
   position: fixed;
