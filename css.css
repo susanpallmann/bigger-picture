@@ -372,6 +372,9 @@ img {
   position: absolute;
   width: 100%;
 }
+  .col_2 {
+    width: 50%;
+  }
 .animal .heroboundary .footprint {
   position: absolute;
   z-index: 6;
@@ -675,6 +678,9 @@ footer .information .row {
     display: flex;
   }
   .col_3 {
+    width: 100%;
+  }
+  .col_2 {
     width: 100%;
   }
   .col_4 {
