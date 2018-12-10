@@ -8,6 +8,10 @@ h1 {
 li a {
   cursor: pointer;
 }
+img.map {
+  positon: absolute;
+  width: 250px;
+}
 a {
   color: inherit;
   cursor: inherit;
