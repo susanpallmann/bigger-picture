@@ -229,6 +229,9 @@ div.firefly_test {
 .col_33 {
   width: 33.33%;
 }
+.col_66 {
+  width: 66.67%;
+}
 div.hunting {
   height: 50px;
   width: 100px;
@@ -754,6 +757,10 @@ footer .information .row {
     width: 100%;
     margin-top: 10pt;
   }
+  .col_66 {
+    width: 100%;
+    margin-top: 10pt;
+  }
   .button.map {
     margin-left: 10pt;
     margin-right: 10pt;
@@ -865,6 +872,9 @@ footer .information .row {
   }
   .col_33 {
     width: 33.33%;
+  }
+  .col_66 {
+    width: 66.67%;
   }
 }
 span.footprint {
