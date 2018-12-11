@@ -140,6 +140,9 @@ ul#top_menu {
   margin-top: 25px;
   cursor: pointer;
 }
+.mapbuttonsquery {
+  text-align: center;
+}
 .button.map {
   margin-right: 20pt;
 }
@@ -159,6 +162,16 @@ ul#top_menu {
   -webkit-transition: background-color 0.3s;
   width: 120px;
   display: inline-block;
+}
+span.button.map:nth-child(1) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  margin-right: 0;
+}
+span.button.map:nth-child(2) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin-left: 0;
 }
 .button.callaction {
   background-color: #F37852;
@@ -728,9 +741,6 @@ footer .information .row {
   .col_33 {
     width: 100%;
     margin-top: 10pt;
-  }
-  .mapbuttonsquery {
-    text-align: center;
   }
   .button.map {
     margin-left: 10pt;
