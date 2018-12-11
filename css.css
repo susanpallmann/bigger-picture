@@ -382,6 +382,7 @@ h4.threatName {
   width: 80%;
   max-width: 220px;
   margin-top: 8pt;
+  margin-bottom: 20pt;
 }
 .animal .hero div.text:nth-child(1) {
   top: 500px;
