@@ -368,10 +368,8 @@ h4.threatName {
 .ticket {
   margin: auto;
   display: block;
-  width: 100%;
+  width: 90%;
   max-width: 220px;
-
-}
 }
 .animal .hero div.text:nth-child(1) {
   top: 500px;
