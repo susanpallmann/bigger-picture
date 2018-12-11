@@ -119,10 +119,6 @@ function updatePageOnScroll() {
         $(this).find(".scene-lit").css("opacity", (scrollFraction*4 - 2));
         if ($(this).attr("id") === "rhino") {
             if (scrollFraction > 0.4) {
-                $(this).find(".nightsky").css("display", "block");
-                $(this).find(".night").css("display", "block");
-                $(this).find(".nightsky").css("transition", "opacity 3s");
-                $(this).find(".night").css("transition", "opacity 3s");
                 if (screenWidth > mediaCutOff) {
                     $(this).find(".sun").css("filter", "");
                     $(this).find(".background").css("filter", "");
