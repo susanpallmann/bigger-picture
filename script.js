@@ -62,11 +62,11 @@ function checkScroll() {
   var currentScroll = $(document).scrollTop();
   updatePageIdle();
   if (scrollValue != currentScroll) {
-      updatePageOnScroll(scrollValue, currentScroll);
+      updatePageOnScroll();
   }
 }
-function updatePageOnScroll(prevScroll, currentScroll) {
-    currentScroll = $(document).scrollTop();
+function updatePageOnScroll() {
+    var currentScroll = $(document).scrollTop();
     $(".animal").each(function() {
       var heroTop = $(this).find(".hero").offset().top;
       if (isScrolledIntoView($(this))) {
