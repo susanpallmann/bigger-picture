@@ -403,6 +403,7 @@ h4.threatName {
 }
 #rhino .nightsky, #rhino .night {
   transition: opacity 3s;
+  display: none;
 }
 #rhino .nightsky {
   z-index: 5;
