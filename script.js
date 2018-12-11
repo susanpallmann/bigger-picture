@@ -11,7 +11,7 @@ $(document).ready(function() {
     sunVerticalBison = -200;
     sunVerticalDevil = -300;
     sunVerticalTamarin = -300;
-    sunVerticalCondor = -200;
+    sunVerticalCondor = -150;
     sunVerticalAddax = -200;
     sunVerticalStickbug = -300;
     sunVerticalRhino = 200;
@@ -19,7 +19,7 @@ $(document).ready(function() {
     sunHorizontalBison = 200;
     sunHorizontalDevil = 200;
     sunHorizontalTamarin = 100;
-    sunHorizontalCondor = 200;
+    sunHorizontalCondor = -50;
     sunHorizontalAddax = 200;
     sunHorizontalStickbug = 100;
     sunHorizontalRhino = -200;
