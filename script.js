@@ -18,7 +18,7 @@ $(document).ready(function() {
     // The horizontal movement of the sun (pixels) for a given species.
     sunHorizontalBison = 200;
     sunHorizontalDevil = 200;
-    sunHorizontalTamarin = 100;
+    sunHorizontalTamarin = 50;
     sunHorizontalCondor = -50;
     sunHorizontalAddax = 200;
     sunHorizontalStickbug = 100;
