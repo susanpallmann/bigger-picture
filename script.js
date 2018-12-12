@@ -51,6 +51,10 @@ $(document).ready(function() {
             }, hamburgerAnimSpeed);
         }
     });
+    $("span.button").click(function() {
+        var pageURL = $(this).attr("id").split(".")[1];
+        redirect(pageURL);
+    });
     $(".toTop").click(scrollToTop);
     $("h1").click(scrollToTop);
     $(".toFirst").click(scrollToFirst);
