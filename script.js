@@ -304,7 +304,7 @@ function currentMap() {
   inactiveButton.removeClass('inactive').addClass('active');
   }
 }
-function redirect (url) {
+function redirect(url) {
   var userAgent = navigator.userAgent.toLowerCase(),
   if (ua.indexOf("msie") !== -1) {
       var isInternetExplorer = true;
