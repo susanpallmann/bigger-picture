@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $(document).scrollTop = 0;
     $("#home-header").css("position", "fixed");
-    $("#home-header").css("z-index", "2");
+    $("#home-header").css("z-index", "5");
 });
 
 $(window).load(function() {
