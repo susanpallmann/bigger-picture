@@ -1,10 +1,13 @@
 $(document).ready(function() {
-    document.scrollTop = 0;
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
     $("#home-header").css("position", "fixed");
     $("#home-header").css("z-index", "5");
 });
 
 $(window).load(function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
     $("#home-header").css("position", "");
     $("#home-header").css("z-index", "");
     /* Adjust these global variables */
