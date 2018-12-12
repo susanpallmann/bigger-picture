@@ -8,8 +8,9 @@ $(document).ready(function() {
 window.onload = function() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-    $("#home-header").css("position", "");
-    $("#home-header").css("z-index", "");
+    $("#home-header").css("position", "initial");
+    $("#home-header").css("z-index", "initial");
+    $("#home-header::after").css("position", "absolute");
     $("#home-header::after").css("opacity", 0);
     /* Adjust these global variables */
     // Speed of population number animation (milliseconds). Ideally, keep it divisible by 30.
