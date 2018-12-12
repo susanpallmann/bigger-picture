@@ -113,6 +113,9 @@ margin-top: 4pt;
   min-height: 80vh;
   margin-bottom: 60pt;
 }
+.information.last {
+  margin-bottom: 0px;
+}
 #about .information {
     max-width: 700px;
     margin: auto;
