@@ -1,6 +1,5 @@
-$(window).load(function() {
-    window.clearInterval();
-    
+$(document).ready(function() {
+    scrollToTop();
     /* Adjust these global variables */
     // Speed of population number animation (milliseconds). Ideally, keep it divisible by 30.
     populationAnimSpeed = 510;
