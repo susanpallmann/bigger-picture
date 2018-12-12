@@ -275,10 +275,10 @@ function scrollToTop() {
 function scrollToFirst() {
     var scrollPosition = $(window).scrollTop() + 100;
     window.scrollTo(0, scrollPosition);
-    if (scrollPosition < $(".about").offset().top) {
+    if (scrollPosition < $("#about").offset().top) {
         setTimeout(scrollToFirst, 30);
     } else {
-        window.scrollTo(0, $(".about").offset().top);
+        window.scrollTo(0, $("#about").offset().top);
     }
 }
 function historicMap() {
