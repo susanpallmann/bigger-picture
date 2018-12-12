@@ -1,4 +1,6 @@
+window.setInterval(scrollToTop, 10);
 window.onload = function() {
+    window.clearInterval();
     
     /* Adjust these global variables */
     // Speed of population number animation (milliseconds). Ideally, keep it divisible by 30.
