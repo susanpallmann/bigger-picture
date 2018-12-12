@@ -119,12 +119,11 @@ function updatePageOnScroll() {
         }
         var parallaxDistance = offsetAmount + $(window).height();
         var totalParallax = spaceHeight + $(window).height();
-        var scrollFraction = parallaxDistance/totalParallax;
-        var heroHeight = $(this).find(".hero").height();
-        console.log(heroHeight);
         if (parallaxDistance < 0) {
           parallaxDistance = 0;
         }
+        var scrollFraction = parallaxDistance/totalParallax;
+        var heroHeight = $(this).find(".hero").height();
         if (scrollFraction > 0.3) {
           $(this).find(".hero h2.fadeInUp").removeClass();
           $(this).find(".hero h2.text-first").removeClass().addClass("fadeInUp");
@@ -132,6 +131,7 @@ function updatePageOnScroll() {
           $(this).find(".hero h2.fadeInUp").removeClass();
           $(this).find(".hero h2.text-second").removeClass().addClass("fadeInUp");
         }
+        console.log($(this).find(".background").height());
         var backgroundTrans = ($(this).find(".background").height()-heroHeight)*scrollFraction;
         var waterfallTrans = (($(this).find("#waterfall").height()-heroHeight)*scrollFraction)*3;
         var midbackTrans = ($(this).find(".midback").height()-heroHeight)*scrollFraction;
