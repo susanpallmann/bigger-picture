@@ -117,8 +117,8 @@ function updatePageOnScroll() {
         var parallaxDistance = offsetAmount + $(window).height();
         var totalParallax = spaceHeight + $(window).height();
         var scrollFraction = parallaxDistance/totalParallax;
-        console.log(scrollFraction);
         var heroHeight = $(this).find(".hero").height();
+        console.log(heroHeight);
         if (parallaxDistance < 0) {
           parallaxDistance = 0;
         }
