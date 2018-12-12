@@ -690,6 +690,8 @@ h4.threatName {
   overflow: hidden;
   background-color: #83ae9c;
   height: 90vh;
+  position: fixed;
+  z-index: 5;
 }
 #home-header .callAction {
   position: absolute;
