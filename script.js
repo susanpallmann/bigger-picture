@@ -1,17 +1,4 @@
-$(document).ready(function() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-    $("#home-header").css("position", "fixed");
-    $("#home-header").css("z-index", "5");
-});
-
 window.onload = function() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-    $("#home-header").css("position", "initial");
-    $("#home-header").css("z-index", "initial");
-    $("#home-header::after").css("position", "absolute");
-    $("#home-header::after").css("opacity", 0);
     /* Adjust these global variables */
     // Speed of population number animation (milliseconds). Ideally, keep it divisible by 30.
     populationAnimSpeed = 510;
