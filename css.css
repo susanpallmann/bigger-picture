@@ -712,7 +712,7 @@ h4.threatName {
   animation-iteration-count: infinite;
   animation-timing-function: linear; 
   position: relative;
-  top: 20%;
+  top: -10vh;
   width: 100%;
 }
 @keyframes spin {
