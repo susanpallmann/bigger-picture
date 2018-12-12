@@ -1,5 +1,12 @@
 $(document).ready(function() {
     scrollToTop();
+    $("#home-header").css("position", "fixed");
+    $("#home-header").css("z-index", "2");
+});
+
+$(window).load(function() {
+    $("#home-header").css("position", "");
+    $("#home-header").css("z-index", "");
     /* Adjust these global variables */
     // Speed of population number animation (milliseconds). Ideally, keep it divisible by 30.
     populationAnimSpeed = 510;
