@@ -810,6 +810,9 @@ footer .information .row {
   img.mockup {
     width: 100%;
   }
+  .mockup.mockMedia {
+    display: none;
+  }
   .animal .hero div.text {
     font-size: 2em;
     line-spacing: 1.35em;
