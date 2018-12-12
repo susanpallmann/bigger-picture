@@ -10,6 +10,7 @@ window.onload = function() {
     document.documentElement.scrollTop = 0;
     $("#home-header").css("position", "");
     $("#home-header").css("z-index", "");
+    $("#home-header::after").css("opacity", 0);
     /* Adjust these global variables */
     // Speed of population number animation (milliseconds). Ideally, keep it divisible by 30.
     populationAnimSpeed = 510;
