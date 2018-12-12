@@ -59,7 +59,13 @@ $(document).ready(function() {
             redirect(pageURL);
         }
     });
-    $("h1").click(scrollToTop);
+    $("h1").click(function() {
+        if (location.pathname == "/") {
+            scrollToTop();
+        } else {
+            redirect("/");
+        }
+    });
     $(".toTop").click(scrollToTop);
     window.setInterval(checkScroll, 30);
     updatePageOnScroll(-1, $(document).scrollTop());
