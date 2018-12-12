@@ -2,7 +2,7 @@
   overflow: hidden;
   height: 100%;
 }
-home-header img#loading {
+#home-header img#loading {
   transition: opacity 1s;
   animation: loadingSpinner 0.5s linear 0s infinite normal forwards;
   width: 50px;
