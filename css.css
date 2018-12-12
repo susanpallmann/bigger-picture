@@ -376,6 +376,9 @@ h4.threatName {
   align-self: flex-end;
   top: 0;
 }
+.scene-lit {
+  will-change: opacity;
+}
 .ticket {
   margin: auto;
   display: block;
@@ -417,6 +420,7 @@ h4.threatName {
 }
 #rhino .nightsky {
   opacity: 0;
+  will-change: opacity;
 }
 .animal .hero .bluebottomgradient {
   box-shadow: inset 0 -150px 100px -100px #1c4554;
@@ -431,6 +435,7 @@ h4.threatName {
   opacity: 0;
   z-index: 6;
   top: 100px;
+  will-change: opacity;
 }
 .animal .heroboundary {
   height: 400vh;
@@ -457,6 +462,7 @@ h4.threatName {
   left: 0;
   filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2));
   transition: opacity 1s;
+  will-change: opacity;
 }
 .animal .heroboundary span.footprint {
   font-size: 1.5em;
