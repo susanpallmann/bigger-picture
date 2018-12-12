@@ -4,7 +4,7 @@ $(document).ready(function() {
     $("#home-header").css("z-index", "5");
 });
 
-$(window).onload(function() {
+$(window).load(function() {
     $("#home-header").css("position", "");
     $("#home-header").css("z-index", "");
     /* Adjust these global variables */
