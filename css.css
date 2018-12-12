@@ -2,6 +2,9 @@ html, body {
   overflow: hidden;
   height: 100%;
 }
+#loading {
+  transition: opacity 1s;
+}
 h1 {
   color: #ffffff;
   font-family: 'Open Sans',sans-serif;
