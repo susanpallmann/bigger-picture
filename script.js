@@ -1,5 +1,4 @@
-window.setInterval(scrollToTop, 10);
-window.onload = function() {
+$(window).load(function() {
     window.clearInterval();
     
     /* Adjust these global variables */
@@ -100,7 +99,7 @@ window.onload = function() {
     $(".toTop").click(scrollToTop);
     updatePageOnScroll(-1, $(document).scrollTop());
     window.setInterval(checkScroll, 30);
-};
+});
 
 function checkScroll() {
   var currentScroll = $(document).scrollTop();
