@@ -53,10 +53,32 @@ $(document).ready(function() {
     });
     $("span.button").click(function() {
         var pageURL = $(this).attr("id").split(".")[1];
-        if (pageURL == "toFirst") {
-            scrollToFirst();
+        $(this).hasClass("callaction") {
+            switch(pageURL) {
+                case "savethebison":
+                    openNewTab("https://www.wcs.org/our-work/species/bison");
+                    break;
+                case "savethedevil":
+                    openNewTab("https://dpipwe.tas.gov.au/wildlife-management/save-the-tasmanian-devil-program/how-you-can-help-and-donation-information");
+                    break;
+                case "savethetamarin":
+                    openNewTab("http://savetheliontamarin.org/");
+                    break;
+                case "savethecondor":
+                    openNewTab("https://www.fws.gov/cno/es/CalCondor/Condor.cfm");
+                    break;
+                case "savetheaddax":
+                    openNewTab("https://www.saharaconservation.org/addax_conservation");
+                    break;
+                case "savetherhino":
+                    openNewTab("https://www.savetherhino.org/");
+            }
         } else {
-            redirect(pageURL);
+            if (pageURL == "toFirst") {
+                scrollToFirst();
+            } else {
+                redirect(pageURL);
+            }
         }
     });
     $("h1").click(function() {
@@ -336,4 +358,8 @@ function redirect(url) {
   } else { 
      window.location.href = url; 
   }
+}
+function openNewTab(url) {
+  var newTab = window.open(url, '_blank');
+  newTab.focus();
 }
