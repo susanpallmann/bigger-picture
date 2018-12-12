@@ -53,11 +53,13 @@ $(document).ready(function() {
     });
     $("span.button").click(function() {
         var pageURL = $(this).attr("id").split(".")[1];
-        redirect(pageURL);
+        if (pageURL !== "toFirst" && pageURL !== "toTop") {
+            redirect(pageURL);
+        }
     });
-    $(".toTop").click(scrollToTop);
     $("h1").click(scrollToTop);
-    $(".toFirst").click(scrollToFirst);
+    $(".toTop").click(scrollToTop);
+    $("#button.toFirst").click(scrollToFirst);
     window.setInterval(checkScroll, 30);
     updatePageOnScroll(-1, $(document).scrollTop());
 });
