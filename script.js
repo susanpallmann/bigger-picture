@@ -75,6 +75,9 @@ $(document).ready(function() {
                         break;
                     case "savetherhino":
                         openNewTab("https://www.savetherhino.org/");
+                        break;
+                    case "About":
+                        redirect(pageURL);
                 }
             } else {
                 if (pageURL == "toFirst") {
