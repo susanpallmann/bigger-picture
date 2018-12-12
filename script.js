@@ -1,8 +1,5 @@
 window.onload = function() {
-    $("html, body").css({
-      "overflow": "auto",
-      "height": "auto"
-    });
+    $(".preload").removeClass("preload");
     $("#loading").css("opacity", 0);
     /* Adjust these global variables */
     // Speed of population number animation (milliseconds). Ideally, keep it divisible by 30.
