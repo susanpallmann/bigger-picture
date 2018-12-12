@@ -1,7 +1,7 @@
 window.onload = function() {
     $('html, body').css({
-      'overflow': 'auto',
-      'height': 'auto'
+      "overflow": "auto",
+      "height": "auto"
     });
     /* Adjust these global variables */
     // Speed of population number animation (milliseconds). Ideally, keep it divisible by 30.
