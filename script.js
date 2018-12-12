@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    scrollToTop();
+    $(document).scrollTop = 0;
     $("#home-header").css("position", "fixed");
     $("#home-header").css("z-index", "2");
 });
