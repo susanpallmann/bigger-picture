@@ -479,7 +479,7 @@ h4.threatName {
 }
 .animal .heroboundary .footprint {
   position: absolute;
-  z-index: 6;
+  z-index: 4;
   width: 100px;
   height: 100px;
   bottom: 0;
