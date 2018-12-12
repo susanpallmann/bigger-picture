@@ -106,7 +106,6 @@ function checkScroll() {
 }
 function updatePageOnScroll() {
     var currentScroll = $(document).scrollTop();
-    console.log(currentScroll);
     $(".animal").each(function() {
       var heroTop = $(this).find(".hero").offset().top;
       if (isScrolledIntoView($(this))) {
@@ -118,6 +117,7 @@ function updatePageOnScroll() {
         var parallaxDistance = offsetAmount + $(window).height();
         var totalParallax = spaceHeight + $(window).height();
         var scrollFraction = parallaxDistance/totalParallax;
+        console.log(scrollFraction);
         var heroHeight = $(this).find(".hero").height();
         if (parallaxDistance < 0) {
           parallaxDistance = 0;
