@@ -1,4 +1,4 @@
-$(document).ready(function() {
+window.onload = function() {
     
     /* Adjust these global variables */
     // Speed of population number animation (milliseconds). Ideally, keep it divisible by 30.
@@ -98,7 +98,7 @@ $(document).ready(function() {
     $(".toTop").click(scrollToTop);
     updatePageOnScroll(-1, $(document).scrollTop());
     window.setInterval(checkScroll, 30);
-});
+};
 
 function checkScroll() {
   var currentScroll = $(document).scrollTop();
