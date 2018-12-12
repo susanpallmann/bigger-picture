@@ -5,7 +5,7 @@ $(document).ready(function() {
     $("#home-header").css("z-index", "5");
 });
 
-$(window).load(function() {
+window.onload = function() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     $("#home-header").css("position", "");
@@ -108,7 +108,7 @@ $(window).load(function() {
     $(".toTop").click(scrollToTop);
     updatePageOnScroll(-1, $(document).scrollTop());
     window.setInterval(checkScroll, 30);
-});
+};
 
 function checkScroll() {
   var currentScroll = $(document).scrollTop();
