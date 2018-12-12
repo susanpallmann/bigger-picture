@@ -67,6 +67,8 @@ $(document).ready(function() {
         }
     });
     $(".toTop").click(scrollToTop);
+    $("span.button.map:nth-child(1)").click(historicMap);
+    $("span.button.map:nth-child(2)").click(currentMap);
     window.setInterval(checkScroll, 30);
     updatePageOnScroll(-1, $(document).scrollTop());
 });
