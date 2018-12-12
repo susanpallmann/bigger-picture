@@ -807,6 +807,9 @@ footer .information .row {
   .informationheader {
     text-align: center;
   }
+  img.mockup {
+    width: 100%;
+  }
   .animal .hero div.text {
     font-size: 2em;
     line-spacing: 1.35em;
