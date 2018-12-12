@@ -779,6 +779,9 @@ footer .information .row {
     width: 100%;
     margin-top: 10pt;
   }
+  .sideBarBox {
+    width: 33.33%;
+  }
   .button.map {
     margin-left: 10pt;
     margin-right: 10pt;
