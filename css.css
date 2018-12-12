@@ -697,6 +697,7 @@ h4.threatName {
   text-align: center;
   width: 100%;
   position: relative;
+  z-index: 1;
 }
 #home-header .callAction h2 {
   font-size: 3em;
