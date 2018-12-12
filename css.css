@@ -1,3 +1,7 @@
+html, body {
+  overflow: hidden;
+  height: 100%;
+}
 h1 {
   color: #ffffff;
   font-family: 'Open Sans',sans-serif;
