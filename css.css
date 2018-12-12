@@ -1,4 +1,4 @@
-html.preload, body.preload {
+.preload {
   overflow: hidden;
   height: 100%;
 }
