@@ -4,7 +4,21 @@
 }
 #loading {
   transition: opacity 1s;
+  animation: loadingSpinner 0.5s linear 0s infinite normal forwards;
 }
+
+@keyframes loadingSpinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 h1 {
   color: #ffffff;
   font-family: 'Open Sans',sans-serif;
