@@ -723,7 +723,7 @@ footer {
   margin-top: 7em;
   background-color: #1A3C48;
 }
-.footer a {
+.footer, .footer a {
   text-align: left;
   font-size: 0.75em;
   font-weight: 600;
