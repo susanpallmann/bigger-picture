@@ -124,6 +124,12 @@ margin-top: 4pt;
   margin-bottom: 0px;
   min-height: 0px;
 }
+.docicon {
+  width: 70%;
+  display: block;
+  margin: auto;
+  max-width: 200px;
+}
 #about .information {
     max-width: 700px;
     margin: auto;
