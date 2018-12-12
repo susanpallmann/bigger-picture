@@ -93,8 +93,8 @@ $(document).ready(function() {
         }
     });
     $(".toTop").click(scrollToTop);
-    window.setInterval(checkScroll, 30);
     updatePageOnScroll(-1, $(document).scrollTop());
+    window.setInterval(checkScroll, 30);
 });
 
 function checkScroll() {
