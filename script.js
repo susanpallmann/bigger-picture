@@ -105,8 +105,8 @@ function checkScroll() {
   }
 }
 function updatePageOnScroll() {
-    console.log("called!");
     var currentScroll = $(document).scrollTop();
+    console.log(currentScroll);
     $(".animal").each(function() {
       var heroTop = $(this).find(".hero").offset().top;
       if (isScrolledIntoView($(this))) {
