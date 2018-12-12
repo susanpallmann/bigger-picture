@@ -51,33 +51,37 @@ $(document).ready(function() {
             }, hamburgerAnimSpeed);
         }
     });
+    $("span.button.map:nth-child(1)").click(historicMap);
+    $("span.button.map:nth-child(2)").click(currentMap);
     $("span.button").click(function() {
-        var pageURL = $(this).attr("id").split(".")[1];
-        if ($(this).hasClass("callaction")) {
-            switch(pageURL) {
-                case "savethebison":
-                    openNewTab("https://www.wcs.org/our-work/species/bison");
-                    break;
-                case "savethedevil":
-                    openNewTab("https://dpipwe.tas.gov.au/wildlife-management/save-the-tasmanian-devil-program/how-you-can-help-and-donation-information");
-                    break;
-                case "savethetamarin":
-                    openNewTab("http://savetheliontamarin.org/");
-                    break;
-                case "savethecondor":
-                    openNewTab("https://www.fws.gov/cno/es/CalCondor/Condor.cfm");
-                    break;
-                case "savetheaddax":
-                    openNewTab("https://www.saharaconservation.org/addax_conservation");
-                    break;
-                case "savetherhino":
-                    openNewTab("https://www.savetherhino.org/");
-            }
-        } else {
-            if (pageURL == "toFirst") {
-                scrollToFirst();
+        if (!$(this).hasClass("map")) {
+            var pageURL = $(this).attr("id").split(".")[1];
+            if ($(this).hasClass("callaction")) {
+                switch(pageURL) {
+                    case "savethebison":
+                        openNewTab("https://www.wcs.org/our-work/species/bison");
+                        break;
+                    case "savethedevil":
+                        openNewTab("https://dpipwe.tas.gov.au/wildlife-management/save-the-tasmanian-devil-program/how-you-can-help-and-donation-information");
+                        break;
+                    case "savethetamarin":
+                        openNewTab("http://savetheliontamarin.org/");
+                        break;
+                    case "savethecondor":
+                        openNewTab("https://www.fws.gov/cno/es/CalCondor/Condor.cfm");
+                        break;
+                    case "savetheaddax":
+                        openNewTab("https://www.saharaconservation.org/addax_conservation");
+                        break;
+                    case "savetherhino":
+                        openNewTab("https://www.savetherhino.org/");
+                }
             } else {
-                redirect(pageURL);
+                if (pageURL == "toFirst") {
+                    scrollToFirst();
+                } else {
+                    redirect(pageURL);
+                }
             }
         }
     });
@@ -89,8 +93,6 @@ $(document).ready(function() {
         }
     });
     $(".toTop").click(scrollToTop);
-    $("span.button.map:nth-child(1)").click(historicMap);
-    $("span.button.map:nth-child(2)").click(currentMap);
     window.setInterval(checkScroll, 30);
     updatePageOnScroll(-1, $(document).scrollTop());
 });
