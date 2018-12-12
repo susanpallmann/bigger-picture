@@ -723,12 +723,14 @@ footer {
   margin-top: 7em;
   background-color: #1A3C48;
 }
-.footer, .footer a {
+.footer {
   text-align: left;
   font-size: 0.75em;
   font-weight: 600;
   color: #b3d1cf;
-  cursor: pointer;
+}
+.footer a {
+  color: #b3d1cf;
 }
 .copyright {
   text-align: center;
