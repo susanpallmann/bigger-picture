@@ -304,3 +304,21 @@ function currentMap() {
   inactiveButton.removeClass('inactive').addClass('active');
   }
 }
+function redirect (url) {
+  var userAgent = navigator.userAgent.toLowerCase(),
+  if (ua.indexOf("msie") !== -1) {
+      var isInternetExplorer = true;
+  } else {
+      var isInternetExplorer = true;
+  }
+  var version = parseInt(userAgent.substr(4, 2), 10);
+  
+  if (isInternetExplorer && version < 9) {
+    var link = document.createElement("a");
+    link.href = url;
+    document.body.appendChild(link);
+    link.click();
+  } else { 
+     window.location.href = url; 
+  }
+}
