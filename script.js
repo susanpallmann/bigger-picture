@@ -309,7 +309,7 @@ function currentMap() {
   }
 }
 function redirect(url) {
-  var userAgent = navigator.userAgent.toLowerCase(),
+  var userAgent = navigator.userAgent.toLowerCase();
   if (userAgent.indexOf("msie") !== -1) {
       var isInternetExplorer = true;
   } else {
