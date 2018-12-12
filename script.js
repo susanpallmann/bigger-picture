@@ -53,7 +53,7 @@ $(document).ready(function() {
     });
     $("span.button").click(function() {
         var pageURL = $(this).attr("id").split(".")[1];
-        $(this).hasClass("callaction") {
+        if ($(this).hasClass("callaction")) {
             switch(pageURL) {
                 case "savethebison":
                     openNewTab("https://www.wcs.org/our-work/species/bison");
