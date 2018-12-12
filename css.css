@@ -24,6 +24,14 @@ img.mapimage {
   transition: opacity 0.6s;
   -webkit-transition: opacity 0.6s;
 }
+#documentation-header {
+  overflow: hidden;
+  background-color: #83ae9c;
+  height: 90vh;
+}
+img.mockup {
+  height: 100%;
+}
 a {
   color: inherit;
   cursor: inherit;
