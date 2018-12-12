@@ -310,7 +310,7 @@ function currentMap() {
 }
 function redirect(url) {
   var userAgent = navigator.userAgent.toLowerCase(),
-  if (ua.indexOf("msie") !== -1) {
+  if (userAgent.indexOf("msie") !== -1) {
       var isInternetExplorer = true;
   } else {
       var isInternetExplorer = true;
