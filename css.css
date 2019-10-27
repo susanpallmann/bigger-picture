@@ -103,6 +103,8 @@ header {
 header table {
   min-height: 60px;
   width: 100%;
+  background-color: #1c4554;
+  box-shadow: rgba(0,0,0,0.2) 0px 0px 6px;
 }
 header h1 {
   font-size: 4vh;
