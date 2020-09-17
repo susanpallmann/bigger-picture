@@ -2,6 +2,7 @@
 An interactive and narrative website designed to inform the general public on the good zoos do for global conservation, while addressing the misconception that animals in zoos are unhappy or mistreated. Overall, the hope is that the public will "see the bigger picture" and realize that having just a few animals in zoos does so much to benefit the rest of the animals in the wild. A project for ART 574 Bookforms, University of Louisville 2018.
 
 **Site:** https://www.supportzoos.com/
+
 **Project Information:** https://www.susanpallmanndesign.com/bigger-picture.html
 
 ## Contents
