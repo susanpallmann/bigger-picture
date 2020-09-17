@@ -52,4 +52,4 @@ Some of the code credit belongs to Daniel Terrington.
 This website is intended to be mostly a proof-of-concept, and has a target audience of college students. With this in mind, the website is not optimized for poor internet connections, slower devices, or outdated browsers. Although there is some reduction of effects on mobile devices, the website may still seem slow on older machines. In a real-world setting, these issues would be addressed better, but this was a school project.
 
 ### Code Quality
-This site is one of the first JavaScript projects I ever did. As such, the code behind it is not especially well-done or optimized. I think the project is important to keep as a documentation of my learning experience, but it's also worth noting that I have improved greatly as a developer since this website.
+This site is one of the first JavaScript projects I ever did. As such, the code behind it is not especially well-done or optimized. I think the project is important to keep as a documentation of my learning experience, but it's also worth noting that I have improved greatly as a developer since this website's creation in 2018.
