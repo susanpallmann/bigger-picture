@@ -1,6 +1,7 @@
 window.onload = function() {
     $(".preload").removeClass("preload");
     $("#loading").css("opacity", 0);
+    console.log('I miss you every day');
     /* Adjust these global variables */
     // Speed of population number animation (milliseconds). Ideally, keep it divisible by 30.
     populationAnimSpeed = 510;
@@ -132,7 +133,6 @@ function updatePageOnScroll() {
           $(this).find(".hero h2.fadeInUp").removeClass();
           $(this).find(".hero h2.text-second").removeClass().addClass("fadeInUp");
         }
-        console.log($(this).find(".background").height());
         var backgroundTrans = ($(this).find(".background").height()-heroHeight)*scrollFraction;
         var waterfallTrans = (($(this).find("#waterfall").height()-heroHeight)*scrollFraction)*3;
         var midbackTrans = ($(this).find(".midback").height()-heroHeight)*scrollFraction;
