@@ -1,7 +1,6 @@
 window.onload = function() {
     $(".preload").removeClass("preload");
     $("#loading").css("opacity", 0);
-    console.log('I miss you every day');
     /* Adjust these global variables */
     // Speed of population number animation (milliseconds). Ideally, keep it divisible by 30.
     populationAnimSpeed = 510;
